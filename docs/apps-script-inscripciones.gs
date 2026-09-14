@@ -26,6 +26,10 @@ function getSheet_() {
     sheet.appendRow(HEADERS);
     sheet.setFrozenRows(1);
   }
+  // La columna "Fecha" (D) siempre como texto plano, para que Google
+  // Sheets no la reconvierta en una fecha de verdad (eso desplaza el día
+  // según la zona horaria y rompe el emparejamiento con la carrera).
+  sheet.getRange('D2:D').setNumberFormat('@');
   return sheet;
 }
 
@@ -33,6 +37,16 @@ function getSheet_() {
 // crear la hoja "Inscripciones" con sus columnas si todavía no existe.
 function setup() {
   getSheet_();
+}
+
+// Si una celda ya se guardó como fecha de verdad (versiones anteriores
+// de este script, o alguien tecleó una fecha directamente en la hoja),
+// la devolvemos como texto "AAAA-MM-DD" en vez de como objeto Date.
+function normalizeValue_(value, header) {
+  if (!(value instanceof Date)) return value;
+  var tz = SpreadsheetApp.getActiveSpreadsheet().getSpreadsheetTimeZone();
+  var pattern = header === 'Fecha' ? 'yyyy-MM-dd' : "yyyy-MM-dd'T'HH:mm:ss";
+  return Utilities.formatDate(value, tz, pattern);
 }
 
 function doGet(e) {
@@ -43,7 +57,7 @@ function doGet(e) {
     .filter(function (row) { return row.join('') !== ''; })
     .map(function (row) {
       var obj = {};
-      headers.forEach(function (h, i) { obj[h] = row[i]; });
+      headers.forEach(function (h, i) { obj[h] = normalizeValue_(row[i], h); });
       return obj;
     });
   return ContentService.createTextOutput(JSON.stringify(data))
