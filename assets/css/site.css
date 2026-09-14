@@ -129,7 +129,7 @@
 
 /* ---------- sedes + social ---------- */
 .rb-venues{display:flex; flex-wrap:wrap; gap:16px; align-items:center;}
-.rb-venues img{height:64px; width:auto; background:#fff; border-radius:12px; padding:8px 12px; object-fit:contain;
+.rb-venues img{height:96px; width:auto; background:#fff; border-radius:12px; padding:10px 16px; object-fit:contain;
   filter:grayscale(.2); transition:.15s;}
 .rb-venues img:hover{filter:none; transform:scale(1.05);}
 .rb-foot{position:relative; z-index:1; border-top:1px solid var(--line); padding:30px 0; text-align:center;}
