@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Panel de administración · Resisbarna</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<div class="rb">
+  <header class="rb-hero" style="padding-bottom:14px">
+    <div class="wrap">
+      <div class="rb-top">
+        <a href="index.html" class="site">Resis<span style="color:var(--red)">barna</span></a>
+        <nav>
+          <a href="index.html">Volver a la web</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div class="wrap rb-crumb"><a href="index.html">Inicio</a><span>/</span><b>Panel de administración</b></div>
+  <div class="wrap rb-subhero">
+    <h1>Panel de administración</h1>
+    <p class="tag">Sube resultados, verificaciones y clasificaciones de la temporada 2026 sin tocar código. Los cambios se publican en la web en 1-2 minutos.</p>
+  </div>
+
+  <section id="auth-section">
+    <div class="wrap">
+      <div class="admin-card">
+        <h3>Conectar con GitHub</h3>
+        <p style="color:var(--muted); font-size:14px; margin-bottom:14px;">La primera vez tienes que crear un "token" (una clave de acceso). Solo se hace una vez:</p>
+        <ol>
+          <li>Entra en <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com/settings/personal-access-tokens/new</a> (con la cuenta de GitHub del club).</li>
+          <li><b>Token name:</b> pon lo que quieras, p. ej. <code>Panel Resisbarna</code>.</li>
+          <li><b>Expiration:</b> elige el plazo que prefieras (p. ej. 1 año).</li>
+          <li><b>Repository access</b> → <b>Only select repositories</b> → elige <code>Resisbarna</code>.</li>
+          <li><b>Permissions</b> → <b>Repository permissions</b> → busca <b>Contents</b> → ponlo en <b>Read and write</b>.</li>
+          <li>Pulsa <b>Generate token</b> al final de la página.</li>
+          <li>Copia el token que aparece (empieza por <code>github_pat_</code>) — solo se muestra una vez — y pégalo aquí abajo.</li>
+        </ol>
+        <input type="password" id="tokenInput" class="admin-input" placeholder="Pega aquí tu token (github_pat_...)" autocomplete="off">
+        <label class="admin-check"><input type="checkbox" id="rememberToken" checked> Recordar en este navegador (no hace falta volver a pegarlo cada vez)</label>
+        <button id="connectBtn" class="rb-cta go">Conectar</button>
+        <div id="authError" class="admin-error" hidden></div>
+        <p style="color:var(--muted); font-size:12px; margin-top:16px;">Este token solo se guarda en tu propio navegador y solo se usa para hablar directamente con GitHub. No lo compartas: funciona como una contraseña para modificar la web. Si crees que alguien más lo tiene, bórralo desde la misma página de GitHub y crea uno nuevo.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="editor-section" hidden>
+    <div class="wrap">
+      <div class="admin-toolbar">
+        <span id="statusMsg" class="admin-status"></span>
+        <div style="display:flex; gap:10px;">
+          <button id="saveBtn" class="rb-cta go" disabled>Guardar cambios</button>
+          <button id="logoutBtn">Cerrar sesión</button>
+        </div>
+      </div>
+      <div id="groups"></div>
+    </div>
+  </section>
+
+  <footer class="rb-foot">
+    <div class="wrap">
+      <div class="cr">Resisbarna © 2026 · Panel de administración</div>
+    </div>
+  </footer>
+</div>
+<script src="assets/js/admin.js"></script>
+</body>
+</html>
