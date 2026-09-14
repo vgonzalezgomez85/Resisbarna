@@ -8,7 +8,17 @@
   var currentFilter = 'all';
   var temporada = null;
   var inscripciones = [];
+  var inscripcionesLoaded = false;
   var configured = SCRIPT_URL.indexOf('http') === 0;
+  var visibleRaces = [];
+
+  var qs = new URLSearchParams(location.search);
+  var qCamp = qs.get('camp');
+  var qSede = qs.get('sede');
+  var qFecha = qs.get('fecha');
+  if(qCamp === 'GT' || qCamp === 'Grupo C' || qCamp === 'Le Mans Series'){
+    currentFilter = qCamp;
+  }
 
   function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
   function colorFor(camp){
@@ -26,19 +36,28 @@
     });
   }
 
-  function raceCardHtml(race, idx){
-    var fecha = race.fecha ? new Date(race.fecha + 'T00:00:00').toLocaleDateString('es-ES', {day:'2-digit', month:'long', year:'numeric'}) : 'Fecha por confirmar';
+  // Contador + lista de apuntados de una prueba (se puede repintar solo
+  // esto, sin tocar el formulario, cuando llegan los datos de la hoja).
+  function statusParts(race){
+    if(!inscripcionesLoaded){
+      return { badge: '<span class="rb-insc-count loading">Cargando apuntados…</span>', list: '' };
+    }
     var teams = teamsFor(race);
     var count = teams.length;
-    var countBadge = count
+    var badge = count
       ? '<span class="rb-insc-count">' + count + ' equipo' + (count === 1 ? '' : 's') + ' apuntado' + (count === 1 ? '' : 's') + '</span>'
       : '<span class="rb-insc-count zero">Sin apuntados todavía</span>';
-    var listHtml = teams.length
+    var list = count
       ? '<div class="rb-insc-list">' + teams.map(function(t, i){
           var p2 = t['Piloto 2'] ? ' / ' + esc(t['Piloto 2']) : '';
           return '<div class="rb-insc-team"><span><span class="n">' + (i+1) + '.</span> ' + esc(t.Equipo) + ' — ' + esc(t['Piloto 1']) + p2 + '</span></div>';
         }).join('') + '</div>'
       : '<div class="rb-insc-empty">Todavía no hay equipos apuntados. ¡Sé el primero!</div>';
+    return { badge: badge, list: list };
+  }
+
+  function raceCardHtml(race, idx){
+    var fecha = race.fecha ? new Date(race.fecha + 'T00:00:00').toLocaleDateString('es-ES', {day:'2-digit', month:'long', year:'numeric'}) : 'Fecha por confirmar';
 
     var formHtml = configured
       ? '<form class="rb-insc-form" data-race="' + idx + '">' +
@@ -54,19 +73,38 @@
         '<div class="venue">' + esc(race.sede || 'Sede por confirmar') + '</div>' +
         '<span class="chip" style="background:' + colorFor(race.campeonato) + '">' + esc(race.campeonato) + '</span>' +
         '<span class="date">' + fecha + '</span>' +
-        countBadge +
+        '<span data-badge="' + idx + '"></span>' +
       '</div>' +
-      listHtml +
+      '<div data-list="' + idx + '"></div>' +
       formHtml +
     '</div>';
   }
 
+  function paintStatus(idx){
+    var race = visibleRaces[idx];
+    if(!race) return;
+    var badgeEl = racesEl.querySelector('[data-badge="' + idx + '"]');
+    var listEl = racesEl.querySelector('[data-list="' + idx + '"]');
+    if(!badgeEl || !listEl) return;
+    var parts = statusParts(race);
+    badgeEl.innerHTML = parts.badge;
+    listEl.innerHTML = parts.list;
+  }
+
+  function paintAllStatuses(){
+    visibleRaces.forEach(function(_, idx){ paintStatus(idx); });
+  }
+
+  // Pinta la estructura completa (calendario + formularios). Se llama
+  // solo cuando cambia el filtro o llega el calendario por primera vez;
+  // así nunca se destruyen formularios a medio rellenar.
   function render(){
-    var races = (temporada.races || []).filter(function(r){
+    visibleRaces = (temporada.races || []).filter(function(r){
       return currentFilter === 'all' || r.campeonato === currentFilter;
     });
-    if(!races.length){ racesEl.innerHTML = '<div class="rb-empty">No hay carreras para este filtro.</div>'; return; }
-    racesEl.innerHTML = races.map(raceCardHtml).join('');
+    if(!visibleRaces.length){ racesEl.innerHTML = '<div class="rb-empty">No hay carreras para este filtro.</div>'; return; }
+    racesEl.innerHTML = visibleRaces.map(raceCardHtml).join('');
+    paintAllStatuses();
   }
 
   racesEl.addEventListener('submit', function(e){
@@ -74,8 +112,7 @@
     var form = e.target;
     if(!form.classList.contains('rb-insc-form')) return;
     var idx = form.dataset.race;
-    var races = (temporada.races || []).filter(function(r){ return currentFilter === 'all' || r.campeonato === currentFilter; });
-    var race = races[idx];
+    var race = visibleRaces[idx];
     var msgEl = racesEl.querySelector('[data-race-msg="' + idx + '"]');
     var equipo = form.equipo.value.trim();
     var piloto1 = form.piloto1.value.trim();
@@ -108,7 +145,8 @@
       form.reset();
       msgEl.textContent = '¡Apuntado! Ya apareces en la lista.';
       msgEl.className = 'rb-insc-msg ok';
-      render();
+      paintStatus(idx);
+      btn.disabled = false;
     }).catch(function(){
       msgEl.textContent = 'No se ha podido guardar. Inténtalo de nuevo en un momento.';
       msgEl.className = 'rb-insc-msg err';
@@ -124,13 +162,49 @@
     render();
   });
 
-  Promise.all([
-    fetch('assets/data/temporada-2026.json').then(function(r){ return r.json(); }),
-    configured ? fetch(SCRIPT_URL).then(function(r){ return r.json(); }).catch(function(){ return []; }) : Promise.resolve([])
-  ]).then(function(results){
-    temporada = results[0];
-    inscripciones = results[1] || [];
+  function syncFilterButtons(){
+    filtersEl.querySelectorAll('button').forEach(function(b){
+      b.classList.toggle('on', b.dataset.f === currentFilter);
+    });
+  }
+
+  // Si se llega desde el calendario de la home con una prueba concreta
+  // (?sede=...&fecha=...), la resalta y hace scroll hasta ella.
+  function highlightRace(){
+    if(!qSede || !qFecha) return;
+    var idx = visibleRaces.findIndex(function(r){ return r.sede === qSede && r.fecha === qFecha; });
+    if(idx === -1) return;
+    var el = racesEl.querySelector('.rb-insc-race:nth-child(' + (idx + 1) + ')');
+    if(!el) return;
+    el.classList.add('highlight');
+    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    setTimeout(function(){ el.classList.remove('highlight'); }, 2600);
+  }
+
+  // 1) El calendario (rápido, mismo servidor que la página) pinta ya
+  //    mismo, con el formulario listo para usar.
+  syncFilterButtons();
+  fetch('assets/data/temporada-2026.json').then(function(r){ return r.json(); }).then(function(data){
+    temporada = data;
     render();
+    highlightRace();
+
+    // 2) La lista de apuntados (Google Apps Script, puede tardar varios
+    //    segundos) se pide en paralelo y solo repinta los contadores/listas
+    //    cuando llega, sin tocar los formularios ya visibles.
+    if(configured){
+      fetch(SCRIPT_URL).then(function(r){ return r.json(); }).then(function(rows){
+        inscripciones = rows || [];
+        inscripcionesLoaded = true;
+        paintAllStatuses();
+      }).catch(function(){
+        inscripcionesLoaded = true; // deja de decir "Cargando…"; los formularios siguen funcionando igual
+        paintAllStatuses();
+      });
+    } else {
+      inscripcionesLoaded = true;
+      paintAllStatuses();
+    }
   }).catch(function(){
     racesEl.innerHTML = '<div class="rb-empty">No se ha podido cargar el calendario.</div>';
   });

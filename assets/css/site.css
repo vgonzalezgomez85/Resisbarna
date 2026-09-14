@@ -258,6 +258,10 @@
   font-weight:800; font-size:13px; color:var(--red); background:rgba(237,27,47,.12); border:1px solid rgba(237,27,47,.35);
   padding:7px 14px; border-radius:20px;}
 .rb-insc-count.zero{color:var(--muted); background:rgba(255,255,255,.03); border-color:var(--line);}
+.rb-insc-count.loading{color:var(--muted); background:rgba(255,255,255,.03); border-color:var(--line);}
+
+.rb-insc-race{transition:box-shadow .3s, border-color .3s;}
+.rb-insc-race.highlight{border-color:var(--c); box-shadow:0 0 0 3px rgba(237,27,47,.25);}
 
 .rb-insc-list{display:flex; flex-direction:column; gap:6px; margin-bottom:16px;}
 .rb-insc-team{background:var(--panel2); border:1px solid var(--line); border-radius:9px; padding:10px 14px; font-size:14px;}
