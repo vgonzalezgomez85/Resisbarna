@@ -1,6 +1,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500;600;700;800;900&family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Saira:wght@600;700;800&display=swap');
 
+@font-face{
+  font-family:'Base02';
+  src:url('../fonts/Base_02.ttf') format('truetype');
+  font-weight:normal; font-style:normal; font-display:swap;
+}
+
 .rb{
   --ink:#0c0d10; --panel:#15171d; --panel2:#1b1e26; --line:#2a2e39;
   --txt:#eef0f4; --muted:#9aa1ad;
@@ -38,7 +44,7 @@
 .rb-top nav a{font-family:'Saira',sans-serif; text-transform:uppercase; letter-spacing:.08em; font-size:12.5px; font-weight:700;
   color:var(--muted); padding:8px 12px; border-radius:7px; transition:.15s;}
 .rb-top nav a:hover{color:#fff; background:rgba(255,255,255,.06);}
-.rb-hero h1{font-weight:900; font-size:clamp(52px,11vw,128px); position:relative;}
+.rb-hero h1{font-family:'Base02','Saira Condensed',sans-serif; font-weight:normal; font-size:clamp(52px,11vw,128px); position:relative;}
 .rb-hero h1 .yr{color:var(--red) !important;}
 .rb-champ h3{color:var(--txt) !important;}
 .rb-stripe{height:8px; width:160px; margin:14px 0 18px;
@@ -150,7 +156,7 @@
 
 /* ---------- sub-páginas: cabecera simple ---------- */
 .rb-subhero{padding:18px 0 8px;}
-.rb-subhero h1{font-weight:900; font-size:clamp(34px,6vw,56px);}
+.rb-subhero h1{font-family:'Base02','Saira Condensed',sans-serif; font-weight:normal; font-size:clamp(34px,6vw,56px);}
 .rb-subhero .tag{color:var(--muted); font-size:15px; margin-top:8px; max-width:640px;}
 
 /* ---------- filas de documentos por prueba ---------- */
