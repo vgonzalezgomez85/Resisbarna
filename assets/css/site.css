@@ -270,6 +270,8 @@
 .rb-insc-dia{font-family:'Saira',sans-serif; text-transform:uppercase; letter-spacing:.06em; font-size:11px;
   font-weight:700; color:var(--c); background:rgba(255,255,255,.05); border:1px solid var(--line);
   padding:3px 9px; border-radius:20px; white-space:nowrap;}
+.rb-insc-dia.jueves{color:var(--amber); background:rgba(255,196,0,.12); border-color:rgba(255,196,0,.35);}
+.rb-insc-dia.viernes{color:var(--cyan); background:rgba(39,194,214,.12); border-color:rgba(39,194,214,.35);}
 .rb-insc-empty{color:var(--muted); font-size:13.5px; padding:8px 2px 16px;}
 
 .rb-insc-form{display:flex; gap:8px; flex-wrap:wrap; align-items:center; padding-top:4px; border-top:1px solid var(--line);}
