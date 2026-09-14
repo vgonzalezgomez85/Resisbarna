@@ -6,132 +6,240 @@
       "sede": "El Sot",
       "campeonato": "Grupo C",
       "fecha": null,
-      "documentos": {
-        "mangas": "assets/pdfs/historico/2024/MANGAS_GRUPO_C_EL_SOT_2024.pdf",
-        "verificaciones": "assets/pdfs/historico/2024/VERIFICACIONES_GRUPO_C_ELSOT_2024.pdf",
-        "resultado": "assets/pdfs/historico/2024/RESULTADOS_GRUPO_C_ELSOT_2024.pdf"
-      }
+      "documentos": [
+        {
+          "nombre": "Mangas",
+          "href": "assets/pdfs/historico/2024/MANGAS_GRUPO_C_EL_SOT_2024.pdf"
+        },
+        {
+          "nombre": "Verificaciones",
+          "href": "assets/pdfs/historico/2024/VERIFICACIONES_GRUPO_C_ELSOT_2024.pdf"
+        },
+        {
+          "nombre": "Resultado carrera",
+          "href": "assets/pdfs/historico/2024/RESULTADOS_GRUPO_C_ELSOT_2024.pdf"
+        }
+      ]
     },
     {
       "nombre": "RESISBARNA 1ª CARRERA EL SOT",
       "sede": "El Sot",
       "campeonato": "GT",
       "fecha": null,
-      "documentos": {
-        "mangas": "assets/pdfs/historico/2024/MANGAS_EL_SLOT_RESISBARNA_2024.pdf",
-        "verificaciones": "assets/pdfs/historico/2024/VERIFICACIONES_ELSOT_RESISBARNA_2024.pdf",
-        "resultado": "assets/pdfs/historico/2024/RESULTADOS_CARRERA_ELSOT_RESISBARNA_2024.pdf"
-      }
+      "documentos": [
+        {
+          "nombre": "Mangas",
+          "href": "assets/pdfs/historico/2024/MANGAS_EL_SLOT_RESISBARNA_2024.pdf"
+        },
+        {
+          "nombre": "Verificaciones",
+          "href": "assets/pdfs/historico/2024/VERIFICACIONES_ELSOT_RESISBARNA_2024.pdf"
+        },
+        {
+          "nombre": "Resultado carrera",
+          "href": "assets/pdfs/historico/2024/RESULTADOS_CARRERA_ELSOT_RESISBARNA_2024.pdf"
+        }
+      ]
     },
     {
       "nombre": "GRUPO C 2ª CARRERA SLOT FOR YOU",
       "sede": "Slot For You",
       "campeonato": "Grupo C",
       "fecha": null,
-      "documentos": {
-        "mangas": "assets/pdfs/historico/2024/MANGAS_S4Y_GRUPO_C_2024.pdf",
-        "verificaciones": "assets/pdfs/historico/2024/VERIFICACIONES_S4Y_GRUPO_C_2024.pdf",
-        "resultado": "assets/pdfs/historico/2024/RESULTADO_S4Y_GRUPO_C_2024.pdf"
-      }
+      "documentos": [
+        {
+          "nombre": "Mangas",
+          "href": "assets/pdfs/historico/2024/MANGAS_S4Y_GRUPO_C_2024.pdf"
+        },
+        {
+          "nombre": "Verificaciones",
+          "href": "assets/pdfs/historico/2024/VERIFICACIONES_S4Y_GRUPO_C_2024.pdf"
+        },
+        {
+          "nombre": "Resultado carrera",
+          "href": "assets/pdfs/historico/2024/RESULTADO_S4Y_GRUPO_C_2024.pdf"
+        }
+      ]
     },
     {
       "nombre": "RESISBARNA 2ª CARRERA SLOT FOR YOU",
       "sede": "Slot For You",
       "campeonato": "GT",
       "fecha": null,
-      "documentos": {
-        "mangas": "assets/pdfs/historico/2024/MANGAS_S4Y_RESISBARNA_2024.pdf",
-        "verificaciones": "assets/pdfs/historico/2024/VERIFICACIONES_S4Y_RESISBARNA_2024.pdf",
-        "resultado": "assets/pdfs/historico/2024/RESULTADO_S4Y_RESISBARNA_2024.pdf"
-      }
+      "documentos": [
+        {
+          "nombre": "Mangas",
+          "href": "assets/pdfs/historico/2024/MANGAS_S4Y_RESISBARNA_2024.pdf"
+        },
+        {
+          "nombre": "Verificaciones",
+          "href": "assets/pdfs/historico/2024/VERIFICACIONES_S4Y_RESISBARNA_2024.pdf"
+        },
+        {
+          "nombre": "Resultado carrera",
+          "href": "assets/pdfs/historico/2024/RESULTADO_S4Y_RESISBARNA_2024.pdf"
+        }
+      ]
     },
     {
       "nombre": "GRUPO C 3ª CARRERA SLOT-CAR",
       "sede": "Slot Car",
       "campeonato": "Grupo C",
       "fecha": null,
-      "documentos": {
-        "mangas": "assets/pdfs/historico/2024/MANGAS_GRUPO_C_SLOTCAR_2024.pdf",
-        "verificaciones": "assets/pdfs/historico/2024/VERIFICACIONES_SLOTCAR_GRUPO_C_2024.pdf",
-        "resultado": "assets/pdfs/historico/2024/FINAL-SLOT-CAR-RECONSTRUIDO.pdf"
-      }
+      "documentos": [
+        {
+          "nombre": "Mangas",
+          "href": "assets/pdfs/historico/2024/MANGAS_GRUPO_C_SLOTCAR_2024.pdf"
+        },
+        {
+          "nombre": "Verificaciones",
+          "href": "assets/pdfs/historico/2024/VERIFICACIONES_SLOTCAR_GRUPO_C_2024.pdf"
+        },
+        {
+          "nombre": "Resultado carrera",
+          "href": "assets/pdfs/historico/2024/FINAL-SLOT-CAR-RECONSTRUIDO.pdf"
+        }
+      ]
     },
     {
       "nombre": "RESISBARNA 3ª CARRERA SLOT CAR",
       "sede": "Slot Car",
       "campeonato": "GT",
       "fecha": null,
-      "documentos": {
-        "mangas": "assets/pdfs/historico/2024/MANGAS_SLOTCAR_RESISBARNA_2024.pdf",
-        "verificaciones": "assets/pdfs/historico/2024/VERIFICACIONES_SLOTCAR_RESISBARNA_2024.pdf",
-        "resultado": "assets/pdfs/historico/2024/RESULTADOS-CARRERA-RESISBARNA-SLOTCAR-2024.pdf"
-      }
+      "documentos": [
+        {
+          "nombre": "Mangas",
+          "href": "assets/pdfs/historico/2024/MANGAS_SLOTCAR_RESISBARNA_2024.pdf"
+        },
+        {
+          "nombre": "Verificaciones",
+          "href": "assets/pdfs/historico/2024/VERIFICACIONES_SLOTCAR_RESISBARNA_2024.pdf"
+        },
+        {
+          "nombre": "Resultado carrera",
+          "href": "assets/pdfs/historico/2024/RESULTADOS-CARRERA-RESISBARNA-SLOTCAR-2024.pdf"
+        }
+      ]
     },
     {
       "nombre": "GRUPO C 4ª CARRERA ESCUDERIA CRONO",
       "sede": "Crono",
       "campeonato": "Grupo C",
       "fecha": null,
-      "documentos": {
-        "mangas": "assets/pdfs/historico/2024/MANGAS_CRUPOC_CRONO_2024.pdf",
-        "verificaciones": "assets/pdfs/historico/2024/VERIFICACIONES_GRUPOC_CRONO_2024.pdf",
-        "resultado": "assets/pdfs/historico/2024/RESULTADOS_GRUPOC_CRONO_2024.pdf"
-      }
+      "documentos": [
+        {
+          "nombre": "Mangas",
+          "href": "assets/pdfs/historico/2024/MANGAS_CRUPOC_CRONO_2024.pdf"
+        },
+        {
+          "nombre": "Verificaciones",
+          "href": "assets/pdfs/historico/2024/VERIFICACIONES_GRUPOC_CRONO_2024.pdf"
+        },
+        {
+          "nombre": "Resultado carrera",
+          "href": "assets/pdfs/historico/2024/RESULTADOS_GRUPOC_CRONO_2024.pdf"
+        }
+      ]
     },
     {
       "nombre": "RESISBARNA 4ª CARRERA ESCUDERIA CRONO",
       "sede": "Crono",
       "campeonato": "GT",
       "fecha": null,
-      "documentos": {
-        "mangas": "assets/pdfs/historico/2024/MANGAS_CRONO_RESISBARNA_2024.pdf",
-        "verificaciones": "assets/pdfs/historico/2024/VERIFICACIONES_CRONO_2024.pdf",
-        "resultado": "assets/pdfs/historico/2024/RESULTADOS_CRONO_2024.pdf"
-      }
+      "documentos": [
+        {
+          "nombre": "Mangas",
+          "href": "assets/pdfs/historico/2024/MANGAS_CRONO_RESISBARNA_2024.pdf"
+        },
+        {
+          "nombre": "Verificaciones",
+          "href": "assets/pdfs/historico/2024/VERIFICACIONES_CRONO_2024.pdf"
+        },
+        {
+          "nombre": "Resultado carrera",
+          "href": "assets/pdfs/historico/2024/RESULTADOS_CRONO_2024.pdf"
+        }
+      ]
     },
     {
       "nombre": "GRUPO C 5ª CARRERA SLOTMANIA",
       "sede": "Slotmania",
       "campeonato": "Grupo C",
       "fecha": null,
-      "documentos": {
-        "mangas": "assets/pdfs/historico/2024/MANGAS_SLOTMANIA_GRUPOC_2024.pdf",
-        "verificaciones": "assets/pdfs/historico/2024/VERIFICACIONES_SLOTMANIA_GRUPOC_2024.pdf",
-        "resultado": "assets/pdfs/historico/2024/RESULTADO_SLOTMANIA_GRUPOC_2024.pdf"
-      }
+      "documentos": [
+        {
+          "nombre": "Mangas",
+          "href": "assets/pdfs/historico/2024/MANGAS_SLOTMANIA_GRUPOC_2024.pdf"
+        },
+        {
+          "nombre": "Verificaciones",
+          "href": "assets/pdfs/historico/2024/VERIFICACIONES_SLOTMANIA_GRUPOC_2024.pdf"
+        },
+        {
+          "nombre": "Resultado carrera",
+          "href": "assets/pdfs/historico/2024/RESULTADO_SLOTMANIA_GRUPOC_2024.pdf"
+        }
+      ]
     },
     {
       "nombre": "RESISBARNA 5ª CARRERA SLOTMANIA",
       "sede": "Slotmania",
       "campeonato": "GT",
       "fecha": null,
-      "documentos": {
-        "mangas": "assets/pdfs/historico/2024/MANGAS_SLOTMANIA_RESISBARNA_2024.pdf",
-        "verificaciones": "assets/pdfs/historico/2024/VERIFICACIONES_SLOTMANIA_RESISBARNA_2024.pdf",
-        "resultado": "assets/pdfs/historico/2024/RESULTADOS_slotmainia_2024.pdf"
-      }
+      "documentos": [
+        {
+          "nombre": "Mangas",
+          "href": "assets/pdfs/historico/2024/MANGAS_SLOTMANIA_RESISBARNA_2024.pdf"
+        },
+        {
+          "nombre": "Verificaciones",
+          "href": "assets/pdfs/historico/2024/VERIFICACIONES_SLOTMANIA_RESISBARNA_2024.pdf"
+        },
+        {
+          "nombre": "Resultado carrera",
+          "href": "assets/pdfs/historico/2024/RESULTADOS_slotmainia_2024.pdf"
+        }
+      ]
     },
     {
       "nombre": "RESISBARNA 6ª CARRERA GASCLAVAT",
       "sede": "Gasclavat",
       "campeonato": "GT",
       "fecha": null,
-      "documentos": {
-        "mangas": "assets/pdfs/historico/2024/MANGAS_GASCLAVAT_RESISBARNA_2024.pdf",
-        "verificaciones": "assets/pdfs/historico/2024/VERIFICACIONES_GASCLAVAT_RESISBARNA_2024.pdf",
-        "resultado": "assets/pdfs/historico/2024/RESULTADOS_GASCLAVAT_RESISBARNA_2024.pdf"
-      }
+      "documentos": [
+        {
+          "nombre": "Mangas",
+          "href": "assets/pdfs/historico/2024/MANGAS_GASCLAVAT_RESISBARNA_2024.pdf"
+        },
+        {
+          "nombre": "Verificaciones",
+          "href": "assets/pdfs/historico/2024/VERIFICACIONES_GASCLAVAT_RESISBARNA_2024.pdf"
+        },
+        {
+          "nombre": "Resultado carrera",
+          "href": "assets/pdfs/historico/2024/RESULTADOS_GASCLAVAT_RESISBARNA_2024.pdf"
+        }
+      ]
     },
     {
       "nombre": "RESISBARNA 7ª CARRERA DREAM SLOT",
       "sede": "Dream Slot",
       "campeonato": "GT",
       "fecha": null,
-      "documentos": {
-        "mangas": "assets/pdfs/historico/2024/MANGAS_DREAMSLOT_RESISBARNA_2024.pdf",
-        "verificaciones": "assets/pdfs/historico/2024/VERIFICACIONES_DREAMSLOT_RESISBARNA_2024.pdf",
-        "resultado": "assets/pdfs/historico/2024/RESULTADO_FINAL_DREAMSLOT_RESISBARNA_2024.pdf"
-      }
+      "documentos": [
+        {
+          "nombre": "Mangas",
+          "href": "assets/pdfs/historico/2024/MANGAS_DREAMSLOT_RESISBARNA_2024.pdf"
+        },
+        {
+          "nombre": "Verificaciones",
+          "href": "assets/pdfs/historico/2024/VERIFICACIONES_DREAMSLOT_RESISBARNA_2024.pdf"
+        },
+        {
+          "nombre": "Resultado carrera",
+          "href": "assets/pdfs/historico/2024/RESULTADO_FINAL_DREAMSLOT_RESISBARNA_2024.pdf"
+        }
+      ]
     }
   ],
   "clasificaciones": [
@@ -159,5 +267,6 @@
       "nombre": "CLASIFICACION GRUPO C",
       "pdf": "assets/pdfs/historico/2024/CLASIFICACION_GRUPOC_2024.pdf"
     }
-  ]
+  ],
+  "documentos_generales": []
 }

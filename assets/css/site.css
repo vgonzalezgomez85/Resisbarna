@@ -183,6 +183,13 @@
 
 .rb-empty{color:var(--muted); font-size:14px; padding:30px 0; text-align:center;}
 
+.rb-year-picker{display:flex; align-items:center; gap:14px; margin-bottom:26px; flex-wrap:wrap;}
+.rb-year-picker .lbl{color:var(--muted); font-size:12px;}
+.rb-year-picker select{font-family:'Saira Condensed',sans-serif; font-weight:800; font-size:20px;
+  color:#fff; background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:9px 16px;
+  cursor:pointer;}
+.rb-year-picker select:focus{outline:2px solid var(--red);}
+
 @media(max-width:820px){
   .rb-docrow{grid-template-columns:1fr; grid-template-areas:"venue" "pills"; gap:10px; padding:16px;}
   .rb-docrow .pills{justify-content:flex-start;}

@@ -6,165 +6,284 @@
       "sede": "El Sot",
       "campeonato": "GT",
       "fecha": null,
-      "documentos": {
-        "mangas": "assets/pdfs/historico/2025/MANGAS_RESISBARNA_ELSOT_2025.pdf",
-        "verificaciones": "assets/pdfs/historico/2025/VERIFICACIONES_RESISBARNA_ELSOT_2025.pdf",
-        "resultado": "assets/pdfs/historico/2025/RESULTADOS_RESISBARNA_ELSOT_2025.pdf"
-      }
+      "documentos": [
+        {
+          "nombre": "Mangas",
+          "href": "assets/pdfs/historico/2025/MANGAS_RESISBARNA_ELSOT_2025.pdf"
+        },
+        {
+          "nombre": "Verificaciones",
+          "href": "assets/pdfs/historico/2025/VERIFICACIONES_RESISBARNA_ELSOT_2025.pdf"
+        },
+        {
+          "nombre": "Resultado carrera",
+          "href": "assets/pdfs/historico/2025/RESULTADOS_RESISBARNA_ELSOT_2025.pdf"
+        }
+      ]
     },
     {
       "nombre": "RESISBARNA SLOT FOR YOU 2025",
       "sede": "Slot For You",
       "campeonato": "GT",
       "fecha": null,
-      "documentos": {
-        "mangas": "assets/pdfs/historico/2025/MANGAS_RESISBARNA_2025_S4Y.pdf",
-        "verificaciones": "assets/pdfs/historico/2025/VERIFICACIONES_RESISBARNA_S4Y_2025.pdf.pdf",
-        "resultado": "assets/pdfs/historico/2025/RESULTADOS_RESISBARNA_S4Y_2025.pdf.pdf"
-      }
+      "documentos": [
+        {
+          "nombre": "Mangas",
+          "href": "assets/pdfs/historico/2025/MANGAS_RESISBARNA_2025_S4Y.pdf"
+        },
+        {
+          "nombre": "Verificaciones",
+          "href": "assets/pdfs/historico/2025/VERIFICACIONES_RESISBARNA_S4Y_2025.pdf.pdf"
+        },
+        {
+          "nombre": "Resultado carrera",
+          "href": "assets/pdfs/historico/2025/RESULTADOS_RESISBARNA_S4Y_2025.pdf.pdf"
+        }
+      ]
     },
     {
       "nombre": "RESISBARNA SLOT CAR 2025",
       "sede": "Slot Car",
       "campeonato": "GT",
       "fecha": null,
-      "documentos": {
-        "mangas": "assets/pdfs/historico/2025/MANGAS_SLOTCAR_RESISBARNA_2025.pdf",
-        "verificaciones": "assets/pdfs/historico/2025/VERIFICACIONES_RESISBARNA_2025_SLOTCAR.pdf",
-        "resultado": "assets/pdfs/historico/2025/RESULTADOS_RESISBARNA_2025_SLOTCAR.pdf"
-      }
+      "documentos": [
+        {
+          "nombre": "Mangas",
+          "href": "assets/pdfs/historico/2025/MANGAS_SLOTCAR_RESISBARNA_2025.pdf"
+        },
+        {
+          "nombre": "Verificaciones",
+          "href": "assets/pdfs/historico/2025/VERIFICACIONES_RESISBARNA_2025_SLOTCAR.pdf"
+        },
+        {
+          "nombre": "Resultado carrera",
+          "href": "assets/pdfs/historico/2025/RESULTADOS_RESISBARNA_2025_SLOTCAR.pdf"
+        }
+      ]
     },
     {
       "nombre": "RESISBARNA GASCLAVAT 2025",
       "sede": "Gasclavat",
       "campeonato": "GT",
       "fecha": null,
-      "documentos": {
-        "mangas": null,
-        "verificaciones": "assets/pdfs/historico/2025/VERIFICACIONES_GASCLAVAT_RESISBARNA_2025.pdf",
-        "resultado": "assets/pdfs/historico/2025/RESULTADO_GASCLAVAT_RESISBARNA_2025.pdf"
-      }
+      "documentos": [
+        {
+          "nombre": "Verificaciones",
+          "href": "assets/pdfs/historico/2025/VERIFICACIONES_GASCLAVAT_RESISBARNA_2025.pdf"
+        },
+        {
+          "nombre": "Resultado carrera",
+          "href": "assets/pdfs/historico/2025/RESULTADO_GASCLAVAT_RESISBARNA_2025.pdf"
+        }
+      ]
     },
     {
       "nombre": "RESISBARNA SLTOMANIA 2025",
       "sede": "Slotmania",
       "campeonato": "GT",
       "fecha": null,
-      "documentos": {
-        "mangas": null,
-        "verificaciones": "assets/pdfs/historico/2025/VERIFICACIONES_RESISBARNA_SLOTMANIA_2025.pdf",
-        "resultado": "assets/pdfs/historico/2025/RESULTADOS_RESISBARNA_SLOTMANIA_2025.pdf"
-      }
+      "documentos": [
+        {
+          "nombre": "Verificaciones",
+          "href": "assets/pdfs/historico/2025/VERIFICACIONES_RESISBARNA_SLOTMANIA_2025.pdf"
+        },
+        {
+          "nombre": "Resultado carrera",
+          "href": "assets/pdfs/historico/2025/RESULTADOS_RESISBARNA_SLOTMANIA_2025.pdf"
+        }
+      ]
     },
     {
       "nombre": "RESISBARNA CRONO 2025",
       "sede": "Crono",
       "campeonato": "GT",
       "fecha": null,
-      "documentos": {
-        "mangas": "assets/pdfs/historico/2025/MANGAS_RESISBARNA_CRONO_2025.pdf",
-        "verificaciones": "assets/pdfs/historico/2025/RESISBARNA_2025_VERIFICACIONES_CRONO.pdf",
-        "resultado": "assets/pdfs/historico/2025/RESISBARNA_2025_RESULTADOS_CRONO.pdf"
-      }
+      "documentos": [
+        {
+          "nombre": "Mangas",
+          "href": "assets/pdfs/historico/2025/MANGAS_RESISBARNA_CRONO_2025.pdf"
+        },
+        {
+          "nombre": "Verificaciones",
+          "href": "assets/pdfs/historico/2025/RESISBARNA_2025_VERIFICACIONES_CRONO.pdf"
+        },
+        {
+          "nombre": "Resultado carrera",
+          "href": "assets/pdfs/historico/2025/RESISBARNA_2025_RESULTADOS_CRONO.pdf"
+        }
+      ]
     },
     {
       "nombre": "RESISBARNA EL SOT BIS 2025",
       "sede": "El Sot Bis",
       "campeonato": "GT",
       "fecha": null,
-      "documentos": {
-        "mangas": "assets/pdfs/historico/2025/MANGAS_ELSOT_BIS_RESISBARNA_2025.pdf",
-        "verificaciones": "assets/pdfs/historico/2025/RESISBARNA_2025_VERIFICACIONES_ELSOTBIS.pdf",
-        "resultado": "assets/pdfs/historico/2025/RESISBARNA_2025_RESULTADOS_ELSOTBIS.pdf"
-      }
+      "documentos": [
+        {
+          "nombre": "Mangas",
+          "href": "assets/pdfs/historico/2025/MANGAS_ELSOT_BIS_RESISBARNA_2025.pdf"
+        },
+        {
+          "nombre": "Verificaciones",
+          "href": "assets/pdfs/historico/2025/RESISBARNA_2025_VERIFICACIONES_ELSOTBIS.pdf"
+        },
+        {
+          "nombre": "Resultado carrera",
+          "href": "assets/pdfs/historico/2025/RESISBARNA_2025_RESULTADOS_ELSOTBIS.pdf"
+        }
+      ]
     },
     {
       "nombre": "GRUPO C EL SOT 2025",
       "sede": "El Sot",
       "campeonato": "Grupo C",
       "fecha": null,
-      "documentos": {
-        "mangas": "assets/pdfs/historico/2025/MANGAS_GRUPOC_ELSOT_2025.pdf",
-        "verificaciones": "assets/pdfs/historico/2025/VERIFICACIONES_GRUPOC_ELSOT_2025.pdf",
-        "resultado": null
-      }
+      "documentos": [
+        {
+          "nombre": "Mangas",
+          "href": "assets/pdfs/historico/2025/MANGAS_GRUPOC_ELSOT_2025.pdf"
+        },
+        {
+          "nombre": "Verificaciones",
+          "href": "assets/pdfs/historico/2025/VERIFICACIONES_GRUPOC_ELSOT_2025.pdf"
+        }
+      ]
     },
     {
       "nombre": "GRUPO C SLOT CAR 2025",
       "sede": "Slot Car",
       "campeonato": "Grupo C",
       "fecha": null,
-      "documentos": {
-        "mangas": "assets/pdfs/historico/2025/MANGAS_SLOTCAR_GRUPOC_2025.pdf",
-        "verificaciones": "assets/pdfs/historico/2025/VERIFICACIONES_GRUPOC_SLOTCAR_2025.pdf.pdf",
-        "resultado": "assets/pdfs/historico/2025/RESULTADOS_GRUPO_C_SLOTCAR_2025.pdf.pdf"
-      }
+      "documentos": [
+        {
+          "nombre": "Mangas",
+          "href": "assets/pdfs/historico/2025/MANGAS_SLOTCAR_GRUPOC_2025.pdf"
+        },
+        {
+          "nombre": "Verificaciones",
+          "href": "assets/pdfs/historico/2025/VERIFICACIONES_GRUPOC_SLOTCAR_2025.pdf.pdf"
+        },
+        {
+          "nombre": "Resultado carrera",
+          "href": "assets/pdfs/historico/2025/RESULTADOS_GRUPO_C_SLOTCAR_2025.pdf.pdf"
+        }
+      ]
     },
     {
       "nombre": "GRUPO C SLOTMANIA2025",
       "sede": "Slotmania",
       "campeonato": "Grupo C",
       "fecha": null,
-      "documentos": {
-        "mangas": "assets/pdfs/historico/2025/MANGAS_GRUPOC_SLOTMANIA_2025.pdf",
-        "verificaciones": "assets/pdfs/historico/2025/VERIFICACIONES_-GRUPOC_SLOTMANIA_2025.pdf",
-        "resultado": "assets/pdfs/historico/2025/resultados_-GRUPOC_SLOTMANIA_2025.pdf"
-      }
+      "documentos": [
+        {
+          "nombre": "Mangas",
+          "href": "assets/pdfs/historico/2025/MANGAS_GRUPOC_SLOTMANIA_2025.pdf"
+        },
+        {
+          "nombre": "Verificaciones",
+          "href": "assets/pdfs/historico/2025/VERIFICACIONES_-GRUPOC_SLOTMANIA_2025.pdf"
+        },
+        {
+          "nombre": "Resultado carrera",
+          "href": "assets/pdfs/historico/2025/resultados_-GRUPOC_SLOTMANIA_2025.pdf"
+        }
+      ]
     },
     {
       "nombre": "GRUPO C EL SOT BIS 2025",
       "sede": "El Sot Bis",
       "campeonato": "Grupo C",
       "fecha": null,
-      "documentos": {
-        "mangas": "assets/pdfs/historico/2025/MANGAS_GRUPO_C_ELSOT_BIS_2025.pdf",
-        "verificaciones": "assets/pdfs/historico/2025/VERIFICACIONES-GRUPO-C-EL-SOT-BIS-2025.pdf",
-        "resultado": "assets/pdfs/historico/2025/RESULTADOS-GRUPO-C-EL-SOT-BIS-2025.pdf"
-      }
+      "documentos": [
+        {
+          "nombre": "Mangas",
+          "href": "assets/pdfs/historico/2025/MANGAS_GRUPO_C_ELSOT_BIS_2025.pdf"
+        },
+        {
+          "nombre": "Verificaciones",
+          "href": "assets/pdfs/historico/2025/VERIFICACIONES-GRUPO-C-EL-SOT-BIS-2025.pdf"
+        },
+        {
+          "nombre": "Resultado carrera",
+          "href": "assets/pdfs/historico/2025/RESULTADOS-GRUPO-C-EL-SOT-BIS-2025.pdf"
+        }
+      ]
     },
     {
       "nombre": "CLASSIC DTM SLOT FOR YOU 2025",
       "sede": "Slot For You",
       "campeonato": "Classic DTM",
       "fecha": null,
-      "documentos": {
-        "mangas": "assets/pdfs/historico/2025/MANGAS_CLASSICDMT_S4Y_2025.pdf",
-        "verificaciones": "assets/pdfs/historico/2025/VERIFICACIONES_DTM_S4Y_2025.pdf",
-        "resultado": "assets/pdfs/historico/2025/RESULTADOS_DTM_S4Y_2025.pdf"
-      }
+      "documentos": [
+        {
+          "nombre": "Mangas",
+          "href": "assets/pdfs/historico/2025/MANGAS_CLASSICDMT_S4Y_2025.pdf"
+        },
+        {
+          "nombre": "Verificaciones",
+          "href": "assets/pdfs/historico/2025/VERIFICACIONES_DTM_S4Y_2025.pdf"
+        },
+        {
+          "nombre": "Resultado carrera",
+          "href": "assets/pdfs/historico/2025/RESULTADOS_DTM_S4Y_2025.pdf"
+        }
+      ]
     },
     {
       "nombre": "CLASSIC DTM GASCLAVAT 2025",
       "sede": "Gasclavat",
       "campeonato": "Classic DTM",
       "fecha": null,
-      "documentos": {
-        "mangas": "assets/pdfs/historico/2025/MANGAS_DTM_GASCLAVAT_2025.pdf",
-        "verificaciones": "assets/pdfs/historico/2025/VERIFICACIONES_CLASSIC_DTM_GASCLAVAT_2025.pdf",
-        "resultado": "assets/pdfs/historico/2025/RESULTADOS_CLASSIC_DTM_GASCLAVAT_2025.pdf"
-      }
+      "documentos": [
+        {
+          "nombre": "Mangas",
+          "href": "assets/pdfs/historico/2025/MANGAS_DTM_GASCLAVAT_2025.pdf"
+        },
+        {
+          "nombre": "Verificaciones",
+          "href": "assets/pdfs/historico/2025/VERIFICACIONES_CLASSIC_DTM_GASCLAVAT_2025.pdf"
+        },
+        {
+          "nombre": "Resultado carrera",
+          "href": "assets/pdfs/historico/2025/RESULTADOS_CLASSIC_DTM_GASCLAVAT_2025.pdf"
+        }
+      ]
     },
     {
       "nombre": "CLASSIC DTM CRONO 2025",
       "sede": "Crono",
       "campeonato": "Classic DTM",
       "fecha": null,
-      "documentos": {
-        "mangas": "assets/pdfs/historico/2025/MANGAS_CLASSIC_DTM_CRONO_2025.pdf",
-        "verificaciones": "assets/pdfs/historico/2025/VERIFICAIONES_CLASSIC_DTM_CRONO_2025.pdf",
-        "resultado": "assets/pdfs/historico/2025/RESULTADOS_CLASSIC_DTM_CRONO_2025.pdf"
-      }
+      "documentos": [
+        {
+          "nombre": "Mangas",
+          "href": "assets/pdfs/historico/2025/MANGAS_CLASSIC_DTM_CRONO_2025.pdf"
+        },
+        {
+          "nombre": "Verificaciones",
+          "href": "assets/pdfs/historico/2025/VERIFICAIONES_CLASSIC_DTM_CRONO_2025.pdf"
+        },
+        {
+          "nombre": "Resultado carrera",
+          "href": "assets/pdfs/historico/2025/RESULTADOS_CLASSIC_DTM_CRONO_2025.pdf"
+        }
+      ]
     },
     {
       "nombre": "6 HORAS CHAPARRAL",
       "sede": null,
       "campeonato": "Especial",
       "fecha": null,
-      "documentos": {
-        "mangas": null,
-        "verificaciones": "assets/pdfs/historico/2025/VERIFICACIONES_CHAPARRAL_6H_2025.pdf",
-        "resultado": "assets/pdfs/historico/2025/RESULTADOS_ELSOT_S4Y_CHAPARRAL_6H_2025.pdf"
-      }
+      "documentos": [
+        {
+          "nombre": "Verificaciones",
+          "href": "assets/pdfs/historico/2025/VERIFICACIONES_CHAPARRAL_6H_2025.pdf"
+        },
+        {
+          "nombre": "Resultado carrera",
+          "href": "assets/pdfs/historico/2025/RESULTADOS_ELSOT_S4Y_CHAPARRAL_6H_2025.pdf"
+        }
+      ]
     }
   ],
   "clasificaciones": [
@@ -200,5 +319,6 @@
       "nombre": "CLASIFICACION DTM (2025-10)",
       "pdf": "assets/pdfs/historico/2025/CLASIFICACION_DTM_2025.pdf"
     }
-  ]
+  ],
+  "documentos_generales": []
 }
