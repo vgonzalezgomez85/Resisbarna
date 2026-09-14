@@ -1,0 +1,224 @@
+{
+  "year": 2008,
+  "documentos_generales": [
+    {
+      "nombre": "Boletín informativo 2008",
+      "href": "assets/historico/2008/boletin-informativo-2008.html"
+    },
+    {
+      "nombre": "Reglamento 2008",
+      "href": "assets/historico/2008/reglamento2008.pdf"
+    }
+  ],
+  "races": [
+    {
+      "nombre": "Carrera 1 · Race Tuned",
+      "sede": "Race Tuned",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Resultados (Excel)",
+          "href": "assets/historico/2008/carrera-1-race-tuned/1a-resisbarna-2008-race.xls"
+        },
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2008/carrera-1-race-tuned/datos-race-tuned.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2008/carrera-1-race-tuned/lista-inscritos-race-tuned.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2008/carrera-1-race-tuned/mangas-race-tuned.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2008/carrera-1-race-tuned/premios-race-tuned.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2008/carrera-1-race-tuned/resultados-race-tuned.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Carrera 2 · BSR",
+      "sede": "BSR",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Resultados (Excel)",
+          "href": "assets/historico/2008/carrera-2-bsr/2o-resisbarna-2008-bsr.xls"
+        },
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2008/carrera-2-bsr/datos-bsr.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2008/carrera-2-bsr/lista-inscritos-bsr.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2008/carrera-2-bsr/mangas-bsr.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2008/carrera-2-bsr/resultados-bsr.html"
+        },
+        {
+          "nombre": "Trofeo decoración",
+          "href": "assets/historico/2008/carrera-2-bsr/trofeo-decoracion-bsr.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Carrera 3 · Slot al Límit",
+      "sede": "Slot al Límit",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Resultados (Excel)",
+          "href": "assets/historico/2008/carrera-3-slot-al-limit/3a-resisbarna-limit.xls"
+        },
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2008/carrera-3-slot-al-limit/datos-limit.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2008/carrera-3-slot-al-limit/inscritos-limit.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2008/carrera-3-slot-al-limit/mangas-limit.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2008/carrera-3-slot-al-limit/premios-limit.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2008/carrera-3-slot-al-limit/resultados-limit.html"
+        },
+        {
+          "nombre": "Trofeo decoración",
+          "href": "assets/historico/2008/carrera-3-slot-al-limit/trofeo-decoracion-limit.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Carrera 4 · Slotmania",
+      "sede": "Slotmania",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Resultados (Excel)",
+          "href": "assets/historico/2008/carrera-4-slotmania/4a-resisbarna-slotmnia.xls"
+        },
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2008/carrera-4-slotmania/datos-slotmania.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2008/carrera-4-slotmania/inscritos-slotmania.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2008/carrera-4-slotmania/mangas-slotmania.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2008/carrera-4-slotmania/premios-slotmania.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2008/carrera-4-slotmania/resultados-slotmania.html"
+        },
+        {
+          "nombre": "Trofeo decoración",
+          "href": "assets/historico/2008/carrera-4-slotmania/trofeo-decoracion-slotmania.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Carrera 5 · Palau",
+      "sede": "Palau",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Resultados (Excel)",
+          "href": "assets/historico/2008/carrera-5-palau/5a-resisbarna-palau.xls"
+        },
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2008/carrera-5-palau/datos-palau.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2008/carrera-5-palau/inscritos-palau.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2008/carrera-5-palau/mangas-palau.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2008/carrera-5-palau/premios-palau.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2008/carrera-5-palau/resultados-palau.html"
+        },
+        {
+          "nombre": "Trofeo decoración",
+          "href": "assets/historico/2008/carrera-5-palau/trofeo-decoracion-palau.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Carrera 6 · Gasclavat",
+      "sede": "Gasclavat",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Resultados (Excel)",
+          "href": "assets/historico/2008/carrera-6-gasclavat/6a-resisbarna-gas-clavat.xls"
+        },
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2008/carrera-6-gasclavat/datos-gasclavat.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2008/carrera-6-gasclavat/inscritos-gasclavat.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2008/carrera-6-gasclavat/mangas-gasclavat.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2008/carrera-6-gasclavat/premios-gasclavat.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2008/carrera-6-gasclavat/resultados-gasclavat.html"
+        },
+        {
+          "nombre": "Trofeo decoración",
+          "href": "assets/historico/2008/carrera-6-gasclavat/trofeo-decoracion-gasclavat.html"
+        }
+      ]
+    }
+  ],
+  "clasificaciones": []
+}

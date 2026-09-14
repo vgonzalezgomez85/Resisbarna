@@ -1,0 +1,457 @@
+{
+  "year": 2014,
+  "documentos_generales": [
+    {
+      "nombre": "General 2014 (Resisbarna Classics)",
+      "href": "assets/historico/2014/clasicos-2014/general.html"
+    },
+    {
+      "nombre": "Reglamento clásicos 2014",
+      "href": "assets/historico/2014/clasicos-2014/reglamentos-clasicos-2014.pdf"
+    },
+    {
+      "nombre": "Motores 2014 (2)",
+      "href": "assets/historico/2014/motores-2014-2.html"
+    },
+    {
+      "nombre": "Motores 2014",
+      "href": "assets/historico/2014/motores-2014.html"
+    },
+    {
+      "nombre": "Reglamento deportivo 2014",
+      "href": "assets/historico/2014/reglamento-deportivo-resisbarna-2014.pdf"
+    },
+    {
+      "nombre": "Reglamento técnico 2014",
+      "href": "assets/historico/2014/reglamento-tecnico-resisbarna-2014.pdf"
+    }
+  ],
+  "races": [
+    {
+      "nombre": "Crono",
+      "sede": "Crono",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2014/crono/20145crodades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2014/crono/20145croinscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2014/crono/20145cromanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2014/crono/20145cropremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2014/crono/20145croresults.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2014/crono/cortijos.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Dream Slot",
+      "sede": "Dream Slot",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2014/dreamslot/20146drsdades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2014/dreamslot/20146drsinscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2014/dreamslot/20146drsmanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2014/dreamslot/20146drspremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2014/dreamslot/20146drsresults.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2014/dreamslot/cortijos.html"
+        },
+        {
+          "nombre": "Pol García",
+          "href": "assets/historico/2014/dreamslot/pol-garcia.html"
+        }
+      ]
+    },
+    {
+      "nombre": "El Sot",
+      "sede": "El Sot",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2014/elsot/20144sotdades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2014/elsot/20144sotinscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2014/elsot/20144sotmanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2014/elsot/20144sotpremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2014/elsot/20144sotresults.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2014/elsot/cortijos.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Gasclavat",
+      "sede": "Gasclavat",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2014/gasclavat/20141gcldades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2014/gasclavat/20141gclinscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2014/gasclavat/20141gclmanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2014/gasclavat/20141gclpremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2014/gasclavat/20141gclresults.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2014/gasclavat/cortijos.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Hot Slot",
+      "sede": "Hot Slot",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2014/hotslot/20142hotdades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2014/hotslot/20142hotinscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2014/hotslot/20142hotmanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2014/hotslot/20142hotpremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2014/hotslot/20142hotresults.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2014/hotslot/cortijos.html"
+        },
+        {
+          "nombre": "Resisbarna 2014 Hotslot",
+          "href": "assets/historico/2014/hotslot/resisbarna-2014-hotslot.xlsx"
+        }
+      ]
+    },
+    {
+      "nombre": "Palau",
+      "sede": "Palau",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2014/palau/20143paldades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2014/palau/20143palinscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2014/palau/20143palmanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2014/palau/20143palpremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2014/palau/20143palresults.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2014/palau/cortijos.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Slotmania",
+      "sede": "Slotmania",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2014/slotmania/20147slmdades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2014/slotmania/20147slminscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2014/slotmania/20147slmmanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2014/slotmania/20147slmpremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2014/slotmania/20147slmresults.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2014/slotmania/cortijos.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Crono",
+      "sede": "Crono",
+      "campeonato": "Resisbarna Classics",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Clasificación",
+          "href": "assets/historico/2014/clasicos-2014/crono/20143croclassc.html"
+        },
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2014/clasicos-2014/crono/20143crodadesc.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2014/clasicos-2014/crono/20143croinscripc.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2014/clasicos-2014/crono/20143cromaneguesc.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2014/clasicos-2014/crono/20143croresultsc.html"
+        },
+        {
+          "nombre": "Clasificación (2)",
+          "href": "assets/historico/2014/clasicos-2014/crono/rbarna-classics-2014-crono.xls"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2014/clasicos-2014/crono/cortijos.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Dream Slot",
+      "sede": "Dream Slot",
+      "campeonato": "Resisbarna Classics",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Clasificación",
+          "href": "assets/historico/2014/clasicos-2014/dreamslot/20144drsclassc.html"
+        },
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2014/clasicos-2014/dreamslot/20144drsdadesc.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2014/clasicos-2014/dreamslot/20144drsinscripc.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2014/clasicos-2014/dreamslot/20144drsmaneguesc.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2014/clasicos-2014/dreamslot/20144drsresultsc.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2014/clasicos-2014/dreamslot/cortijos.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Gasclavat",
+      "sede": "Gasclavat",
+      "campeonato": "Resisbarna Classics",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Clasificación",
+          "href": "assets/historico/2014/clasicos-2014/gasclavat/20141gclclassc.html"
+        },
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2014/clasicos-2014/gasclavat/20141gcldadesc.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2014/clasicos-2014/gasclavat/20141gclinscripc.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2014/clasicos-2014/gasclavat/20141gclmaneguesc.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2014/clasicos-2014/gasclavat/20141gclresultsc.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2014/clasicos-2014/gasclavat/cortijos.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Hot Slot",
+      "sede": "Hot Slot",
+      "campeonato": "Resisbarna Classics",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Clasificación",
+          "href": "assets/historico/2014/clasicos-2014/hotslot/20142hotclassc.html"
+        },
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2014/clasicos-2014/hotslot/20142hotdadesc.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2014/clasicos-2014/hotslot/20142hotinscripc.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2014/clasicos-2014/hotslot/20142hotmaneguesc.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2014/clasicos-2014/hotslot/20142hotresultsc.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2014/clasicos-2014/hotslot/cortijos.html"
+        },
+        {
+          "nombre": "Clasificación (2)",
+          "href": "assets/historico/2014/clasicos-2014/hotslot/resisbarna-clasicos-2014.xlsx"
+        }
+      ]
+    },
+    {
+      "nombre": "Slotmania",
+      "sede": "Slotmania",
+      "campeonato": "Resisbarna Classics",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Clasificación",
+          "href": "assets/historico/2014/clasicos-2014/slotmania/20145slmclassc.html"
+        },
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2014/clasicos-2014/slotmania/20145slmdadesc.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2014/clasicos-2014/slotmania/20145slminscripc.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2014/clasicos-2014/slotmania/20145slmmaneguesc.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2014/clasicos-2014/slotmania/20145slmresultsc.html"
+        },
+        {
+          "nombre": "Nuevo Documento De Microsoft Word",
+          "href": "assets/historico/2014/clasicos-2014/slotmania/nuevo-documento-de-microsoft-word.html"
+        }
+      ]
+    }
+  ],
+  "clasificaciones": [
+    {
+      "nombre": "Clasificación 2014 (actualización 1)",
+      "pdf": "assets/historico/2014/clasificacion2014-1.html"
+    },
+    {
+      "nombre": "Clasificación 2014 (actualización 2)",
+      "pdf": "assets/historico/2014/clasificacion2014-2.html"
+    },
+    {
+      "nombre": "Clasificación 2014 (actualización 3)",
+      "pdf": "assets/historico/2014/clasificacion2014-3.html"
+    },
+    {
+      "nombre": "Clasificación 2014 (actualización 4)",
+      "pdf": "assets/historico/2014/clasificacion2014-4.html"
+    },
+    {
+      "nombre": "Clasificación 2014 (actualización 5)",
+      "pdf": "assets/historico/2014/clasificacion2014-5.html"
+    },
+    {
+      "nombre": "Clasificación 2014",
+      "pdf": "assets/historico/2014/clasificacion2014.html"
+    }
+  ]
+}

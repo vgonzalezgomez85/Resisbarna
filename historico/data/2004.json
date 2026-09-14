@@ -1,0 +1,137 @@
+{
+  "year": 2004,
+  "documentos_generales": [
+    {
+      "nombre": "Comunicado 2004",
+      "href": "assets/historico/2004/comunicado.html"
+    },
+    {
+      "nombre": "General Final 2004",
+      "href": "assets/historico/2004/general-final.html"
+    },
+    {
+      "nombre": "Calendario 2004",
+      "href": "assets/historico/2004/calendario-2004.html"
+    }
+  ],
+  "races": [
+    {
+      "nombre": "Carrera 1 · Slot Car",
+      "sede": "Slot Car",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2004/carrera-1-slot-car/carrera-1-slot-car.html"
+        },
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2004/carrera-1-slot-car/cronica-carrera-1-slot-car.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Carrera 2 · Palau",
+      "sede": "Palau",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2004/carrera-2-palau/carrera-2-palau.html"
+        },
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2004/carrera-2-palau/cronica-carrera-2-palau.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Carrera 3 · Slotmania",
+      "sede": "Slotmania",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2004/carrera-3-slotmania/carrera-3-slotmania.html"
+        },
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2004/carrera-3-slotmania/cronica-carrera-3-26-3-04-slotmania.html"
+        },
+        {
+          "nombre": "Clasificación general",
+          "href": "assets/historico/2004/carrera-3-slotmania/general-3-carreras.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Carrera 4 · Dream Slot",
+      "sede": "Dream Slot",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2004/carrera-4-dream-slot/carrera-4-dream-slot.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Carrera 5 · Slot Car",
+      "sede": "Slot Car",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2004/carrera-5-slot-car/carrera-5-slot-car.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Carrera 6 · Slotmania",
+      "sede": "Slotmania",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2004/carrera-6-slotmania/carrera-6-slotmania-incompleta.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Carrera 7 · Dream Slot",
+      "sede": "Dream Slot",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2004/carrera-7-dream-slot/carrera-7-dream-slot-incompleta-fecha-erronea.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Carrera 8 · Palau",
+      "sede": "Palau",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2004/carrera-8-palau/carrera-8-palau.html"
+        }
+      ]
+    }
+  ],
+  "clasificaciones": [
+    {
+      "nombre": "Clasificación general 2004",
+      "pdf": "assets/historico/2004/resisbarna20043.htm"
+    }
+  ]
+}

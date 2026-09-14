@@ -1,0 +1,172 @@
+{
+  "year": 2007,
+  "documentos_generales": [
+    {
+      "nombre": "Rani Datos General 2007",
+      "href": "assets/historico/2007/rani-dades-general.xlsx"
+    },
+    {
+      "nombre": "Reglamento 2007",
+      "href": "assets/historico/2007/reglamento-2007.html"
+    },
+    {
+      "nombre": "Reglamento 2007 (2)",
+      "href": "assets/historico/2007/reglamento-resisbarna-2007.pdf"
+    }
+  ],
+  "races": [
+    {
+      "nombre": "Carrera 1 · Dream Slot",
+      "sede": "Dream Slot",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2007/carrera-1-dream-slot/cronica-dream-slot.html"
+        },
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2007/carrera-1-dream-slot/datos-dream-slot.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2007/carrera-1-dream-slot/lista-inscritos-dream-slot.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2007/carrera-1-dream-slot/resultados-dream-slot.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Carrera 2 · Race Tuned",
+      "sede": "Race Tuned",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2007/carrera-2-race-tuned/cronica-race-tuned.html"
+        },
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2007/carrera-2-race-tuned/datos-race-tuned.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2007/carrera-2-race-tuned/lista-inscritos-race-tuned.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2007/carrera-2-race-tuned/resultados-race-tuned.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Carrera 3 · Slot al Límit",
+      "sede": "Slot al Límit",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2007/carrera-3-slot-al-limit/cronica-slot-al-limit.html"
+        },
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2007/carrera-3-slot-al-limit/datos-slot-al-limit.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2007/carrera-3-slot-al-limit/lista-inscritos-slot-al-limit.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2007/carrera-3-slot-al-limit/resultados-slot-al-limit.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Carrera 4 · Slot Car",
+      "sede": "Slot Car",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2007/carrera-4-slot-car/datos-slot-car.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2007/carrera-4-slot-car/lista-inscritos-slot-car.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2007/carrera-4-slot-car/resultados-slot-car.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Carrera 5 · BSR",
+      "sede": "BSR",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2007/carrera-5-bsr/datos-bsr.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2007/carrera-5-bsr/resultados-bsr.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Carrera 6 · Palau Ronda",
+      "sede": "Palau Ronda",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2007/carrera-6-palau-ronda/datos-palau.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2007/carrera-6-palau-ronda/lista-inscritos-palau.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2007/carrera-6-palau-ronda/resultados-palau.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Carrera 7 · Slotmania (Nocturna)",
+      "sede": "Slotmania (Nocturna)",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2007/carrera-7-slotmania-nocturna/lista-inscritos-slotmania.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Copa Estiu 2007",
+      "sede": "Copa Estiu 2007",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2007/copa-estiu-2007/lista-inscritos-copa-estiu.html"
+        }
+      ]
+    }
+  ],
+  "clasificaciones": []
+}

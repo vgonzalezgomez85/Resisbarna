@@ -1,0 +1,77 @@
+{
+  "year": 2005,
+  "documentos_generales": [
+    {
+      "nombre": "Reglamento Resisbarna 2005",
+      "href": "assets/historico/2005/reglamento-resisbarna-2005.html"
+    },
+    {
+      "nombre": "Reglamento Resiscat 2005",
+      "href": "assets/historico/2005/reglamento-resiscat-2005.html"
+    }
+  ],
+  "races": [
+    {
+      "nombre": "Carrera 1",
+      "sede": null,
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2005/incritos-carrera-1.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Palau Ronda",
+      "sede": "Palau Ronda",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2005/resultados-1-10-05-palau-ronda.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Dream Slot",
+      "sede": "Dream Slot",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2005/resultados-foro-02-02-05-dream.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Carrera 2 · Race Tuned",
+      "sede": "Race Tuned",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2005/resultados-carrera-2-race-tuned.html"
+        }
+      ]
+    }
+  ],
+  "clasificaciones": [
+    {
+      "nombre": "Clasificación Resisbarna 2005",
+      "pdf": "assets/historico/2005/clasificacio-resisbarna.xls"
+    },
+    {
+      "nombre": "Clasificación final 2005",
+      "pdf": "assets/historico/2005/class-final-foro.html"
+    },
+    {
+      "nombre": "Clasificación 2005",
+      "pdf": "assets/historico/2005/class-2005.html"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "year": 2020,
+  "documentos_generales": [
+    {
+      "nombre": "Control de temporada Resisbarna 2020",
+      "href": "assets/historico/2020/resisbarna/CONTROL_Resisbarna_OK_.xlsx"
+    },
+    {
+      "nombre": "Resultado general Resisbarna 2020",
+      "href": "assets/historico/2020/resisbarna/Resultado RESISBARNA.xlsx"
+    }
+  ],
+  "races": [
+    {
+      "nombre": "C7",
+      "sede": "Slot Car",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Control de carrera",
+          "href": "assets/historico/2020/resisbarna/c7/CONTROL_Resisbarna_OK_.xlsx"
+        },
+        {
+          "nombre": "Resultados (Slotcar)",
+          "href": "assets/historico/2020/resisbarna/c7/SLOTCAR.xlsx"
+        }
+      ]
+    },
+    {
+      "nombre": "Le Mans Series 2020",
+      "sede": null,
+      "campeonato": "Le Mans Series",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Control de carrera",
+          "href": "assets/historico/2020/lemans/CONTROL_Resislemans.xlsx"
+        }
+      ]
+    },
+    {
+      "nombre": "Mercedes Cup 2020",
+      "sede": null,
+      "campeonato": "Mercedes Cup",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Control de carrera",
+          "href": "assets/historico/2020/mercedes-cup/CONTROL_Mercedes_CUP.xlsx"
+        }
+      ]
+    }
+  ],
+  "clasificaciones": []
+}

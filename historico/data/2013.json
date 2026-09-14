@@ -1,0 +1,433 @@
+{
+  "year": 2013,
+  "documentos_generales": [
+    {
+      "nombre": "Reglamento clásicos 2013",
+      "href": "assets/historico/2013/clasicos-gr5-2013/2013-rbarna-classics-reglaments.pdf"
+    },
+    {
+      "nombre": "Reglamento clásicos 2013 (2)",
+      "href": "assets/historico/2013/2013-rbarna-classics-reglaments.pdf"
+    },
+    {
+      "nombre": "Ferry Slotadictos 2013",
+      "href": "assets/historico/2013/ferry-slotadictos.html"
+    },
+    {
+      "nombre": "En Breve 2013",
+      "href": "assets/historico/2013/en-breve.pdf"
+    },
+    {
+      "nombre": "Motores 2013",
+      "href": "assets/historico/2013/motores-2013.html"
+    },
+    {
+      "nombre": "Calendario 2013 (antiguo)",
+      "href": "assets/historico/2013/old-calendario2013.html"
+    },
+    {
+      "nombre": "Motores 2013 (2)",
+      "href": "assets/historico/2013/old-motores-2013.html"
+    },
+    {
+      "nombre": "Organización 2013",
+      "href": "assets/historico/2013/organizacion2013.html"
+    },
+    {
+      "nombre": "Premios 2013",
+      "href": "assets/historico/2013/premios2013.pdf"
+    },
+    {
+      "nombre": "Reglamento deportivo 2013",
+      "href": "assets/historico/2013/reglamento-deportivo-resisbarna-2013.pdf"
+    },
+    {
+      "nombre": "Reglamento técnico 2013",
+      "href": "assets/historico/2013/reglamento-tecnico-resisbarna-2013.pdf"
+    }
+  ],
+  "races": [
+    {
+      "nombre": "BSR",
+      "sede": "BSR",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2013/bsr/20135bsrdades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2013/bsr/20135bsrinscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2013/bsr/20135bsrmanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2013/bsr/20135bsrpremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2013/bsr/20135bsrresults.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Crono",
+      "sede": "Crono",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2013/crono/20136crodades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2013/crono/20136croinscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2013/crono/20136cromanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2013/crono/20136cropremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2013/crono/20136croresults.html"
+        }
+      ]
+    },
+    {
+      "nombre": "El Sot",
+      "sede": "El Sot",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2013/elsot/20134sotdades-1.html"
+        },
+        {
+          "nombre": "Datos (2)",
+          "href": "assets/historico/2013/elsot/20134sotdades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2013/elsot/20134sotinscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2013/elsot/20134sotmanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2013/elsot/20134sotpremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2013/elsot/20134sotresults.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Gasclavat",
+      "sede": "Gasclavat",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2013/gasclavat/20131gcldades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2013/gasclavat/20131gclinscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2013/gasclavat/20131gclmanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2013/gasclavat/20131gclpremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2013/gasclavat/20131gclresults.html"
+        },
+        {
+          "nombre": "Datos (2)",
+          "href": "assets/historico/2013/gasclavat/20135gcldades.html"
+        },
+        {
+          "nombre": "Inscritos (2)",
+          "href": "assets/historico/2013/gasclavat/20135gclinscrip.html"
+        },
+        {
+          "nombre": "Mangas (2)",
+          "href": "assets/historico/2013/gasclavat/20135gclmanegues.html"
+        },
+        {
+          "nombre": "Premios (2)",
+          "href": "assets/historico/2013/gasclavat/20135gclpremis.html"
+        },
+        {
+          "nombre": "Resultados (2)",
+          "href": "assets/historico/2013/gasclavat/20135gclresults.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2013/gasclavat/cronica-cortijos.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Hot Slot",
+      "sede": "Hot Slot",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2013/hotslot/20137hotdades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2013/hotslot/20137hotinscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2013/hotslot/20137hotmanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2013/hotslot/20137hotpremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2013/hotslot/20137hotresults.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Palau",
+      "sede": "Palau",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2013/palau/20133paldades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2013/palau/20133palinscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2013/palau/20133palmanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2013/palau/20133palpremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2013/palau/20133palresults.html"
+        },
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2013/palau/cronica-pinto.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Slotmania",
+      "sede": "Slotmania",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2013/slotmania/20132slmdades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2013/slotmania/20132slminscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2013/slotmania/20132slmmanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2013/slotmania/20132slmpremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2013/slotmania/20132slmresults.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Crono",
+      "sede": "Crono",
+      "campeonato": "Resisbarna Classics",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Clasificación",
+          "href": "assets/historico/2013/clasicos-gr5-2013/crono/20134croclassc.html"
+        },
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2013/clasicos-gr5-2013/crono/20134crodadesc.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2013/clasicos-gr5-2013/crono/20134croinscripc.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2013/clasicos-gr5-2013/crono/20134cromaneguesc.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2013/clasicos-gr5-2013/crono/20134croresultsc.html"
+        }
+      ]
+    },
+    {
+      "nombre": "El Sot",
+      "sede": "El Sot",
+      "campeonato": "Resisbarna Classics",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Clasificación",
+          "href": "assets/historico/2013/clasicos-gr5-2013/elsot/20133sotclassc.html"
+        },
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2013/clasicos-gr5-2013/elsot/20133sotdadesc.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2013/clasicos-gr5-2013/elsot/20133sotinscripc.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2013/clasicos-gr5-2013/elsot/20133sotmaneguesc.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2013/clasicos-gr5-2013/elsot/20133sotresultsc.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Gasclavat",
+      "sede": "Gasclavat",
+      "campeonato": "Resisbarna Classics",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Clasificación",
+          "href": "assets/historico/2013/clasicos-gr5-2013/gasclavat/20131gclclassc.html"
+        },
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2013/clasicos-gr5-2013/gasclavat/20131gcldadesc.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2013/clasicos-gr5-2013/gasclavat/20131gclinscripc.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2013/clasicos-gr5-2013/gasclavat/20131gclmaneguesc.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2013/clasicos-gr5-2013/gasclavat/20131gclresultsc.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Hot Slot",
+      "sede": "Hot Slot",
+      "campeonato": "Resisbarna Classics",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Clasificación",
+          "href": "assets/historico/2013/clasicos-gr5-2013/hotslot/20135hotclassc.html"
+        },
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2013/clasicos-gr5-2013/hotslot/20135hotdadesc.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2013/clasicos-gr5-2013/hotslot/20135hotinscripc.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2013/clasicos-gr5-2013/hotslot/20135hotmaneguesc.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2013/clasicos-gr5-2013/hotslot/20135hotresultsc.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Slotmania",
+      "sede": "Slotmania",
+      "campeonato": "Resisbarna Classics",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Clasificación",
+          "href": "assets/historico/2013/clasicos-gr5-2013/slotmania/20132slmclassc.html"
+        },
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2013/clasicos-gr5-2013/slotmania/20132slmdadesc.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2013/clasicos-gr5-2013/slotmania/20132slminscripc.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2013/clasicos-gr5-2013/slotmania/20132slmmaneguesc.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2013/clasicos-gr5-2013/slotmania/20132slmresultsc.html"
+        },
+        {
+          "nombre": "Fotos Molins",
+          "href": "assets/historico/2013/clasicos-gr5-2013/slotmania/fotos-molins.html"
+        }
+      ]
+    }
+  ],
+  "clasificaciones": [
+    {
+      "nombre": "Clasificación 2013 (antigua)",
+      "pdf": "assets/historico/2013/clasificacion2013-old.html"
+    },
+    {
+      "nombre": "Clasificación 2013",
+      "pdf": "assets/historico/2013/clasificacion2013.html"
+    }
+  ]
+}

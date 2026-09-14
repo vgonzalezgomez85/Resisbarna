@@ -1,0 +1,305 @@
+{
+  "year": 2010,
+  "documentos_generales": [
+    {
+      "nombre": "Hándicap 2010",
+      "href": "assets/historico/2010/handicap-2010.xls"
+    },
+    {
+      "nombre": "Premios 2010",
+      "href": "assets/historico/2010/listado-premios-general-2010.html"
+    },
+    {
+      "nombre": "Premios 2010 (2)",
+      "href": "assets/historico/2010/premios-resisbarna-bcn.xls"
+    },
+    {
+      "nombre": "Motores 2010",
+      "href": "assets/historico/2010/verificacion-motores-resisbarna2010.xlsx"
+    },
+    {
+      "nombre": "Hándicap 2010 (2)",
+      "href": "assets/historico/2010/handicap.html"
+    },
+    {
+      "nombre": "Motores 2010 (2)",
+      "href": "assets/historico/2010/motores.html"
+    },
+    {
+      "nombre": "Reglamento 2010",
+      "href": "assets/historico/2010/reglamento-resisbarna-2010.pdf"
+    }
+  ],
+  "races": [
+    {
+      "nombre": "BSR",
+      "sede": "BSR",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2010/bsr/20106bsrdades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2010/bsr/20106bsrinscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2010/bsr/20106bsrmanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2010/bsr/20106bsrpremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2010/bsr/20106bsrresults.html"
+        },
+        {
+          "nombre": "Resultados (Excel)",
+          "href": "assets/historico/2010/6o-bsr.xls"
+        }
+      ]
+    },
+    {
+      "nombre": "El Sot",
+      "sede": "El Sot",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2010/elsot/20102sotdades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2010/elsot/20102sotinscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2010/elsot/20102sotmanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2010/elsot/20102sotpremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2010/elsot/20102sotresults.html"
+        },
+        {
+          "nombre": "Resultados (Excel)",
+          "href": "assets/historico/2010/2o-el-sot.xls"
+        }
+      ]
+    },
+    {
+      "nombre": "Gasclavat",
+      "sede": "Gasclavat",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2010/gasclavat2010/20101gcldades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2010/gasclavat2010/20101gclinscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2010/gasclavat2010/20101gclmanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2010/gasclavat2010/20101gclpremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2010/gasclavat2010/20101gclresults.html"
+        },
+        {
+          "nombre": "Resultados (Excel)",
+          "href": "assets/historico/2010/1a-gas-clavat.xls"
+        }
+      ]
+    },
+    {
+      "nombre": "Hot Slot",
+      "sede": "Hot Slot",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2010/hotslot/20105hotdades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2010/hotslot/20105hotinscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2010/hotslot/20105hotmanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2010/hotslot/20105hotpremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2010/hotslot/20105hotresults.html"
+        },
+        {
+          "nombre": "Resultados (Excel)",
+          "href": "assets/historico/2010/5o-hot-slot.xls"
+        }
+      ]
+    },
+    {
+      "nombre": "Palau",
+      "sede": "Palau",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2010/palau/20103paldades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2010/palau/20103palinscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2010/palau/20103palmanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2010/palau/20103palpremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2010/palau/20103palresults.html"
+        },
+        {
+          "nombre": "Resultados (Excel)",
+          "href": "assets/historico/2010/3a-palau.xls"
+        }
+      ]
+    },
+    {
+      "nombre": "Punt Slot",
+      "sede": "Punt Slot",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2010/puntslot/20107psldades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2010/puntslot/20107pslinscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2010/puntslot/20107pslmanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2010/puntslot/20107pslpremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2010/puntslot/20107pslresults.html"
+        },
+        {
+          "nombre": "Resultados (Excel)",
+          "href": "assets/historico/2010/7a-punt-slot.xls"
+        }
+      ]
+    },
+    {
+      "nombre": "Slotmania",
+      "sede": "Slotmania",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2010/slotmania/20104slmdades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2010/slotmania/20104slminscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2010/slotmania/20104slmmanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2010/slotmania/20104slmpremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2010/slotmania/20104slmresults.html"
+        },
+        {
+          "nombre": "Resultados (Excel)",
+          "href": "assets/historico/2010/4a-slotmania.xls"
+        }
+      ]
+    },
+    {
+      "nombre": "STP",
+      "sede": "STP",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2010/stp/20108stpdades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2010/stp/20108stpinscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2010/stp/20108stpmanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2010/stp/20108stppremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2010/stp/20108stpresults.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Siscu",
+      "sede": "Siscu",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "8º Siscu 2010",
+          "href": "assets/historico/2010/8o-siscu.xls"
+        }
+      ]
+    }
+  ],
+  "clasificaciones": [
+    {
+      "nombre": "Clasificación 2010",
+      "pdf": "assets/historico/2010/clasificacion2010.html"
+    }
+  ]
+}

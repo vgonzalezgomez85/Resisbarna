@@ -1,0 +1,549 @@
+{
+  "year": 2016,
+  "documentos_generales": [
+    {
+      "nombre": "Reglamento técnico Endurance LMP Slot.it (Resislemans)",
+      "href": "assets/historico/2016/2016-resislemans/32-regl-tecnico-endurance-lmp-slotit-v1.pdf"
+    },
+    {
+      "nombre": "Reglamento Resislemans 2016",
+      "href": "assets/historico/2016/2016-resislemans/reglamento-resislemans-2016.pdf"
+    },
+    {
+      "nombre": "Copa Ninco 2016",
+      "href": "assets/historico/2016/copa-ninco.html"
+    },
+    {
+      "nombre": "Copa Scaleauto 2016",
+      "href": "assets/historico/2016/copa-scaleauto.html"
+    },
+    {
+      "nombre": "Estadísticas 2016",
+      "href": "assets/historico/2016/estadistiques-2016.pdf"
+    },
+    {
+      "nombre": "Calendario 2016",
+      "href": "assets/historico/2016/calendario-2016.html"
+    },
+    {
+      "nombre": "Motores 2016",
+      "href": "assets/historico/2016/motores-2016.html"
+    },
+    {
+      "nombre": "Reglamento deportivo 2016",
+      "href": "assets/historico/2016/reglamento-deportivo-resisbarna-2016.pdf"
+    },
+    {
+      "nombre": "Reglamento técnico 2016",
+      "href": "assets/historico/2016/reglamento-tecnico-resisbarna-2016.pdf"
+    }
+  ],
+  "races": [
+    {
+      "nombre": "BSR",
+      "sede": "BSR",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2016/bsr/20166bsrdades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2016/bsr/20166bsrinscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2016/bsr/20166bsrmanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2016/bsr/20166bsrpremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2016/bsr/20166bsrresults.html"
+        },
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2016/bsr/cronica.html"
+        },
+        {
+          "nombre": "Crónica (Resisbarna)",
+          "href": "assets/historico/2016/bsr/resisbarna.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Crono",
+      "sede": "Crono",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2016/crono/20167crodades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2016/crono/20167croinscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2016/crono/20167cromanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2016/crono/20167cropremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2016/crono/20167croresults.html"
+        },
+        {
+          "nombre": "Coche Ganador",
+          "href": "assets/historico/2016/crono/coche-ganador.html"
+        },
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2016/crono/cronica.html"
+        },
+        {
+          "nombre": "Crónica (Resisbarna)",
+          "href": "assets/historico/2016/crono/resisbarna.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Dream Slot",
+      "sede": "Dream Slot",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2016/dreamslot/20165drsdades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2016/dreamslot/20165drsinscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2016/dreamslot/20165drsmanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2016/dreamslot/20165drspremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2016/dreamslot/20165drsresults.html"
+        },
+        {
+          "nombre": "Coche Ganador",
+          "href": "assets/historico/2016/dreamslot/coche-ganador.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2016/dreamslot/cortijos.html"
+        },
+        {
+          "nombre": "Crónica (Resisbarna)",
+          "href": "assets/historico/2016/dreamslot/resisbarna.html"
+        }
+      ]
+    },
+    {
+      "nombre": "El Sot",
+      "sede": "El Sot",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2016/elsot/20169sotdades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2016/elsot/20169sotinscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2016/elsot/20169sotmanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2016/elsot/20169sotpremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2016/elsot/20169sotresults.html"
+        },
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2016/elsot/crionica.html"
+        },
+        {
+          "nombre": "Crónica (Resisbarna)",
+          "href": "assets/historico/2016/elsot/resisbarna.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Gasclavat",
+      "sede": "Gasclavat",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2016/gasclavat/20163gcldades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2016/gasclavat/20163gclinscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2016/gasclavat/20163gclmanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2016/gasclavat/20163gclpremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2016/gasclavat/20163gclresults.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2016/gasclavat/cortijos.html"
+        },
+        {
+          "nombre": "Coche Ganador",
+          "href": "assets/historico/2016/gasclavat/coche-ganador.html"
+        },
+        {
+          "nombre": "Crónica (Resisbarna)",
+          "href": "assets/historico/2016/gasclavat/resisbarna.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Hot Slot",
+      "sede": "Hot Slot",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2016/hotslot/20161hotdades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2016/hotslot/20161hotinscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2016/hotslot/20161hotmanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2016/hotslot/20161hotpremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2016/hotslot/20161hotresults.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2016/hotslot/cortijos.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Slot For You",
+      "sede": "Slot For You",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2016/slot4you/20164s4udades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2016/slot4you/20164s4uinscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2016/slot4you/20164s4umanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2016/slot4you/20164s4upremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2016/slot4you/20164s4uresults.html"
+        },
+        {
+          "nombre": "Coche Ganador",
+          "href": "assets/historico/2016/slot4you/coche-ganador.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2016/slot4you/resisbarna-cortijos.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Slotmania",
+      "sede": "Slotmania",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2016/slotmania/20168slmdades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2016/slotmania/20168slminscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2016/slotmania/20168slmmanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2016/slotmania/20168slmpremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2016/slotmania/20168slmresults.html"
+        },
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2016/slotmania/cronica.html"
+        },
+        {
+          "nombre": "Crónica (Resisbarna)",
+          "href": "assets/historico/2016/slotmania/resisbarna.html"
+        },
+        {
+          "nombre": "Premios (2)",
+          "href": "assets/historico/2016/entrega-premios-slotmania-diciembre-2016.html"
+        }
+      ]
+    },
+    {
+      "nombre": "STP",
+      "sede": "STP",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2016/stp/20162stpdades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2016/stp/20162stpinscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2016/stp/20162stpmanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2016/stp/20162stppremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2016/stp/20162stpresults.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2016/stp/cortijos.html"
+        },
+        {
+          "nombre": "Crónica (Resisbarna)",
+          "href": "assets/historico/2016/stp/resisnarna.html"
+        }
+      ]
+    },
+    {
+      "nombre": "El Sot",
+      "sede": "El Sot",
+      "campeonato": "Resislemans",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Clasificación",
+          "href": "assets/historico/2016/2016-resislemans/elsot/20163sotclassrl.html"
+        },
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2016/2016-resislemans/elsot/20163sotdadesrl.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2016/2016-resislemans/elsot/20163sotinscriprl.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2016/2016-resislemans/elsot/20163sotmaneguesrl.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2016/2016-resislemans/elsot/20163sotresultsrl.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Granollers",
+      "sede": "Granollers",
+      "campeonato": "Resislemans",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Clasificación",
+          "href": "assets/historico/2016/2016-resislemans/granollers/20162graclassrl.html"
+        },
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2016/2016-resislemans/granollers/20162gradadesrl.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2016/2016-resislemans/granollers/20162grainscriprl.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2016/2016-resislemans/granollers/20162gramaneguesrl.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2016/2016-resislemans/granollers/20162graresultsrl.html"
+        },
+        {
+          "nombre": "Bolsa",
+          "href": "assets/historico/2016/2016-resislemans/granollers/bolsa.html"
+        }
+      ]
+    },
+    {
+      "nombre": "STP",
+      "sede": "STP",
+      "campeonato": "Resislemans",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Clasificación",
+          "href": "assets/historico/2016/2016-resislemans/stp/20161stpclassrl.html"
+        },
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2016/2016-resislemans/stp/20161stpdadesrl.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2016/2016-resislemans/stp/20161stpinscriprl.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2016/2016-resislemans/stp/20161stpmaneguesrl.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2016/2016-resislemans/stp/20161stpresultsrl.html"
+        },
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2016/2016-resislemans/stp/cronica-stp.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Superdome",
+      "sede": "Superdome",
+      "campeonato": "Resislemans",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2016/2016-resislemans/superdome/161104-12-h-resultados-v1-sin-besay.xlsx"
+        },
+        {
+          "nombre": "Resultados (2)",
+          "href": "assets/historico/2016/2016-resislemans/superdome/161104-12-h-resultados-v1.xlsx"
+        },
+        {
+          "nombre": "Clasificación",
+          "href": "assets/historico/2016/2016-resislemans/superdome/20164iguclassrl.html"
+        },
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2016/2016-resislemans/superdome/20164igudadesrl.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2016/2016-resislemans/superdome/20164iguinscriprl.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2016/2016-resislemans/superdome/20164igumaneguesrl.html"
+        },
+        {
+          "nombre": "Resultados (3)",
+          "href": "assets/historico/2016/2016-resislemans/superdome/20164iguresultsrl.html"
+        },
+        {
+          "nombre": "Classifica_Finale_Lmp_Slot.It",
+          "href": "assets/historico/2016/2016-resislemans/superdome/classifica-finale-lmp-slot-it.pdf"
+        },
+        {
+          "nombre": "Fotos Lunas",
+          "href": "assets/historico/2016/2016-resislemans/superdome/fotos-lunas.html"
+        },
+        {
+          "nombre": "Inscritos (2)",
+          "href": "assets/historico/2016/2016-resislemans/superdome/inscritos-y-verificaciones.xls"
+        },
+        {
+          "nombre": "Pagament 3H Porsche911",
+          "href": "assets/historico/2016/2016-resislemans/superdome/pagament-3h-porsche911.pdf"
+        },
+        {
+          "nombre": "Qualifiche_Lmp_Slot.It",
+          "href": "assets/historico/2016/2016-resislemans/superdome/qualifiche-lmp-slot-it.pdf"
+        },
+        {
+          "nombre": "Reg Scaleauto_Porsche_991_Cup_V.1",
+          "href": "assets/historico/2016/2016-resislemans/superdome/reg-scaleauto-porsche-991-cup-v-1.pdf"
+        },
+        {
+          "nombre": "Reg Final Endurance 2016",
+          "href": "assets/historico/2016/2016-resislemans/superdome/reg-final-endurance-2016.pdf"
+        },
+        {
+          "nombre": "Rptreportgara_Endurance",
+          "href": "assets/historico/2016/2016-resislemans/superdome/rptreportgara-endurance.pdf"
+        },
+        {
+          "nombre": "Clasificación (Superdome)",
+          "href": "assets/historico/2016/2016-resislemans/20164iguclassrl.html"
+        }
+      ]
+    }
+  ],
+  "clasificaciones": [
+    {
+      "nombre": "Clasificación 2016",
+      "pdf": "assets/historico/2016/clasificacion2016.html"
+    }
+  ]
+}

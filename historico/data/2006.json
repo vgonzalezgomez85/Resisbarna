@@ -1,0 +1,158 @@
+{
+  "year": 2006,
+  "documentos_generales": [
+    {
+      "nombre": "Fichas Técnicas Resisbarna 2006",
+      "href": "assets/historico/2006/fichas-tecnicas-resisbarna-2006.pdf"
+    },
+    {
+      "nombre": "Reglamento 2006",
+      "href": "assets/historico/2006/reglamento-resisbarna-2006.pdf"
+    },
+    {
+      "nombre": "Resisbarna Hivern 2006",
+      "href": "assets/historico/2006/resisbarna-hivern-2006.xls"
+    }
+  ],
+  "races": [
+    {
+      "nombre": "Carrera 1 · Slotmania",
+      "sede": "Slotmania",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2006/carrera-1-slotmania/datos-slotmania.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2006/carrera-1-slotmania/resultado-slotmania.html"
+        },
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2006/carrera-1-slotmania/cronica-2.html"
+        },
+        {
+          "nombre": "Crónica (2)",
+          "href": "assets/historico/2006/carrera-1-slotmania/cronica-carrera-1-slotmania.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Carrera 2 · Dream Slot",
+      "sede": "Dream Slot",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2006/carrera-2-dream-slot/datos-carrera-2.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2006/carrera-2-dream-slot/resultados-dream-slot.html"
+        },
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2006/carrera-2-dream-slot/cronica-2.html"
+        },
+        {
+          "nombre": "Crónica (2)",
+          "href": "assets/historico/2006/carrera-2-dream-slot/cronica-carrera-2-dream.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Carrera 3 · Slot al Límit",
+      "sede": "Slot al Límit",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2006/carrera-3-slot-al-limit/cronica-limit.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2006/carrera-3-slot-al-limit/premios-limit.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Carrera 4 · Race Tuned",
+      "sede": "Race Tuned",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2006/carrera-4-race-tuned/cronica-race-tuned.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2006/carrera-4-race-tuned/resultados-race-tuned.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Carrera 5 · Slot Car",
+      "sede": "Slot Car",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2006/carrera-5-slot-car-nocturna/cronica-slot-car.html"
+        },
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2006/carrera-5-slot-car-nocturna/datos-slot-car-ojo-titulo-dentro-mal-web.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2006/carrera-5-slot-car-nocturna/inscritos-slot-car.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2006/carrera-5-slot-car-nocturna/premios-slot-car.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2006/carrera-5-slot-car-nocturna/resultados-slot-car.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Carrera 6 · Palau",
+      "sede": "Palau",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": []
+    },
+    {
+      "nombre": "Carrera 7 · Mospmis",
+      "sede": "Mospmis",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": []
+    },
+    {
+      "nombre": "Copa Estiu",
+      "sede": "Copa Estiu",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Documento",
+          "href": "assets/historico/2006/copa-estiu/copa-estiu.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2006/copa-estiu/inscritos-copa-estiu.html"
+        }
+      ]
+    }
+  ],
+  "clasificaciones": []
+}

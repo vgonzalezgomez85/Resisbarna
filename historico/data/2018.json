@@ -1,0 +1,549 @@
+{
+  "year": 2018,
+  "documentos_generales": [
+    {
+      "nombre": "Reglamento deportivo 2018",
+      "href": "assets/historico/2018/reglamento_deportivo_resisbarna_2018.pdf"
+    },
+    {
+      "nombre": "Reglamento técnico 2018",
+      "href": "assets/historico/2018/reglamento_tecnico_resisbarna_2018.pdf"
+    },
+    {
+      "nombre": "Estadísticas 2018",
+      "href": "assets/historico/2018/Estadistiques_2018.pdf"
+    },
+    {
+      "nombre": "Premios 2018",
+      "href": "assets/historico/2018/premios.html"
+    },
+    {
+      "nombre": "Motores 2018",
+      "href": "assets/historico/2018/motors_2018.html"
+    },
+    {
+      "nombre": "Copa Scaleauto 2018",
+      "href": "assets/historico/2018/copa-scaleauto.html"
+    },
+    {
+      "nombre": "Copa GT2 2018",
+      "href": "assets/historico/2018/copa-gt2.html"
+    },
+    {
+      "nombre": "Nota de prensa A7R Cup 2018",
+      "href": "assets/historico/2018/a7r-cup/press-a7r-cup-2018.html"
+    },
+    {
+      "nombre": "Crónica de la temporada A7R Cup 2018",
+      "href": "assets/historico/2018/a7r-cup/CRONICA TEMPORADA A7R SCALEAUTO 2018.pdf"
+    },
+    {
+      "nombre": "Motores A7R Cup 2018",
+      "href": "assets/historico/2018/a7r-cup/a7r_cup_2018_motors.html"
+    },
+    {
+      "nombre": "12H LMP 2018",
+      "href": "assets/historico/2018/lemans/12h_lmp_2018.pdf"
+    },
+    {
+      "nombre": "Inscritos CE 12H 2018",
+      "href": "assets/historico/2018/lemans/inscritos-ce-12h-2018.html"
+    }
+  ],
+  "races": [
+    {
+      "nombre": "BSR",
+      "sede": "BSR",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2018/bsr/20185BSRDades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2018/bsr/20185BSRInscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2018/bsr/20185BSRManegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2018/bsr/20185BSRPremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2018/bsr/20185BSRResults.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2018/bsr/cronica-cortijos.html"
+        },
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2018/bsr/cronica-resisbarna.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Crono",
+      "sede": "Crono",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2018/crono/20187CRODades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2018/crono/20187CROInscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2018/crono/20187CROManegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2018/crono/20187CROPremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2018/crono/20187CROResults.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2018/crono/cronica-cortijos.html"
+        },
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2018/crono/cronica-resisbarna.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Dream Slot",
+      "sede": "Dream Slot",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2018/dreamslot/20182DRSDades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2018/dreamslot/20182DRSInscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2018/dreamslot/20182DRSManegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2018/dreamslot/20182DRSPremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2018/dreamslot/20182DRSResults.html"
+        },
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2018/dreamslot/cronica-resisbarna.html"
+        },
+        {
+          "nombre": "Resultado de carrera",
+          "href": "assets/historico/2018/dreamslot/Resultado Carrera DREAM.xlsx"
+        }
+      ]
+    },
+    {
+      "nombre": "El Sot",
+      "sede": "El Sot",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2018/elsot/20181SOTDades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2018/elsot/20181SOTInscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2018/elsot/20181SOTManegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2018/elsot/20181SOTPremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2018/elsot/20181SOTResults.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2018/elsot/cronica-cortijos.html"
+        },
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2018/elsot/cronica-resisbarna.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Gasclavat",
+      "sede": "Gasclavat",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2018/gasclavat/20189GCLDades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2018/gasclavat/20189GCLInscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2018/gasclavat/20189GCLManegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2018/gasclavat/20189GCLPremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2018/gasclavat/20189GCLResults.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2018/gasclavat/cronica-cortijos.html"
+        },
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2018/gasclavat/cronica-resisbarna.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Granollers",
+      "sede": "Granollers",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2018/granollers/20188GRADades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2018/granollers/20188GRAInscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2018/granollers/20188GRAManegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2018/granollers/20188GRAPremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2018/granollers/20188GRAResults.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2018/granollers/cronica-cortijos.html"
+        },
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2018/granollers/cronica-resisbarna.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Slot For You",
+      "sede": "Slot For You",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2018/slot4you/20183S4UDades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2018/slot4you/20183S4UInscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2018/slot4you/20183S4UManegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2018/slot4you/20183S4UPremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2018/slot4you/20183S4UResults.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2018/slot4you/cronica-cortijos.html"
+        },
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2018/slot4you/cronica-resisbarna.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Slotmania",
+      "sede": "Slotmania",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2018/slotmania/20186SLMDades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2018/slotmania/20186SLMInscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2018/slotmania/20186SLMManegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2018/slotmania/20186SLMPremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2018/slotmania/20186SLMResults.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2018/slotmania/cronica-cortijos.html"
+        },
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2018/slotmania/cronica-resisbarna.html"
+        }
+      ]
+    },
+    {
+      "nombre": "STP",
+      "sede": "STP",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2018/stp/20184STPDades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2018/stp/20184STPInscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2018/stp/20184STPManegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2018/stp/20184STPPremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2018/stp/20184STPResults.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2018/stp/cronica-cortijos.html"
+        },
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2018/stp/cronica-resisbarna.html"
+        }
+      ]
+    },
+    {
+      "nombre": "El Sot (A7R Cup)",
+      "sede": "El Sot",
+      "campeonato": "A7R Cup",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2018/a7r-cup/20181SOTA7R.pdf"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2018/a7r-cup/cronica-1-cortijos-el-sot.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Dream Slot (A7R Cup)",
+      "sede": "Dream Slot",
+      "campeonato": "A7R Cup",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2018/a7r-cup/20182DRSA7R.pdf"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2018/a7r-cup/cronica-2-cortijos-dreamslot.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Slot For You (A7R Cup)",
+      "sede": "Slot For You",
+      "campeonato": "A7R Cup",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2018/a7r-cup/20183S4UA7R.pdf"
+        }
+      ]
+    },
+    {
+      "nombre": "STP (A7R Cup)",
+      "sede": "STP",
+      "campeonato": "A7R Cup",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2018/a7r-cup/20184STPA7R.pdf"
+        },
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2018/a7r-cup/cronica-4-resisbarna-stp.html"
+        }
+      ]
+    },
+    {
+      "nombre": "3x3 Resisdome (Igualada)",
+      "sede": "Igualada",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2018/resisdome/cronica-resisbarna.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2018/resisdome/cronica-cortijos.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2018/resisdome/2018 3X3 RESISDOME.xlsx"
+        },
+        {
+          "nombre": "Resultados carrera 1",
+          "href": "assets/historico/2018/resisdome/carrera-1.xls"
+        },
+        {
+          "nombre": "Resultados carrera 2",
+          "href": "assets/historico/2018/resisdome/carrera-2.xls"
+        },
+        {
+          "nombre": "Resultados carrera 3",
+          "href": "assets/historico/2018/resisdome/carrera-3.xls"
+        }
+      ]
+    },
+    {
+      "nombre": "Slotmania (Le Mans Series)",
+      "sede": "Slotmania",
+      "campeonato": "Le Mans Series",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2018/lemans/cronica-1-slotmania.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2018/lemans/20180615 RESISLEMANS SLOTMANIA.xlsx"
+        },
+        {
+          "nombre": "Resultados (xls)",
+          "href": "assets/historico/2018/lemans/RESISLEMANS SLOTMANIA 2018.xls"
+        }
+      ]
+    },
+    {
+      "nombre": "Crono (Le Mans Series)",
+      "sede": "Crono",
+      "campeonato": "Le Mans Series",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2018/lemans/cronica-2-crono.html"
+        },
+        {
+          "nombre": "Resultados (jueves)",
+          "href": "assets/historico/2018/lemans/resislemans 13_09_18 CRONO JUEVES.xlsx"
+        },
+        {
+          "nombre": "Resultados (viernes)",
+          "href": "assets/historico/2018/lemans/resislemans 14_09_18 CRONO VIERNES.xlsx"
+        }
+      ]
+    },
+    {
+      "nombre": "CE España (Le Mans Series)",
+      "sede": null,
+      "campeonato": "Le Mans Series",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Crónica (Superdome)",
+          "href": "assets/historico/2018/lemans/cronica-superdome.html"
+        },
+        {
+          "nombre": "Resultados 12H Slotit CE",
+          "href": "assets/historico/2018/lemans/12H Slotit CE 2018.xls"
+        },
+        {
+          "nombre": "Resultados 3H GT Scaleauto",
+          "href": "assets/historico/2018/lemans/3h GT Scaleauto 2018.xls"
+        }
+      ]
+    }
+  ],
+  "clasificaciones": [
+    {
+      "nombre": "Clasificación general 2018",
+      "pdf": "assets/historico/2018/clasificacion2018.html"
+    },
+    {
+      "nombre": "Clasificación A7R Cup 2018",
+      "pdf": "assets/historico/2018/a7r-cup/class_a7r_cup_2018.html"
+    },
+    {
+      "nombre": "Clasificación parcial Le Mans Series 2018",
+      "pdf": "assets/historico/2018/lemans/clasificacion-parcial-lemans-2018.html"
+    },
+    {
+      "nombre": "Clasificación Le Mans Series 2018 (Excel)",
+      "pdf": "assets/historico/2018/lemans/Clasi.xlsx"
+    }
+  ]
+}

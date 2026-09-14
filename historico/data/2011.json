@@ -1,0 +1,349 @@
+{
+  "year": 2011,
+  "documentos_generales": [
+    {
+      "nombre": "Reglamento deportivo clásicos 2011",
+      "href": "assets/historico/2011/resisbarna-classics/clasicos-deportivo-2011.pdf"
+    },
+    {
+      "nombre": "Reglamento técnico clásicos 2011",
+      "href": "assets/historico/2011/resisbarna-classics/clasicos-tecnico-2011.pdf"
+    },
+    {
+      "nombre": "Endurance Classics Final 2011 (Resisbarna Classics)",
+      "href": "assets/historico/2011/resisbarna-classics/endurance-classics-final-2011.pdf"
+    },
+    {
+      "nombre": "Reglamento clásicos 2011",
+      "href": "assets/historico/2011/resisbarna-classics/reglamento-acs-endurance-classics-2011.pdf"
+    },
+    {
+      "nombre": "Generalclasicos 2011 (Resisbarna Classics)",
+      "href": "assets/historico/2011/resisbarna-classics/generalclasicos2011.html"
+    },
+    {
+      "nombre": "Cambios En La Web Del Resisbarna 2011",
+      "href": "assets/historico/2011/cambios-en-la-web-del-resisbarna.html"
+    },
+    {
+      "nombre": "Equipos Temporada 2011",
+      "href": "assets/historico/2011/equipos-temporada.xls"
+    },
+    {
+      "nombre": "Hándicap 2011",
+      "href": "assets/historico/2011/handicap.xls"
+    },
+    {
+      "nombre": "Listado Premios Resisbarna 2011",
+      "href": "assets/historico/2011/listado-premios-resisbarna-2011.html"
+    },
+    {
+      "nombre": "Motores Resisbarna Xlsx 2011",
+      "href": "assets/historico/2011/motores-resisbarna2011xlsx.xlsx"
+    },
+    {
+      "nombre": "Pesos Carrocerias 2011",
+      "href": "assets/historico/2011/pesos-carrocerias.html"
+    },
+    {
+      "nombre": "Premios 2011",
+      "href": "assets/historico/2011/premios.xls"
+    },
+    {
+      "nombre": "Diseño / cartel Resisbarna 2011 (CorelDraw)",
+      "href": "assets/historico/2011/resisbarna-2011.cdr"
+    },
+    {
+      "nombre": "Equipos temporada 2011",
+      "href": "assets/historico/2011/equipostemporada.html"
+    },
+    {
+      "nombre": "Hándicap 2011 (2)",
+      "href": "assets/historico/2011/handicap.html"
+    },
+    {
+      "nombre": "Motores 2011",
+      "href": "assets/historico/2011/motores2011.html"
+    },
+    {
+      "nombre": "Motores 2011 (2)",
+      "href": "assets/historico/2011/motores2012.html"
+    },
+    {
+      "nombre": "Pesos carrocerías 2011",
+      "href": "assets/historico/2011/pesoscarrocerias2011.pdf"
+    },
+    {
+      "nombre": "Premios 2011 (2)",
+      "href": "assets/historico/2011/premios2011.pdf"
+    },
+    {
+      "nombre": "Reglamento deportivo 2011",
+      "href": "assets/historico/2011/reglamento-deportivo-resisbarna-2011.pdf"
+    },
+    {
+      "nombre": "Reglamento técnico 2011",
+      "href": "assets/historico/2011/reglamento-tecnico-resisbarna-2011.pdf"
+    }
+  ],
+  "races": [
+    {
+      "nombre": "BSR",
+      "sede": "BSR",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2011/bsr/20115bsrdades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2011/bsr/20115bsrinscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2011/bsr/20115bsrmanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2011/bsr/20115bsrpremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2011/bsr/20115bsrresults.html"
+        }
+      ]
+    },
+    {
+      "nombre": "El Sot",
+      "sede": "El Sot",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2011/elsot/20111sotdades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2011/elsot/20111sotinscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2011/elsot/20111sotmanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2011/elsot/20111sotpremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2011/elsot/20111sotresults.html"
+        },
+        {
+          "nombre": "Resultados (2)",
+          "href": "assets/historico/2011/elsot/resultado-carrera2000.xls"
+        },
+        {
+          "nombre": "Resultados (3)",
+          "href": "assets/historico/2011/elsot/resultado-carrera2200.xls"
+        },
+        {
+          "nombre": "Resultados (4)",
+          "href": "assets/historico/2011/elsot/resultado-carrera2400.xls"
+        },
+        {
+          "nombre": "Resultados (Excel)",
+          "href": "assets/historico/2011/1o-el-sot.xls"
+        }
+      ]
+    },
+    {
+      "nombre": "Gasclavat",
+      "sede": "Gasclavat",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2011/gasclavat/20112gcldades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2011/gasclavat/20112gclinscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2011/gasclavat/20112gclmanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2011/gasclavat/20112gclpremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2011/gasclavat/20112gclresults.html"
+        },
+        {
+          "nombre": "Resultados (Excel)",
+          "href": "assets/historico/2011/2a-gasclavat.xls"
+        }
+      ]
+    },
+    {
+      "nombre": "Hot Slot",
+      "sede": "Hot Slot",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2011/hotslot/20114hotdades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2011/hotslot/20114hotinscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2011/hotslot/20114hotmanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2011/hotslot/20114hotpremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2011/hotslot/20114hotresults.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Punt Slot",
+      "sede": "Punt Slot",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2011/puntslot/20117psldades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2011/puntslot/20117pslinscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2011/puntslot/20117pslmanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2011/puntslot/20117pslpremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2011/puntslot/20117pslresults.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Slotmania",
+      "sede": "Slotmania",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2011/slotmania/20116slmdades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2011/slotmania/20116slminscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2011/slotmania/20116slmmanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2011/slotmania/20116slmpremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2011/slotmania/20116slmresults.html"
+        }
+      ]
+    },
+    {
+      "nombre": "STP",
+      "sede": "STP",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2011/stp/20113stpdades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2011/stp/20113stpinscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2011/stp/20113stpmanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2011/stp/20113stppremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2011/stp/20113stpresults.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Hot Slot",
+      "sede": "Hot Slot",
+      "campeonato": "Resisbarna Classics",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Documento",
+          "href": "assets/historico/2011/resisbarna-classics/hotslot.html"
+        }
+      ]
+    },
+    {
+      "nombre": "BSR",
+      "sede": "BSR",
+      "campeonato": "Resisbarna Classics",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Clasificación",
+          "href": "assets/historico/2011/resisbarna-classics/bsrclasicos2011.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Punt Slot",
+      "sede": "Punt Slot",
+      "campeonato": "Resisbarna Classics",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Clasificación",
+          "href": "assets/historico/2011/resisbarna-classics/puntslotclasicos2011.html"
+        }
+      ]
+    }
+  ],
+  "clasificaciones": [
+    {
+      "nombre": "Clasificación 2011",
+      "pdf": "assets/historico/2011/clasificacion2011.html"
+    }
+  ]
+}

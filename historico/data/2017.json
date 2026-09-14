@@ -1,0 +1,537 @@
+{
+  "year": 2017,
+  "documentos_generales": [
+    {
+      "nombre": "Reglamento deportivo 2017",
+      "href": "assets/historico/2017/reglamento_deportivo_resisbarna_2017.pdf"
+    },
+    {
+      "nombre": "Reglamento técnico 2017",
+      "href": "assets/historico/2017/reglamento_tecnico_resisbarna_2017.pdf"
+    },
+    {
+      "nombre": "Estadísticas 2017",
+      "href": "assets/historico/2017/Estadistiques_2017.pdf"
+    },
+    {
+      "nombre": "Premios 2017",
+      "href": "assets/historico/2017/premios.html"
+    },
+    {
+      "nombre": "Carrera 100",
+      "href": "assets/historico/2017/carrera-100.html"
+    },
+    {
+      "nombre": "Copa Scaleauto 2017",
+      "href": "assets/historico/2017/copa-scaleauto.html"
+    },
+    {
+      "nombre": "Copa Iniciación 2017",
+      "href": "assets/historico/2017/copa-iniciacion.html"
+    },
+    {
+      "nombre": "Porsche Cup 2017 - Documento 01",
+      "href": "assets/historico/2017/porsche-cup/01_PORSCHE991.pdf"
+    },
+    {
+      "nombre": "Reglamento Porsche Cup 2017",
+      "href": "assets/historico/2017/porsche-cup/reglamento-porsche-cup-2017.html"
+    },
+    {
+      "nombre": "Reglamento Le Mans Series 2017",
+      "href": "assets/historico/2017/lemans/reglamento-le-mans-series-2017.html"
+    },
+    {
+      "nombre": "Nota de prensa Superdome 2017 (ronda no disputada)",
+      "href": "assets/historico/2017/lemans/press-superdome-2017.html"
+    }
+  ],
+  "races": [
+    {
+      "nombre": "BSR",
+      "sede": "BSR",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2017/bsr/20176BSRDades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2017/bsr/20176BSRInscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2017/bsr/20176BSRManegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2017/bsr/20176BSRPremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2017/bsr/20176BSRResults.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2017/bsr/cronica-cortijos.html"
+        },
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2017/bsr/cronica-resisbarna.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Crono",
+      "sede": "Crono",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2017/crono/20177CRODades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2017/crono/20177CROInscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2017/crono/20177CROManegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2017/crono/20177CROPremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2017/crono/20177CROResults.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2017/crono/cronica-cortijos.html"
+        },
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2017/crono/cronica-resisbarna.html"
+        }
+      ]
+    },
+    {
+      "nombre": "El Sot",
+      "sede": "El Sot",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2017/elsot/20171SOTDades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2017/elsot/20171SOTInscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2017/elsot/20171SOTManegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2017/elsot/20171SOTPremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2017/elsot/20171SOTResults.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2017/elsot/cronica-cortijos.html"
+        },
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2017/elsot/cronica-resisbarna.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Gasclavat",
+      "sede": "Gasclavat",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2017/gasclavat/20179GCLDades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2017/gasclavat/20179GCLInscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2017/gasclavat/20179GCLManegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2017/gasclavat/20179GCLPremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2017/gasclavat/20179GCLResults.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2017/gasclavat/cronica-cortijos.html"
+        },
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2017/gasclavat/cronica-resisbarna.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Granollers",
+      "sede": "Granollers",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2017/granollers/20178GRADades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2017/granollers/20178GRAInscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2017/granollers/20178GRAManegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2017/granollers/20178GRAPremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2017/granollers/20178GRAResults.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2017/granollers/cronica-cortijos.html"
+        },
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2017/granollers/cronica-resisbarna.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Hot Slot",
+      "sede": "Hot Slot",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2017/hotslot/20173HOTDades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2017/hotslot/20173HOTInscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2017/hotslot/20173HOTManegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2017/hotslot/20173HOTPremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2017/hotslot/20173HOTResults.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2017/hotslot/cronica-cortijos.html"
+        },
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2017/hotslot/cronica-resisbarna.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Slot For You",
+      "sede": "Slot For You",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2017/slot4you/20172S4UDades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2017/slot4you/20172S4UInscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2017/slot4you/20172S4UManegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2017/slot4you/20172S4UPremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2017/slot4you/20172S4UResults.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2017/slot4you/cronica-cortijos.html"
+        },
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2017/slot4you/cronica-resisbarna.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Slotmania",
+      "sede": "Slotmania",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2017/slotmania/20174SLMDades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2017/slotmania/20174SLMInscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2017/slotmania/20174SLMManegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2017/slotmania/20174SLMPremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2017/slotmania/20174SLMResults.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2017/slotmania/cronica-cortijos.html"
+        },
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2017/slotmania/cronica-resisbarna.html"
+        }
+      ]
+    },
+    {
+      "nombre": "STP",
+      "sede": "STP",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2017/stp/20175STPDades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2017/stp/20175STPInscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2017/stp/20175STPManegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2017/stp/20175STPPremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2017/stp/20175STPResults.html"
+        },
+        {
+          "nombre": "Crónica (Robles)",
+          "href": "assets/historico/2017/stp/cronica-robles.html"
+        },
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2017/stp/cronica-resisbarna.html"
+        }
+      ]
+    },
+    {
+      "nombre": "El Sot (Porsche Cup)",
+      "sede": "El Sot",
+      "campeonato": "Porsche Cup",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2017/porsche-cup/20171SOTPORSCHE991.pdf"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2017/porsche-cup/cronica-cortijos-el-sot.html"
+        },
+        {
+          "nombre": "Entrenamientos",
+          "href": "assets/historico/2017/porsche-cup/entrenamientos-carrera-1.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Slot For You (Porsche Cup)",
+      "sede": "Slot For You",
+      "campeonato": "Porsche Cup",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2017/porsche-cup/20172S4UPORSCHE991.pdf"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2017/porsche-cup/cronica-cortijos-slot-4-you.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Hot Slot (Porsche Cup)",
+      "sede": "Hot Slot",
+      "campeonato": "Porsche Cup",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2017/porsche-cup/20173HOTPORSCHE991.pdf"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2017/porsche-cup/cronica-hotslot.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Slotmania (Porsche Cup)",
+      "sede": "Slotmania",
+      "campeonato": "Porsche Cup",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2017/porsche-cup/20174SLMPORSCHE991.pdf"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2017/porsche-cup/cronica-slotmania.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Granollers (Le Mans Series)",
+      "sede": "Granollers",
+      "campeonato": "Le Mans Series",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2017/lemans/cronica-1-granollers.html"
+        },
+        {
+          "nombre": "Puntuación",
+          "href": "assets/historico/2017/lemans/puntuacion carrera 1.xlsx"
+        }
+      ]
+    },
+    {
+      "nombre": "CMBSC (Le Mans Series)",
+      "sede": "CMBSC",
+      "campeonato": "Le Mans Series",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2017/lemans/cronica-2-cmbsc.html"
+        },
+        {
+          "nombre": "Nota de prensa",
+          "href": "assets/historico/2017/lemans/press-cmbsc.html"
+        }
+      ]
+    },
+    {
+      "nombre": "El Sot (Le Mans Series)",
+      "sede": "El Sot",
+      "campeonato": "Le Mans Series",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2017/lemans/cronica-3-el-sot.html"
+        },
+        {
+          "nombre": "Ficha técnica",
+          "href": "assets/historico/2017/lemans/ficha-tecnica-el-sot.xls"
+        },
+        {
+          "nombre": "Resultados (Carrera Final)",
+          "href": "assets/historico/2017/lemans/resultado-carrera-final.xls"
+        },
+        {
+          "nombre": "Resultados (VP1)",
+          "href": "assets/historico/2017/lemans/resultado-carrera-vp1.xls"
+        },
+        {
+          "nombre": "Puntuación",
+          "href": "assets/historico/2017/lemans/puntuacion carrera 3.xlsx"
+        },
+        {
+          "nombre": "Nota de prensa",
+          "href": "assets/historico/2017/lemans/press-el-sot.html"
+        }
+      ]
+    },
+    {
+      "nombre": "CE Igualada (Le Mans Series)",
+      "sede": "Igualada",
+      "campeonato": "Le Mans Series",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2017/lemans/cronica-4-ce-igualada.html"
+        },
+        {
+          "nombre": "Resultados finales",
+          "href": "assets/historico/2017/lemans/resultados-finales-igualada.pdf"
+        }
+      ]
+    }
+  ],
+  "clasificaciones": [
+    {
+      "nombre": "Clasificación general 2017",
+      "pdf": "assets/historico/2017/clasificacion2017.html"
+    },
+    {
+      "nombre": "Clasificación Porsche Cup 2017",
+      "pdf": "assets/historico/2017/porsche-cup/class_porsche_cup_2017.html"
+    },
+    {
+      "nombre": "Clasificación Le Mans Series 2017 (sin Superdome)",
+      "pdf": "assets/historico/2017/lemans/clasificacion-general-sin-superdome-2017.html"
+    }
+  ]
+}

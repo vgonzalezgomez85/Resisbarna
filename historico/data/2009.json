@@ -1,0 +1,224 @@
+{
+  "year": 2009,
+  "documentos_generales": [
+    {
+      "nombre": "Reglamento 2009",
+      "href": "assets/historico/2009/reglamento-2009/reglamento.html"
+    },
+    {
+      "nombre": "Hándicap 2009",
+      "href": "assets/historico/2009/handicap-resisbarna-2009-bcn.xls"
+    },
+    {
+      "nombre": "Reglamento 2009 (2)",
+      "href": "assets/historico/2009/reglamento2009.pdf"
+    }
+  ],
+  "races": [
+    {
+      "nombre": "BSR",
+      "sede": "BSR",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2009/bsr2009/20092bsrdades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2009/bsr2009/20092bsrinscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2009/bsr2009/20092bsrmanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2009/bsr2009/20092bsrpremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2009/bsr2009/20092bsrresults.html"
+        },
+        {
+          "nombre": "Resultados (Excel)",
+          "href": "assets/historico/2009/bsr2009/2a-bsr-resisbarna-2009.xls"
+        }
+      ]
+    },
+    {
+      "nombre": "Gasclavat",
+      "sede": "Gasclavat",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2009/gasclavat2009/20093gcldades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2009/gasclavat2009/20093gclinscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2009/gasclavat2009/20093gclmanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2009/gasclavat2009/20093gclpremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2009/gasclavat2009/20093gclresults.html"
+        },
+        {
+          "nombre": "Resultados (Excel)",
+          "href": "assets/historico/2009/gasclavat2009/3o-gasclavat-resisbarna-2009.xls"
+        },
+        {
+          "nombre": "Inscritos (2)",
+          "href": "assets/historico/2009/gasclavat2009/inscritosgasclavat2009.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Slot al Límit",
+      "sede": "Slot al Límit",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Resultados (Excel)",
+          "href": "assets/historico/2009/limit2009/1o-limit-resisbarna-2009.xls"
+        },
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2009/limit2009/datoscocheslimit2009.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2009/limit2009/inscritoslimit2009.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2009/limit2009/mangaslimit.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2009/limit2009/premioslimit2009.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2009/limit2009/resultadoslimit2009.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Palau",
+      "sede": "Palau",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2009/palau2009/20094paldades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2009/palau2009/20094palinscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2009/palau2009/20094palmanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2009/palau2009/20094palpremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2009/palau2009/20094palresults.html"
+        },
+        {
+          "nombre": "Resultados (Excel)",
+          "href": "assets/historico/2009/palau2009/4a-palau-resisbarna.xls"
+        },
+        {
+          "nombre": "Foto Molins",
+          "href": "assets/historico/2009/palau2009/foto-molins.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Punt Slot",
+      "sede": "Punt Slot",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2009/puntslot2009/20096psldades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2009/puntslot2009/20096pslinscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2009/puntslot2009/20096pslmanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2009/puntslot2009/20096pslpremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2009/puntslot2009/20096pslresults.html"
+        },
+        {
+          "nombre": "Resultados (Excel)",
+          "href": "assets/historico/2009/puntslot2009/6a-punt-slot.xls"
+        }
+      ]
+    },
+    {
+      "nombre": "Slotmania",
+      "sede": "Slotmania",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2009/slotmania2009/20095slmdades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2009/slotmania2009/20095slminscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2009/slotmania2009/20095slmmanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2009/slotmania2009/20095slmpremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2009/slotmania2009/20095slmresults.html"
+        },
+        {
+          "nombre": "Resultados (Excel)",
+          "href": "assets/historico/2009/slotmania2009/5a-slotmania.xls"
+        },
+        {
+          "nombre": "Inscritos (2)",
+          "href": "assets/historico/2009/slotmania2009/inscritosslotmania2009.html"
+        }
+      ]
+    }
+  ],
+  "clasificaciones": []
+}

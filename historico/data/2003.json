@@ -1,0 +1,36 @@
+{
+  "year": 2003,
+  "documentos_generales": [
+    {
+      "nombre": "Calendario 2003",
+      "href": "assets/historico/2003/calendario.html"
+    }
+  ],
+  "races": [
+    {
+      "nombre": "Carrera 5",
+      "sede": null,
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2003/cronica-carrera-5.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Carrera 1",
+      "sede": null,
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2003/carrera-1.html"
+        }
+      ]
+    }
+  ],
+  "clasificaciones": []
+}

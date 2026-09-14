@@ -1,0 +1,477 @@
+{
+  "year": 2019,
+  "documentos_generales": [
+    {
+      "nombre": "Reglamento deportivo 2019",
+      "href": "assets/historico/2019/reglamento_deportivo_resisbarna_2019.pdf"
+    },
+    {
+      "nombre": "Reglamento técnico 2019",
+      "href": "assets/historico/2019/reglamento_tecnico_resisbarna_2019.pdf"
+    },
+    {
+      "nombre": "Estadísticas 2019",
+      "href": "assets/historico/2019/Estadistiques_2019.pdf"
+    },
+    {
+      "nombre": "Reglamento LMS GT3 Cup 2019",
+      "href": "assets/historico/2019/lmsgt3-cup/Reglament_lmsgt3_Cup_2019.pdf"
+    },
+    {
+      "nombre": "Nota de prensa Le Mans Series 2019",
+      "href": "assets/historico/2019/lemans/press-lemans-2019.html"
+    },
+    {
+      "nombre": "Grupo C 2018 - El Sot (referencia)",
+      "href": "assets/historico/2019/lemans/Grup_C_2018 el sot.pdf"
+    },
+    {
+      "nombre": "Superdome - Grupo C CE 2019",
+      "href": "assets/historico/2019/lemans/SUPERDOME Grupo_C_CE_2019.pdf"
+    },
+    {
+      "nombre": "Listado inscritos Le Mans Series 2019",
+      "href": "assets/historico/2019/lemans/LLISTAT INSCRITS CHAMPI 2019.xlsx"
+    }
+  ],
+  "races": [
+    {
+      "nombre": "Crono",
+      "sede": "Crono",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2019/crono/20196CRODades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2019/crono/20196CROInscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2019/crono/20196CROManegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2019/crono/20196CROPremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2019/crono/20196CROResults.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2019/crono/cronica-cortijos.html"
+        },
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2019/crono/cronica-resisbarna.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Dream Slot",
+      "sede": "Dream Slot",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2019/dreamslot/20191DRSDades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2019/dreamslot/20191DRSInscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2019/dreamslot/20191DRSManegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2019/dreamslot/20191DRSPremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2019/dreamslot/20191DRSResults.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2019/dreamslot/cronica-cortijos.html"
+        },
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2019/dreamslot/cronica-resisbarna.html"
+        }
+      ]
+    },
+    {
+      "nombre": "El Sot",
+      "sede": "El Sot",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2019/elsot/20193SOTDades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2019/elsot/20193SOTInscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2019/elsot/20193SOTManegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2019/elsot/20193SOTPremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2019/elsot/20193SOTResults.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2019/elsot/cronica-cortijos.html"
+        },
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2019/elsot/cronica-resisbarna.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Gasclavat",
+      "sede": "Gasclavat",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2019/gasclavat/20199GCLDades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2019/gasclavat/20199GCLInscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2019/gasclavat/20199GCLManegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2019/gasclavat/20199GCLPremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2019/gasclavat/20199GCLResults.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2019/gasclavat/cronica-cortijos.html"
+        },
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2019/gasclavat/cronica-resisbarna.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Granollers",
+      "sede": "Granollers",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2019/granollers/20197GRADades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2019/granollers/20197GRAInscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2019/granollers/20197GRAManegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2019/granollers/20197GRAPremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2019/granollers/20197GRAResults.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2019/granollers/cronica-cortijos.html"
+        },
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2019/granollers/cronica-resisbarna.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Slot For You",
+      "sede": "Slot For You",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2019/slot4you/20192S4UDades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2019/slot4you/20192S4UInscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2019/slot4you/20192S4UManegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2019/slot4you/20192S4UPremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2019/slot4you/20192S4UResults.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2019/slot4you/cronica-cortijos.html"
+        },
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2019/slot4you/cronica-resisbarna.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Slot Car",
+      "sede": "Slot Car",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2019/slotcar/20195SLCDades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2019/slotcar/20195SLCInscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2019/slotcar/20195SLCManegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2019/slotcar/20195SLCPremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2019/slotcar/20195SLCResults.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2019/slotcar/cronica-cortijos.html"
+        },
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2019/slotcar/cronica-resisbarna.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Slotmania",
+      "sede": "Slotmania",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2019/slotmania/20194SLMDades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2019/slotmania/20194SLMInscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2019/slotmania/20194SLMManegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2019/slotmania/20194SLMPremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2019/slotmania/20194SLMResults.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2019/slotmania/cronica-cortijos.html"
+        },
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2019/slotmania/cronica-resisbarna.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Superdome",
+      "sede": "Superdome",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2019/superdome/20198DOMDades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2019/superdome/20198DOMInscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2019/superdome/20198DOMManegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2019/superdome/20198DOMPremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2019/superdome/20198DOMResults.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2019/superdome/cronica-cortijos.html"
+        },
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2019/superdome/cronica-resisbarna.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Dream Slot (LMS GT3 Cup)",
+      "sede": "Dream Slot",
+      "campeonato": "LMS GT3 Cup",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2019/lmsgt3-cup/20191DRSLMSGT3.pdf"
+        }
+      ]
+    },
+    {
+      "nombre": "Slot For You (LMS GT3 Cup)",
+      "sede": "Slot For You",
+      "campeonato": "LMS GT3 Cup",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2019/lmsgt3-cup/20192S4ULMSGT3.pdf"
+        }
+      ]
+    },
+    {
+      "nombre": "El Sot (LMS GT3 Cup)",
+      "sede": "El Sot",
+      "campeonato": "LMS GT3 Cup",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2019/lmsgt3-cup/20193SOTLMSGT3.pdf"
+        }
+      ]
+    },
+    {
+      "nombre": "Slotmania (LMS GT3 Cup)",
+      "sede": "Slotmania",
+      "campeonato": "LMS GT3 Cup",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2019/lmsgt3-cup/20194SLMLMSGT3.pdf"
+        }
+      ]
+    },
+    {
+      "nombre": "Crono (Le Mans Series)",
+      "sede": "Crono",
+      "campeonato": "Le Mans Series",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2019/lemans/cronica-crono.html"
+        },
+        {
+          "nombre": "Revisiones Grupo C",
+          "href": "assets/historico/2019/lemans/REVISIONS GRUP C CRONO 2019.xlsx"
+        },
+        {
+          "nombre": "Resultado manga (viernes)",
+          "href": "assets/historico/2019/lemans/Resultado Manga viernes Resislemans 2019.xlsx"
+        }
+      ]
+    },
+    {
+      "nombre": "Granollers (Le Mans Series)",
+      "sede": "Granollers",
+      "campeonato": "Le Mans Series",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2019/lemans/cronica-granollers.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Slot Car (Le Mans Series)",
+      "sede": "Slot Car",
+      "campeonato": "Le Mans Series",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Crónica",
+          "href": "assets/historico/2019/lemans/cronica-slot-car.html"
+        },
+        {
+          "nombre": "Revisiones Grupo C",
+          "href": "assets/historico/2019/lemans/REVISIONS GRUP C 2019.xlsx"
+        }
+      ]
+    }
+  ],
+  "clasificaciones": [
+    {
+      "nombre": "Clasificación general 2019",
+      "pdf": "assets/historico/2019/clasificacion2019.html"
+    },
+    {
+      "nombre": "Clasificación LMS GT3 Cup 2019",
+      "pdf": "assets/historico/2019/lmsgt3-cup/class_lmsgt3_cup_2019.html"
+    },
+    {
+      "nombre": "Clasificación Le Mans Series 2019 (Excel)",
+      "pdf": "assets/historico/2019/lemans/Clasi 2019.xlsx"
+    },
+    {
+      "nombre": "Clasificación final Le Mans Series 2019",
+      "pdf": "assets/historico/2019/lemans/clasificacion-final-lemans-2019.html"
+    }
+  ]
+}

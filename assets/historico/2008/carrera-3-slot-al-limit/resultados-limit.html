@@ -1,0 +1,6137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Author" content="Bloode">
+  <meta name="LastAuthor" content="Bloode">
+  <meta name="CreationTime" content="2023-09-24T07:16:00Z">
+  <meta name="ModificationTime" content="2023-09-24T07:16:00Z">
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; min-height: 14.0px}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px Helvetica; color: #9999aa}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 9.0px Helvetica; color: #ffff00}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px Helvetica; color: #9999aa; min-height: 11.0px}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 16.5px Helvetica; color: #ffff00}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: right; font: 9.0px Helvetica; color: #000000}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: right; font: 7.0px Helvetica; color: #ffffff}
+    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: right; font: 7.0px Helvetica; color: #ffffff; min-height: 8.0px}
+    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 7.0px Helvetica; color: #ffffff; min-height: 8.0px}
+    p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; font: 7.0px Helvetica; color: #ffffff; min-height: 8.0px}
+    p.p11 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Times New Roman'; min-height: 11.0px}
+    p.p12 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 10.0px 'Times New Roman'; min-height: 11.0px}
+    p.p13 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Times New Roman'}
+    p.p14 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Times New Roman'; min-height: 15.0px}
+    p.p15 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px 'Times New Roman'; min-height: 15.0px}
+    p.p16 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Times New Roman'}
+    p.p17 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Times New Roman'; color: #ffffff}
+    p.p18 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Times New Roman'; color: #ffffff; min-height: 15.0px}
+    p.p19 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px Arial; color: #0000ff}
+    p.p20 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px Arial; color: #0000ff; min-height: 11.0px}
+    p.p21 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 10.0px Arial; color: #0000ff; min-height: 11.0px}
+    p.p22 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Times New Roman'; color: #ffffff}
+    p.p23 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Times New Roman'; color: #ffffff; min-height: 11.0px}
+    p.p24 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 10.0px 'Times New Roman'; color: #ffffff; min-height: 11.0px}
+    p.p25 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px 'Times New Roman'; color: #ffffff}
+    p.p26 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 10.0px 'Times New Roman'}
+    p.p27 {margin: 0.0px 0.0px 0.0px 0.0px; font: 8.0px 'Times New Roman'}
+    p.p28 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 8.0px 'Times New Roman'}
+    p.p29 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: right; font: 8.0px 'Times New Roman'}
+    p.p30 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 8.0px 'Times New Roman'; min-height: 9.0px}
+    p.p31 {margin: 0.0px 0.0px 0.0px 0.0px; font: 8.0px 'Times New Roman'; min-height: 9.0px}
+    p.p32 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px 'Times New Roman'; color: #ffffff; min-height: 15.0px}
+    span.s1 {font: 12.0px Helvetica}
+    span.s2 {font: 9.0px Helvetica}
+    span.s3 {text-decoration: underline}
+    table.t1 {border-collapse: collapse}
+    td.td1 {border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #bfbfbf #bfbfbf #bfbfbf #bfbfbf; padding: 0.0px 5.0px 0.0px 5.0px}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2">MAR</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p3"><b>APR</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2">MAY</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p5"><b>22</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p4"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2">2020</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p3"><b>2021</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p2">2022</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p6">  </p>
+<p class="p7"><span class="s2"> </span>About this capture</p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p8"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p9"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p10"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p10"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p10"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p10"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p10"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p10"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p11"><br></p>
+        <table cellspacing="0" cellpadding="0" class="t1">
+          <tbody>
+            <tr>
+              <td valign="middle" class="td1">
+                <p class="p11"><br></p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="p11"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p11"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p11"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p11"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p11"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p12"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p11"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p11"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p11"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p11"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p11"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p11"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p11"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p11"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p11"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p11"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p13"><b>RESISBARNA 2008 - 3A. CARRERA - SLOT AL LIMIT 16 Y 17 MAYO 2008</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p14"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p14"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p14"><b></b><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p14"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p15"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p14"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p14"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p14"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p14"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p14"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p14"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p14"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p14"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p14"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p14"><b></b><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p17"><b>RESULTADOS MANGAS</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p18"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p18"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p18"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p18"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p18"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p18"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p18"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p18"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p18"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p18"><b></b><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p18"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p18"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p18"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p18"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p18"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p18"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p18"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p18"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p18"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p18"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p18"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p18"><b></b><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16"><b>Próximamente se publicará la Clasificación General por pilotos una vez se haya comprobado su participación.</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16"><b>Igualmente se publicarán los premios y las fotos de los coches para votar al Premio MASSLOT de decoración.</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p11"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p11"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p11"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p11"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p11"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p11"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p11"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p11"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p11"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p11"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p11"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p11"><b></b><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p19"><span class="s3"><b>resisbarna@gmail.com</b></span></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p20"><span class="s3"><b></b></span><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p20"><span class="s3"><b></b></span><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p20"><span class="s3"><b></b></span><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p20"><span class="s3"><b></b></span><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p20"><span class="s3"><b></b></span><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p20"><span class="s3"><b></b></span><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p20"><span class="s3"><b></b></span><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p20"><span class="s3"><b></b></span><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p20"><span class="s3"><b></b></span><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p20"><span class="s3"><b></b></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20"><span class="s3"><b></b></span><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p21"><span class="s3"><b></b></span><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p20"><span class="s3"><b></b></span><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p20"><span class="s3"><b></b></span><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p20"><span class="s3"><b></b></span><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p20"><span class="s3"><b></b></span><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p20"><span class="s3"><b></b></span><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p20"><span class="s3"><b></b></span><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p20"><span class="s3"><b></b></span><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p20"><span class="s3"><b></b></span><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p20"><span class="s3"><b></b></span><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p20"><span class="s3"><b></b></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p17"><b>MANGA VIERNES 20:00 Horas</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p22"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p24"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>#</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p17"><b>EQUIP</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>1</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>2</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>3</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>4</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>5</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>6</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>7</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>8</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>TOTAL</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>MEDIA</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">1</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">SLOTMANIA</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">445,31</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55,63</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p29"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,365</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,352</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,345</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,232</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,537</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,125</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,133</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,283</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">2</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">SLOTWAY</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">429,28</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53,63</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p29"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,890</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,829</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,010</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,639</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,917</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,692</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,821</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,843</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">3</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">XXL TEAM</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">52</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">52</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">428,48</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53,50</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p29"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,334</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,640</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,560</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,511</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,424</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,784</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,504</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,752</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">4</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">GASCLAVAT-1</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">52</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">52</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">48</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">51</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">51</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">51</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">412,59</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">51,50</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p29"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,297</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,383</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,389</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,620</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,015</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,690</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,810</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,664</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">5</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">SLOT-CAR ALOY SHOP</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">28</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">400,31</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">51,25</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p29"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,357</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">11,988</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,300</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,146</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,249</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,084</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,191</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,192</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">6</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">GASCLAVAT-3</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">51</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">49</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">52</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">49</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">49</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">48</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">49</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">397,38</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">49,63</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p29"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,565</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,909</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,893</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,441</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,402</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,427</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,002</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,462</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">7</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">BSRX</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">51</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">51</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">49</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">49</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">47</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">46</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">393,28</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">49,13</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p29"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,178</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,064</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,471</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,479</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,559</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,320</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,752</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,849</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">8</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">BCN SLOT 2</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">49</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">49</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">48</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">48</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">48</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">392,59</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">49,00</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p29"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,988</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,016</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,015</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,292</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">14,161</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,609</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,445</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">14,039</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">9</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">STOP&amp;GO VILAMAJOR G.J.</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">47</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">49</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">47</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">26</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">48</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">48</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">365,44</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">45,63</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p29"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,674</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,256</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">14,126</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,652</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,576</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,010</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,857</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,584</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p30"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p17"><b>MANGA VIERNES 22:00 Horas</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p22"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p24"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>#</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p17"><b>EQUIP</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>1</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>2</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>3</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>4</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>5</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>6</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>7</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>8</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>TOTAL</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>MEDIA</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">1</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">SQUADRA CORSE</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">59</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">59</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">58</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">59</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">58</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">463,25</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57,88</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p29"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">11,935</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">11,862</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,242</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">11,920</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">11,905</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,039</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">11,992</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">11,909</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">2</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">SLOT AL LIMIT</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">58</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">454,58</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56,75</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p29"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,196</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,100</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,433</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,216</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,232</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,208</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,263</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,188</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">3</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">SLOT AL LIMIT AFICIO 06</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">58</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">446,50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55,75</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p29"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,218</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,434</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,805</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,461</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,513</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,245</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,631</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,803</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">4</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">SLOT AL LIMIT 3</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">445,22</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55,63</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p29"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,287</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,336</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,648</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,597</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,517</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,523</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,439</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,372</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">5</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">TNT SLOT</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">438,60</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54,75</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p29"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,539</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,594</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,510</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,785</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,614</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,370</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,428</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,747</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">6</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">SLOT AL LIMIT 3.1</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">52</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">52</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">432,62</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54,00</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p29"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,574</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,669</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,273</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,374</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,474</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,420</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,833</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,540</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">7</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">EDUPAS</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">52</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">52</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">52</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">429,59</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53,63</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p29"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,679</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,446</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,761</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,755</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,540</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,449</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,379</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,552</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">8</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">GASCLAVAT-2</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">47</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">48</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">51</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">47</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">51</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">394,33</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">49,25</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p29"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,421</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,257</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,933</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,515</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,813</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,802</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,198</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,315</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">9</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">BSR DJ</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">49</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">52</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">47</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">49</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">43</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">48</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">47</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">44</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">379,39</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">47,38</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p29"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,540</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,208</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,619</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,253</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,377</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,272</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,190</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,335</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p30"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p17"><b>MANGA VIERNES 24:00 Horas</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p22"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p24"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>#</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p17"><b>EQUIP</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>1</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>2</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>3</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>4</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>5</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>6</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>7</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>8</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>TOTAL</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>MEDIA</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">1</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">DREAM SLOT VETERANS</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">58</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">58</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">58</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">58</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">456,59</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57,00</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p29"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,263</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,238</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,392</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,431</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,274</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,199</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,107</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,209</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">2</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">STOP&amp;GO VILAMAJOR V.I.</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">58</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">58</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">454,44</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56,75</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p29"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,296</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,288</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,364</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,508</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,252</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,118</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,092</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,040</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">3</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">CRIC CRAC SPORT</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">58</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">448,32</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56,00</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p29"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,162</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,336</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,223</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,151</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,130</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,171</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,458</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,316</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">4</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">SLOTMANIA.NET</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">443,34</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55,38</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p29"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,373</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,387</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,541</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,307</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,584</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,430</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,438</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,492</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">5</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">SLOTMANIA-MOMO</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">51</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">442,57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55,25</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p29"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,459</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,311</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,416</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,533</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,377</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,477</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,295</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,276</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">6</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">LA LECHE</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">58</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">45</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">442,41</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55,25</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p29"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,146</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,060</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,152</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,358</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,397</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,291</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,225</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,020</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">7</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">GASS AL LIMIT</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">48</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">422,59</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">52,75</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p29"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,654</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,283</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,367</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,650</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,545</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,332</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,228</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,639</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">8</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">ALOY SHOP MALANYANES</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">52</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">52</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">51</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">52</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">417,32</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">52,13</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p29"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,783</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,900</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,783</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,121</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,741</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,980</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,673</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,231</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p30"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p17"><b>MANGA SÁBADO 10:00 Horas</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p22"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p24"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>#</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p17"><b>EQUIP</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>1</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>2</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>3</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>4</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>5</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>6</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>7</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>8</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>TOTAL</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>MEDIA</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">1</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">LACET SLOT</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">58</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">51</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">52</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">58</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">439,22</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54,88</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p29"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,150</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,070</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,010</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,370</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,180</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,200</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,000</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,240</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">2</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">BUDELLETS &amp; TEAM</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">52</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">431,11</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53,88</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p29"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,400</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,430</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,630</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,580</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,530</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,620</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,550</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,680</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">3</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">BSR OFF</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">52</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">423,32</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">52,88</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p29"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,980</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,780</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,950</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,960</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,790</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,580</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,760</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,810</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">4</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">BCN SLOT 1</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">51</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">52</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">49</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">52</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">52</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">51</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">410,23</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">51,25</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p29"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,530</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,390</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,360</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,160</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,220</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,950</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,080</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,070</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">5</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">BUDELLETS &amp; TEAM-2</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">51</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">51</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">51</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">51</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">52</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">406,33</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50,75</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p29"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,970</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,240</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,240</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,240</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,140</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,220</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,230</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,200</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">6</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">MAMUNTS DEL SLOT</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">51</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">48</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">48</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">46</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">51</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">48</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">395,59</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">49,38</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p29"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,300</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,990</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,000</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,820</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,490</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,960</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,060</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">14,050</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">7</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">TIFOSI TEAM</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">0</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">0</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">48</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">47</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">43</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">45</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">28</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">38</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">249,00</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">31,13</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p29"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,350</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,520</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,800</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,220</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,490</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,670</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p30"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p17"><b>MANGA SÁBADO 13:00 Horas</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p22"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p24"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p23"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>#</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p17"><b>EQUIP</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>1</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>2</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>3</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>4</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>5</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>6</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>7</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>8</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>TOTAL</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>MEDIA</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">1</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">STRICACHOVA TEAM</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">447,11</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55,88</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p29"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,468</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,381</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,649</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,501</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,282</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,324</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,348</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,371</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">2</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">SLOT AL LIMIT 2</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">447,09</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55,88</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p29"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,287</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,230</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,250</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,376</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,513</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,565</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,789</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,678</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">3</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">MOTOR A LA SANG</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">435,50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54,38</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p29"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,590</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,440</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,488</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,645</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,692</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,138</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,925</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,696</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">4</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">MARLEX AL LIMIT</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">51</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">430,58</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53,75</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p29"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,435</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,486</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,086</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,926</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,729</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,590</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,546</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,827</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">5</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">SLOT 08191</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">424,45</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53,00</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p29"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,810</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,624</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,982</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,671</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,035</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,741</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,965</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,060</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">6</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">SLOTO RACE TEAM 2</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">47</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">48</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">49</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">49</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">49</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">392,51</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">49,00</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p29"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,461</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,188</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,424</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,829</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,277</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,731</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,969</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,625</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">7</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">SLOTO RACE TEAM 1</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">45</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">47</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">45</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">45</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">25</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">49</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">356,20</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">44,50</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p29"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,897</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,976</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">14,235</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">12,993</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">14,183</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,041</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,589</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">13,561</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p30"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p30"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p30"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p30"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p30"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p30"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p30"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p30"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p30"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p30"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p30"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16"> </p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p17"><b>CLASIFICACIÓN FINAL</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p18"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p18"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p18"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p18"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p18"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p18"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p18"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p18"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p18"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p18"><b></b><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p18"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p32"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p18"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p18"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p18"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p18"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p18"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p18"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p18"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p18"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p18"><b></b><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p18"><b></b><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>#</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p17"><b>EQUIP</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>1</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>2</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>3</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>4</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>5</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>6</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>7</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>8</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>TOTAL</b></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p25"><b>BLOC</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">1</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">SQUADRA CORSE</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">59</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">59</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">58</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">59</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">58</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">463,25</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p26">B</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">2</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">DREAM SLOT VETERANS</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">58</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">58</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">58</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">58</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">456,59</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p26">A</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">3</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">SLOT AL LIMIT</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">58</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">454,58</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p26">C</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">4</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">STOP&amp;GO VILAMAJOR V.I.</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">58</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">58</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">454,44</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p26">A</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">5</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">CRIC CRAC SPORT</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">58</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">448,32</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p26">A</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">6</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">STRICACHOVA TEAM</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">447,11</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p26">B</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">7</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">SLOT AL LIMIT 2</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">447,09</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p26">C</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">8</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">SLOT AL LIMIT AFICIO 06</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">58</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">446,50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p26">C</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">9</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">SLOTMANIA</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">445,31</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p26">A</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">10</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">SLOT AL LIMIT 3</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">445,22</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p26">E</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">11</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">SLOTMANIA.NET</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">443,34</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p26">A</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">12</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">SLOTMANIA-MOMO</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">51</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">442,57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p26">A</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">13</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">LA LECHE</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">58</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">45</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">442,41</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p26">A</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">14</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">LACET SLOT</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">58</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">51</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">52</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">57</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">58</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">439,22</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p26">D</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">15</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">TNT SLOT</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">438,60</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p26">D</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">16</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">MOTOR A LA SANG</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">435,50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p26">B</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">17</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">SLOT AL LIMIT 3.1</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">52</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">52</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">432,62</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p26">C</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">18</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">BUDELLETS &amp; TEAM</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">52</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">431,11</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p26">D</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">19</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">MARLEX AL LIMIT</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">51</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">430,58</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p26">C</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">20</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">EDUPAS</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">52</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">52</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">52</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">429,59</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p26">B</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">21</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">SLOTWAY</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">429,28</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p26">B</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">22</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">XXL TEAM</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">52</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">52</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">428,48</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p26">C</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">23</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">SLOT 08191</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">424,45</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p26">D</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">24</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">BSR OFF</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">52</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">423,32</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p26">D</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">25</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">GASS AL LIMIT</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">48</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">422,59</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p26">B</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">26</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">ALOY SHOP MALANYANES</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">52</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">52</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">51</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">52</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">417,32</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p26">B</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">27</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">GASCLAVAT-1</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">52</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">52</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">48</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">51</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">51</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">51</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">412,59</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p26">F</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">28</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">BCN SLOT 1</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">51</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">52</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">49</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">52</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">52</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">51</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">410,23</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p26">E</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">29</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">BUDELLETS &amp; TEAM-2</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">51</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">51</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">51</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">51</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">52</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">406,33</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p26">D</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">30</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">SLOT-CAR ALOY SHOP</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">28</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">56</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">55</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">54</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">400,31</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p26">F</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">31</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">GASCLAVAT-3</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">51</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">49</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">52</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">49</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">49</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">48</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">49</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">397,38</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p26">F</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">32</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">MAMUTS DEL SLOT</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">51</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">53</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">48</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">48</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">46</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">51</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">48</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">395,59</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p26">F</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">33</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">GASCLAVAT-2</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">47</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">48</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">51</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">47</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">51</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">394,33</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p26">E</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">34</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">BSRX</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">51</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">51</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">49</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">49</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">47</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">46</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">393,28</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p26">E</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">35</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">BCN SLOT 2</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">49</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">49</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">48</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">48</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">48</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">392,59</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p26">E</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">36</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">SLOTO RACE TEAM 2</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">47</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">48</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">49</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">49</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">49</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">392,51</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p26">D</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">37</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">BSR DJ</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">49</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">52</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">47</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">49</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">43</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">48</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">47</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">44</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">379,39</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p26">C</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">38</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">STOP&amp;GO VILAMAJOR G.J.</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">47</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">49</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">47</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">26</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">48</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">48</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">365,44</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p26">E</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">39</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">SLOTO RACE TEAM 1</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">45</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">47</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">45</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">45</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">50</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">25</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">49</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">356,20</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p26">E</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p26">40</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">TIFOSI TEAM</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">0</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">0</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">48</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">47</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">43</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">45</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">28</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">38</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">249,00</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p26">F</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p11"><br></p>
+</body>
+</html>

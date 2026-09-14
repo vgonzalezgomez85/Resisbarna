@@ -1,0 +1,393 @@
+{
+  "year": 2015,
+  "documentos_generales": [
+    {
+      "nombre": "Premios 2015",
+      "href": "assets/historico/2015/cortijos-entrega-premios-2015.html"
+    },
+    {
+      "nombre": "Datos técnicos 2015",
+      "href": "assets/historico/2015/dades-tecniques-2015.pdf"
+    },
+    {
+      "nombre": "Encuesta 2015",
+      "href": "assets/historico/2015/encuesta-resisbarna-2015.xlsx"
+    },
+    {
+      "nombre": "Encuesta 2015 (2)",
+      "href": "assets/historico/2015/encuesta-resisbarna-2015.pdf"
+    },
+    {
+      "nombre": "Estadísticas 2015",
+      "href": "assets/historico/2015/estadistiques-2015.pdf"
+    },
+    {
+      "nombre": "Reglamento técnico 2015 (borrador)",
+      "href": "assets/historico/2015/reglamento-tecnico-resisbarna-2015-v1-1-borrador.html"
+    },
+    {
+      "nombre": "Calendario 2015",
+      "href": "assets/historico/2015/calendario-2015.html"
+    },
+    {
+      "nombre": "Motores 2015",
+      "href": "assets/historico/2015/motores-2015.html"
+    },
+    {
+      "nombre": "Reglamento deportivo 2015",
+      "href": "assets/historico/2015/reglamento-deportivo-resisbarna-2015.pdf"
+    },
+    {
+      "nombre": "Reglamento técnico 2015 (antiguo)",
+      "href": "assets/historico/2015/reglamento-tecnico-resisbarna-2015-old.pdf"
+    },
+    {
+      "nombre": "Reglamento técnico 2015",
+      "href": "assets/historico/2015/reglamento-tecnico-resisbarna-2015.pdf"
+    }
+  ],
+  "races": [
+    {
+      "nombre": "BSR",
+      "sede": "BSR",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2015/bsr/20156bsrdades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2015/bsr/20156bsrinscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2015/bsr/20156bsrmanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2015/bsr/20156bsrpremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2015/bsr/20156bsrresults.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2015/bsr/cortijos.html"
+        },
+        {
+          "nombre": "Crónica (Resisbarna)",
+          "href": "assets/historico/2015/bsr/resisbarna.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Crono",
+      "sede": "Crono",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2015/crono/20157crodades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2015/crono/20157croinscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2015/crono/20157cromanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2015/crono/20157cropremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2015/crono/20157croresults.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2015/crono/cortijos.html"
+        },
+        {
+          "nombre": "Crónica (Resisbarna)",
+          "href": "assets/historico/2015/crono/resisbarna.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Dream Slot",
+      "sede": "Dream Slot",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2015/dreamslot/20154drsdades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2015/dreamslot/20154drsinscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2015/dreamslot/20154drsmanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2015/dreamslot/20154drspremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2015/dreamslot/20154drsresults.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2015/dreamslot/cortijos.html"
+        },
+        {
+          "nombre": "Resisbarna 2015",
+          "href": "assets/historico/2015/dreamslot/resisbarna-2015.xls"
+        },
+        {
+          "nombre": "Crónica (Resisbarna)",
+          "href": "assets/historico/2015/dreamslot/resisbarna.html"
+        }
+      ]
+    },
+    {
+      "nombre": "El Sot",
+      "sede": "El Sot",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2015/elsot/20159sotdades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2015/elsot/20159sotinscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2015/elsot/20159sotmanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2015/elsot/20159sotpremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2015/elsot/20159sotresults.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2015/elsot/cortijos.html"
+        },
+        {
+          "nombre": "Crónica (Resisbarna)",
+          "href": "assets/historico/2015/elsot/resisbarna.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Gasclavat",
+      "sede": "Gasclavat",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2015/gasclavat/20152gcldades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2015/gasclavat/20152gclinscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2015/gasclavat/20152gclmanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2015/gasclavat/20152gclpremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2015/gasclavat/20152gclresults.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2015/gasclavat/cortijos.html"
+        },
+        {
+          "nombre": "Crónica (Resisbarna)",
+          "href": "assets/historico/2015/gasclavat/resisbarna.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Hot Slot",
+      "sede": "Hot Slot",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2015/hotslot/20151hotdades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2015/hotslot/20151hotinscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2015/hotslot/20151hotmanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2015/hotslot/20151hotpremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2015/hotslot/20151hotresults.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2015/hotslot/cortijos.html"
+        },
+        {
+          "nombre": "Crónica (Resisbarna)",
+          "href": "assets/historico/2015/hotslot/resisbarna.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Slot For You",
+      "sede": "Slot For You",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2015/slot4you/20158s4udades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2015/slot4you/20158s4uinscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2015/slot4you/20158s4umanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2015/slot4you/20158s4upremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2015/slot4you/20158s4uresults.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2015/slot4you/cortijos.html"
+        },
+        {
+          "nombre": "Crónica (Resisbarna)",
+          "href": "assets/historico/2015/slot4you/resisbarna.html"
+        },
+        {
+          "nombre": "Documento",
+          "href": "assets/historico/2015/slot4you/slot-for-you.html"
+        }
+      ]
+    },
+    {
+      "nombre": "Slotmania",
+      "sede": "Slotmania",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2015/slotmania/20155slmdades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2015/slotmania/20155slminscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2015/slotmania/20155slmmanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2015/slotmania/20155slmpremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2015/slotmania/20155slmresults.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2015/slotmania/cortijos.html"
+        },
+        {
+          "nombre": "Crónica (Resisbarna)",
+          "href": "assets/historico/2015/slotmania/resisbarna.html"
+        }
+      ]
+    },
+    {
+      "nombre": "STP",
+      "sede": "STP",
+      "campeonato": "Resisbarna",
+      "fecha": null,
+      "documentos": [
+        {
+          "nombre": "Datos",
+          "href": "assets/historico/2015/stp/20153stpdades.html"
+        },
+        {
+          "nombre": "Inscritos",
+          "href": "assets/historico/2015/stp/20153stpinscrip.html"
+        },
+        {
+          "nombre": "Mangas",
+          "href": "assets/historico/2015/stp/20153stpmanegues.html"
+        },
+        {
+          "nombre": "Premios",
+          "href": "assets/historico/2015/stp/20153stppremis.html"
+        },
+        {
+          "nombre": "Resultados",
+          "href": "assets/historico/2015/stp/20153stpresults.html"
+        },
+        {
+          "nombre": "Crónica (Cortijos)",
+          "href": "assets/historico/2015/stp/cortijos.html"
+        },
+        {
+          "nombre": "Crónica (Resisbarna)",
+          "href": "assets/historico/2015/stp/resisbarna.html"
+        }
+      ]
+    }
+  ],
+  "clasificaciones": [
+    {
+      "nombre": "Clasificación 2015 (actualización 1)",
+      "pdf": "assets/historico/2015/clasificacion2015-1.html"
+    },
+    {
+      "nombre": "Clasificación 2015",
+      "pdf": "assets/historico/2015/clasificacion2015.html"
+    }
+  ]
+}
