@@ -51,7 +51,7 @@
       ? '<div class="rb-insc-list">' + teams.map(function(t, i){
           var p2 = t['Piloto 2'] ? ' / ' + esc(t['Piloto 2']) : '';
           var dia = t['Día'] ? ' <span class="rb-insc-dia">' + esc(t['Día']) + '</span>' : '';
-          return '<div class="rb-insc-team"><span><span class="n">' + (i+1) + '.</span> ' + esc(t.Equipo) + ' — ' + esc(t['Piloto 1']) + p2 + '</span>' + dia + '</div>';
+          return '<div class="rb-insc-team"><span><span class="n">' + (i+1) + '.</span> ' + esc(t.Equipo) + ' — ' + esc(t['Piloto 1']) + p2 + dia + '</span></div>';
         }).join('') + '</div>'
       : '<div class="rb-insc-empty">Todavía no hay equipos apuntados. ¡Sé el primero!</div>';
     return { badge: badge, list: list };
