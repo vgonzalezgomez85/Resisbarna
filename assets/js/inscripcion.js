@@ -1,7 +1,7 @@
 (function(){
   // Pega aquí la URL de tu Google Apps Script publicado como Web App
   // (termina en /exec). Instrucciones: ver docs/apps-script-inscripciones.gs
-  var SCRIPT_URL = 'PON_AQUI_TU_URL_DE_APPS_SCRIPT';
+  var SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzHDhxFYVik9nUO0EVrXmocy26eqN0Z2Lvtv56j4qpXz6BMlnEWebHMYcN5Wgg8FrMB/exec';
 
   var racesEl = document.getElementById('races');
   var filtersEl = document.getElementById('campFilters');
