@@ -1,0 +1,129 @@
+{
+  "year": 2026,
+  "races": [
+    {
+      "campeonato": "GT",
+      "sede": "El Sot",
+      "fecha": "2026-01-16",
+      "documentos": [
+        { "nombre": "Resultado carrera", "href": "assets/pdfs/2026/RESULTADOS_RESISBARNA_ELSOT_2026.pdf" },
+        { "nombre": "Verificaciones", "href": "assets/pdfs/2026/VERIFICACIONES_RESISBARNA_ELSOT_2026.pdf" }
+      ]
+    },
+    {
+      "campeonato": "GT",
+      "sede": "Slot for You",
+      "fecha": "2026-02-06",
+      "documentos": [
+        { "nombre": "Resultado carrera", "href": "assets/pdfs/2026/RESUSLTADO_RESISBARNA_S4Y_2026.pdf" },
+        { "nombre": "Verificaciones", "href": "assets/pdfs/2026/VERIFICACIONES_RESISBARNA_S4Y_2026.pdf" }
+      ]
+    },
+    {
+      "campeonato": "GT",
+      "sede": "Slot Car",
+      "fecha": "2026-02-27",
+      "documentos": [
+        { "nombre": "Resultado carrera", "href": "assets/pdfs/2026/RESULTADOS-SLOTCAR-RESISBARNA-2026.pdf" },
+        { "nombre": "Verificaciones", "href": "assets/pdfs/2026/VERIFICACIONES-SLOTCAR-RESISBARNA-2026.pdf" }
+      ]
+    },
+    {
+      "campeonato": "GT",
+      "sede": "Gasclavat",
+      "fecha": "2026-03-13",
+      "documentos": [
+        { "nombre": "Resultado carrera", "href": "assets/pdfs/2026/RESULTADOS_GASCLAVAT_RESISBARNA_2026.pdf" },
+        { "nombre": "Verificaciones", "href": "assets/pdfs/2026/VERIFICACIONES_GASCLAVAT_RESISBARNA_2026.pdf" }
+      ]
+    },
+    {
+      "campeonato": "GT",
+      "sede": "Crono",
+      "fecha": "2026-04-10",
+      "documentos": [
+        { "nombre": "Verificaciones", "href": "assets/pdfs/2026/VERIFICACIONES_CRONO_RESISBARNA_2026.pdf" }
+      ]
+    },
+    {
+      "campeonato": "GT",
+      "sede": "Slotmania",
+      "fecha": "2026-05-22",
+      "documentos": [
+        { "nombre": "Resultado carrera", "href": "assets/pdfs/2026/RESULTADOS_SLOTMANIA_RESISBARNA_2026.pdf" },
+        { "nombre": "Verificaciones", "href": "assets/pdfs/2026/VERIFICACIONES_SLOTMANIA_RESISBARNA2026.pdf" }
+      ]
+    },
+    {
+      "campeonato": "GT",
+      "sede": "El Sot BIS",
+      "fecha": "2026-06-13",
+      "documentos": []
+    },
+    {
+      "campeonato": "Grupo C",
+      "sede": "El Sot",
+      "fecha": "2026-01-09",
+      "documentos": [
+        { "nombre": "Verificaciones", "href": "assets/pdfs/2026/VERIFICACIONES_GRUPOC_ELSOT_2026.pdf" }
+      ]
+    },
+    {
+      "campeonato": "Grupo C",
+      "sede": "Slot Car",
+      "fecha": "2026-02-13",
+      "documentos": [
+        { "nombre": "Resultado carrera", "href": "assets/pdfs/2026/RESULTADOS_GRUPOC_SLOT_CAR_2026.pdf" },
+        { "nombre": "Verificaciones", "href": "assets/pdfs/2026/VERIFICACIONES_SLOTCAR_GRUPOC_2026.pdf" }
+      ]
+    },
+    {
+      "campeonato": "Grupo C",
+      "sede": "Gasclavat",
+      "fecha": "2026-03-06",
+      "documentos": [
+        { "nombre": "Resultado carrera", "href": "assets/pdfs/2026/RESULTADOS_GRUPOC_GASCLAVAT_2026.pdf" },
+        { "nombre": "Verificaciones", "href": "assets/pdfs/2026/VERIFICACIONES_GRUPOC_GASCLAVAT_2026.pdf" }
+      ]
+    },
+    {
+      "campeonato": "Grupo C",
+      "sede": "Slotmania",
+      "fecha": "2026-05-15",
+      "documentos": [
+        { "nombre": "Resultado carrera", "href": "assets/pdfs/2026/RESULTADOS_GRUPOC_SLOTMANIA_2026_.pdf" },
+        { "nombre": "Verificaciones", "href": "assets/pdfs/2026/VERIFICACIONES_SLOTMANIA_RESISBARNA2026.pdf" }
+      ]
+    },
+    {
+      "campeonato": "Le Mans Series",
+      "sede": "Gasclavat",
+      "fecha": "2026-09-18",
+      "documentos": []
+    },
+    {
+      "campeonato": "Le Mans Series",
+      "sede": "El Sot",
+      "fecha": "2026-10-02",
+      "documentos": []
+    },
+    {
+      "campeonato": "Le Mans Series",
+      "sede": "Crono",
+      "fecha": "2026-10-16",
+      "documentos": []
+    },
+    {
+      "campeonato": "Le Mans Series",
+      "sede": "Slot for You",
+      "fecha": "2026-10-23",
+      "documentos": []
+    }
+  ],
+  "clasificaciones": [
+    { "nombre": "Clasificación general", "pdf": "assets/pdfs/clasificaciones-2026/CLASIFICACION_GENERAL_RESISBARNA2026.pdf" },
+    { "nombre": "Clasificación GT2", "pdf": "assets/pdfs/clasificaciones-2026/CLASIFICACION_GT2_RESISBARNA2026.pdf" },
+    { "nombre": "Clasificación Copa Slot.it", "pdf": "assets/pdfs/clasificaciones-2026/CLASIFICACION_COPA_RESISBARNA2026.pdf" },
+    { "nombre": "Clasificación Grupo C", "pdf": "assets/pdfs/clasificaciones-2026/CLASIFICACION_GRUPOC_2026.pdf" }
+  ]
+}
