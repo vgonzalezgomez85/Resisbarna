@@ -1,0 +1,155 @@
+{
+  "year": 2022,
+  "races": [
+    {
+      "nombre": "COPA F1 1ª CARRERA EL SOT",
+      "sede": "El Sot",
+      "campeonato": "F1",
+      "fecha": null,
+      "documentos": {
+        "mangas": null,
+        "verificaciones": null,
+        "resultado": null
+      }
+    },
+    {
+      "nombre": "RESISBARNA 1ª CARRERA EL SOT",
+      "sede": "El Sot",
+      "campeonato": "GT",
+      "fecha": null,
+      "documentos": {
+        "mangas": "assets/pdfs/historico/2022/MANIGUES-EL-SOT-V3.pdf",
+        "verificaciones": "assets/pdfs/historico/2022/VERIFICACIONES_ELSOT_2022.pdf",
+        "resultado": "assets/pdfs/historico/2022/FINAL_ELSOT_2022.pdf"
+      }
+    },
+    {
+      "nombre": "COPA F1 2ª CARRERA SLOT FOR YOU",
+      "sede": "Slot For You",
+      "campeonato": "F1",
+      "fecha": null,
+      "documentos": {
+        "mangas": null,
+        "verificaciones": "assets/pdfs/historico/2022/COPA-F1-S4Y-VERIFICACIONES.pdf",
+        "resultado": "assets/pdfs/historico/2022/COPA-F1-RESISBARNA-2022-SLOT-FOR-YOU.pdf"
+      }
+    },
+    {
+      "nombre": "RESISBARNA 2ª CARRERA SLOT FOR YOU",
+      "sede": "Slot For You",
+      "campeonato": "GT",
+      "fecha": null,
+      "documentos": {
+        "mangas": "assets/pdfs/historico/2022/MANIGUES-SLOTFOR-YOU-V2.pdf",
+        "verificaciones": "assets/pdfs/historico/2022/VERIFICACIONES_S4Y_RESIS_2022.pdf",
+        "resultado": "assets/pdfs/historico/2022/RESISBARNA-22-S4Y-RESULTATS.pdf"
+      }
+    },
+    {
+      "nombre": "COPA F1 3ª CARRERA GASCLAVAT",
+      "sede": "Gasclavat",
+      "campeonato": "F1",
+      "fecha": null,
+      "documentos": {
+        "mangas": "assets/pdfs/historico/2022/ENTRENAMENTS-I-TANDES-v6.xlsx-PLANTILLA-MANIGUES-F1-1.pdf",
+        "verificaciones": null,
+        "resultado": null
+      }
+    },
+    {
+      "nombre": "RESISBARNA 3ª CARRERA GASCLAVAT",
+      "sede": "Gasclavat",
+      "campeonato": "GT",
+      "fecha": null,
+      "documentos": {
+        "mangas": "assets/pdfs/historico/2022/MANGAS_GASCLAVAT_2022.pdf",
+        "verificaciones": "assets/pdfs/historico/2022/VERIFICACIONES_GASCLAVAT_2022.pdf",
+        "resultado": "assets/pdfs/historico/2022/RESULTADOS_GASCLAVAT_2022.pdf"
+      }
+    },
+    {
+      "nombre": "RESISBARNA 4ª CARRERA EL SOT",
+      "sede": "El Sot",
+      "campeonato": "GT",
+      "fecha": null,
+      "documentos": {
+        "mangas": "assets/pdfs/historico/2022/MANGAS_ELSOT_BIS_2022.pdf",
+        "verificaciones": "assets/pdfs/historico/2022/VERIFICACIONES_EL_SOT_BIS_2022.pdf",
+        "resultado": "assets/pdfs/historico/2022/RESULTADOS_EL_SOT_BIS_2022.pdf"
+      }
+    },
+    {
+      "nombre": "COPA F1 4ª CARRERA SLOTMANIA",
+      "sede": "Slotmania",
+      "campeonato": "F1",
+      "fecha": null,
+      "documentos": {
+        "mangas": "assets/pdfs/historico/2022/MANGAS_SLOTMANIA_F1_2022.pdf",
+        "verificaciones": "assets/pdfs/historico/2022/VERIFICACIONES_F1_SOLOTMANIA_2022.pdf",
+        "resultado": "assets/pdfs/historico/2022/RESULTADOS_F1_SOLOTMANIA_2022.pdf"
+      }
+    },
+    {
+      "nombre": "RESISBARNA 5ª CARRERA SLOTMANIA",
+      "sede": "Slotmania",
+      "campeonato": "GT",
+      "fecha": null,
+      "documentos": {
+        "mangas": "assets/pdfs/historico/2022/MANGAS_SLOTMANIA_RESISBARNA_2022.pdf",
+        "verificaciones": "assets/pdfs/historico/2022/VERIFICACIONES_RESISBARNA_SOLOTMANIA_2022.pdf",
+        "resultado": "assets/pdfs/historico/2022/RESULTADOS_RESISBARNA_SLOTMANIA_2022.pdf"
+      }
+    },
+    {
+      "nombre": "COPA F1 5ª CARRERA CRONO",
+      "sede": "Crono",
+      "campeonato": "F1",
+      "fecha": null,
+      "documentos": {
+        "mangas": "assets/pdfs/historico/2022/MANGAS_CRONO_F1.pdf",
+        "verificaciones": "assets/pdfs/historico/2022/VERIFICACIONES_F1_CRONO_2022.pdf",
+        "resultado": "assets/pdfs/historico/2022/RESULTADOS_F1_CRONO_2022.pdf"
+      }
+    },
+    {
+      "nombre": "RESISBARNA 6ª CARRERA CRONO",
+      "sede": "Crono",
+      "campeonato": "GT",
+      "fecha": null,
+      "documentos": {
+        "mangas": "assets/pdfs/historico/2022/MANGAS_CRONO_RESISBARNA.pdf",
+        "verificaciones": "assets/pdfs/historico/2022/VERIFICACIONES_RESISBARNA_CRONO_2022.pdf",
+        "resultado": "assets/pdfs/historico/2022/RESULTADOS_RESISBARNA_CRONO_2022.pdf"
+      }
+    },
+    {
+      "nombre": "RESISBARNA 7ª CARRERA SLOT CAR",
+      "sede": "Slot Car",
+      "campeonato": "GT",
+      "fecha": null,
+      "documentos": {
+        "mangas": "assets/pdfs/historico/2022/MANGAS_SLOTCAR_RESISBARNA.pdf",
+        "verificaciones": "assets/pdfs/historico/2022/SLOTCAR_VERIFICACIONES_2022.pdf",
+        "resultado": "assets/pdfs/historico/2022/RESULTADOS_RESISBARNA_SLOTCAR_2022.pdf"
+      }
+    }
+  ],
+  "clasificaciones": [
+    {
+      "nombre": "CLASIFICACION GENERAL",
+      "pdf": "assets/pdfs/historico/2022/CLASIFICACION_GENERAL_2022.pdf"
+    },
+    {
+      "nombre": "CLASIFICACION SCA",
+      "pdf": "assets/pdfs/historico/2022/CLASIFICACION_SCA_2022.pdf"
+    },
+    {
+      "nombre": "CLASIFICACION GT2",
+      "pdf": "assets/pdfs/historico/2022/CLASIFICACION_GT2_2022.pdf"
+    },
+    {
+      "nombre": "CLASIFICACION F1",
+      "pdf": "assets/pdfs/historico/2022/CLASIFICACION_F1_2022.pdf"
+    }
+  ]
+}

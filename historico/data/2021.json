@@ -1,0 +1,107 @@
+{
+  "year": 2021,
+  "races": [
+    {
+      "nombre": "SLOTCAR 2021 RESISBARNA",
+      "sede": "Slot Car",
+      "campeonato": "GT",
+      "fecha": null,
+      "documentos": {
+        "mangas": "assets/pdfs/historico/2021/MANGAS_SLOTCAR-2.pdf",
+        "verificaciones": "assets/pdfs/historico/2021/VERIFICACIONES_SLOTCAR.pdf",
+        "resultado": "assets/pdfs/historico/2021/RESULTADOS_SLOTCAR.pdf"
+      }
+    },
+    {
+      "nombre": "EL SOT 2021",
+      "sede": "El Sot",
+      "campeonato": "GT",
+      "fecha": null,
+      "documentos": {
+        "mangas": "assets/pdfs/historico/2021/MANGAS_ELSOT-1.pdf",
+        "verificaciones": "assets/pdfs/historico/2021/VERIFICACIONES_ELSOT.pdf",
+        "resultado": "assets/pdfs/historico/2021/EL-SOT-2021-RESULTATS-1.pdf"
+      }
+    },
+    {
+      "nombre": "SLOT4YOU 2021 RESISBARNA",
+      "sede": "Slot For You",
+      "campeonato": "GT",
+      "fecha": null,
+      "documentos": {
+        "mangas": "assets/pdfs/historico/2021/MANGAS_S4Y.pdf",
+        "verificaciones": "assets/pdfs/historico/2021/VERIFICACIONES_S4Y.pdf",
+        "resultado": "assets/pdfs/historico/2021/RESULTADOS_S4Y_2021.pdf"
+      }
+    },
+    {
+      "nombre": "GASCLAVAT 2021 RESISBARNA",
+      "sede": "Gasclavat",
+      "campeonato": "GT",
+      "fecha": null,
+      "documentos": {
+        "mangas": "assets/pdfs/historico/2021/MANGAS_GASCLAVAT.pdf",
+        "verificaciones": "assets/pdfs/historico/2021/VERIFICACIONES_GASCLAVAT.pdf",
+        "resultado": "assets/pdfs/historico/2021/RESULTATS-EDITATS.pdf"
+      }
+    },
+    {
+      "nombre": "SLOTSAB 2021 RESISBARNA",
+      "sede": "Slot Sab",
+      "campeonato": "GT",
+      "fecha": null,
+      "documentos": {
+        "mangas": "assets/pdfs/historico/2021/SAB_MANGAS.pdf",
+        "verificaciones": "assets/pdfs/historico/2021/SAB_VERIFICACIONES2021.pdf",
+        "resultado": null
+      }
+    },
+    {
+      "nombre": "CRONO 2021 RESISBARNA",
+      "sede": "Crono",
+      "campeonato": "GT",
+      "fecha": null,
+      "documentos": {
+        "mangas": "assets/pdfs/historico/2021/CRONO_MANGAS.pdf",
+        "verificaciones": "assets/pdfs/historico/2021/VERIFICACIONES_CRONO_2021.pdf",
+        "resultado": "assets/pdfs/historico/2021/RESULTADOS_CRONO_2021.pdf"
+      }
+    },
+    {
+      "nombre": "SLOTMANIA 2021 RESISBARNA",
+      "sede": "Slotmania",
+      "campeonato": "GT",
+      "fecha": null,
+      "documentos": {
+        "mangas": "assets/pdfs/historico/2021/SLOTMANIA_MANGAS.pdf",
+        "verificaciones": "assets/pdfs/historico/2021/SLOTMANIA_VERIFICACIONES2021.pdf",
+        "resultado": "assets/pdfs/historico/2021/B0B9F12D-2EED-4BBA-9ECB-26CE72E1D176.jpeg"
+      }
+    },
+    {
+      "nombre": "EL SOT BIS 2021 RESISBARNA",
+      "sede": "El Sot Bis",
+      "campeonato": "GT",
+      "fecha": null,
+      "documentos": {
+        "mangas": "assets/pdfs/historico/2021/EL-SOT2-MANGAS.pdf",
+        "verificaciones": null,
+        "resultado": null
+      }
+    }
+  ],
+  "clasificaciones": [
+    {
+      "nombre": "CLASIFICACION GENERAL",
+      "pdf": "assets/pdfs/historico/2021/CLASIFICACION_GENERAL_2021.pdf"
+    },
+    {
+      "nombre": "CLASIFICACION SCA",
+      "pdf": "assets/pdfs/historico/2021/CLASIFICACION_SCA_2021.pdf"
+    },
+    {
+      "nombre": "CLASIFICACION GT2",
+      "pdf": "assets/pdfs/historico/2021/CLASIFICACION_GT2_2021.pdf"
+    }
+  ]
+}
