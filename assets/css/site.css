@@ -264,13 +264,19 @@
 .rb-insc-race.highlight{border-color:var(--c); box-shadow:0 0 0 3px rgba(237,27,47,.25);}
 
 .rb-insc-list{display:flex; flex-direction:column; gap:6px; margin-bottom:16px;}
-.rb-insc-team{background:var(--panel2); border:1px solid var(--line); border-radius:9px; padding:10px 14px; font-size:14px;}
+.rb-insc-team{background:var(--panel2); border:1px solid var(--line); border-radius:9px; padding:10px 14px; font-size:14px;
+  display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap;}
 .rb-insc-team .n{color:var(--c); font-weight:800; margin-right:4px;}
+.rb-insc-dia{font-family:'Saira',sans-serif; text-transform:uppercase; letter-spacing:.06em; font-size:11px;
+  font-weight:700; color:var(--c); background:rgba(255,255,255,.05); border:1px solid var(--line);
+  padding:3px 9px; border-radius:20px; white-space:nowrap;}
 .rb-insc-empty{color:var(--muted); font-size:13.5px; padding:8px 2px 16px;}
 
 .rb-insc-form{display:flex; gap:8px; flex-wrap:wrap; align-items:center; padding-top:4px; border-top:1px solid var(--line);}
-.rb-insc-form input{background:var(--panel2); border:1px solid var(--line); border-radius:8px; padding:10px 12px;
+.rb-insc-form input, .rb-insc-form select{background:var(--panel2); border:1px solid var(--line); border-radius:8px; padding:10px 12px;
   color:#fff; font-size:13.5px; flex:1; min-width:140px; margin-top:14px; font-family:inherit;}
+.rb-insc-form select{cursor:pointer;}
+.rb-insc-form select option[value=""]{color:var(--muted);}
 .rb-insc-form button{margin-top:14px; white-space:nowrap;}
 .rb-insc-msg{font-size:12.5px; margin-top:8px; color:var(--muted);}
 .rb-insc-msg.ok{color:#3ecf6e;}

@@ -50,7 +50,8 @@
     var list = count
       ? '<div class="rb-insc-list">' + teams.map(function(t, i){
           var p2 = t['Piloto 2'] ? ' / ' + esc(t['Piloto 2']) : '';
-          return '<div class="rb-insc-team"><span><span class="n">' + (i+1) + '.</span> ' + esc(t.Equipo) + ' — ' + esc(t['Piloto 1']) + p2 + '</span></div>';
+          var dia = t['Día'] ? ' <span class="rb-insc-dia">' + esc(t['Día']) + '</span>' : '';
+          return '<div class="rb-insc-team"><span><span class="n">' + (i+1) + '.</span> ' + esc(t.Equipo) + ' — ' + esc(t['Piloto 1']) + p2 + '</span>' + dia + '</div>';
         }).join('') + '</div>'
       : '<div class="rb-insc-empty">Todavía no hay equipos apuntados. ¡Sé el primero!</div>';
     return { badge: badge, list: list };
@@ -64,6 +65,11 @@
           '<input type="text" name="equipo" placeholder="Nombre del equipo" required>' +
           '<input type="text" name="piloto1" placeholder="Piloto 1" required>' +
           '<input type="text" name="piloto2" placeholder="Piloto 2 (opcional)">' +
+          '<select name="dia" required>' +
+            '<option value="" disabled selected>¿Qué día corres?</option>' +
+            '<option value="Jueves">Jueves</option>' +
+            '<option value="Viernes">Viernes</option>' +
+          '</select>' +
           '<button type="submit" class="rb-cta go">Apuntarme →</button>' +
         '</form><div class="rb-insc-msg" data-race-msg="' + idx + '"></div>'
       : '<div class="rb-insc-empty">El apuntarse online está en configuración. Vuelve pronto.</div>';
@@ -117,12 +123,14 @@
     var equipo = form.equipo.value.trim();
     var piloto1 = form.piloto1.value.trim();
     var piloto2 = form.piloto2.value.trim();
-    if(!equipo || !piloto1) return;
+    var dia = form.dia.value;
+    if(!equipo || !piloto1 || !dia) return;
 
     var payload = {
       campeonato: race.campeonato,
       sede: race.sede,
       fecha: race.fecha,
+      dia: dia,
       equipo: equipo,
       piloto1: piloto1,
       piloto2: piloto2
@@ -141,7 +149,7 @@
       if(!res.ok) throw new Error('No se pudo guardar');
       return res.json();
     }).then(function(){
-      inscripciones.push({ Campeonato: race.campeonato, Sede: race.sede, Fecha: race.fecha, Equipo: equipo, 'Piloto 1': piloto1, 'Piloto 2': piloto2 });
+      inscripciones.push({ Campeonato: race.campeonato, Sede: race.sede, Fecha: race.fecha, 'Día': dia, Equipo: equipo, 'Piloto 1': piloto1, 'Piloto 2': piloto2 });
       form.reset();
       msgEl.textContent = '¡Apuntado! Ya apareces en la lista.';
       msgEl.className = 'rb-insc-msg ok';

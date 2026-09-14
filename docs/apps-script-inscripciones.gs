@@ -16,7 +16,7 @@
  */
 
 var SHEET_NAME = 'Inscripciones';
-var HEADERS = ['Timestamp', 'Campeonato', 'Sede', 'Fecha', 'Equipo', 'Piloto 1', 'Piloto 2'];
+var HEADERS = ['Timestamp', 'Campeonato', 'Sede', 'Fecha', 'Día', 'Equipo', 'Piloto 1', 'Piloto 2'];
 
 function getSheet_() {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
@@ -25,16 +25,29 @@ function getSheet_() {
     sheet = ss.insertSheet(SHEET_NAME);
     sheet.appendRow(HEADERS);
     sheet.setFrozenRows(1);
+  } else {
+    // Migración: si la hoja ya existía de antes de añadir alguna columna
+    // nueva (p.ej. "Día"), la añade al final sin tocar lo que ya hay.
+    var lastCol = Math.max(sheet.getLastColumn(), 1);
+    var currentHeaders = sheet.getRange(1, 1, 1, lastCol).getValues()[0];
+    HEADERS.forEach(function (h) {
+      if (currentHeaders.indexOf(h) === -1) {
+        sheet.getRange(1, sheet.getLastColumn() + 1).setValue(h);
+        currentHeaders.push(h);
+      }
+    });
   }
-  // La columna "Fecha" (D) siempre como texto plano, para que Google
-  // Sheets no la reconvierta en una fecha de verdad (eso desplaza el día
-  // según la zona horaria y rompe el emparejamiento con la carrera).
-  sheet.getRange('D2:D').setNumberFormat('@');
+  // La columna "Fecha" siempre como texto plano, para que Google Sheets
+  // no la reconvierta en una fecha de verdad (eso desplaza el día según
+  // la zona horaria y rompe el emparejamiento con la carrera).
+  var fechaCol = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0].indexOf('Fecha') + 1;
+  if (fechaCol > 0) sheet.getRange(2, fechaCol, Math.max(sheet.getMaxRows() - 1, 1)).setNumberFormat('@');
   return sheet;
 }
 
 // Ejecuta esta función una vez a mano desde el editor (▶ Ejecutar) para
-// crear la hoja "Inscripciones" con sus columnas si todavía no existe.
+// crear la hoja "Inscripciones" con sus columnas si todavía no existe,
+// o para añadirle las columnas nuevas si el script se ha actualizado.
 function setup() {
   getSheet_();
 }
@@ -64,18 +77,24 @@ function doGet(e) {
     .setMimeType(ContentService.MimeType.JSON);
 }
 
+// Escribe por NOMBRE de columna (no por posición fija), así si en el
+// futuro se añade o reordena alguna columna en la hoja no se desalinean
+// los datos.
 function doPost(e) {
   var body = JSON.parse(e.postData.contents);
   var sheet = getSheet_();
-  sheet.appendRow([
-    new Date(),
-    body.campeonato || '',
-    body.sede || '',
-    body.fecha || '',
-    body.equipo || '',
-    body.piloto1 || '',
-    body.piloto2 || ''
-  ]);
+  var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
+  var values = {
+    Timestamp: new Date(),
+    Campeonato: body.campeonato || '',
+    Sede: body.sede || '',
+    Fecha: body.fecha || '',
+    'Día': body.dia || '',
+    Equipo: body.equipo || '',
+    'Piloto 1': body.piloto1 || '',
+    'Piloto 2': body.piloto2 || ''
+  };
+  sheet.appendRow(headers.map(function (h) { return values[h] !== undefined ? values[h] : ''; }));
   return ContentService.createTextOutput(JSON.stringify({ ok: true }))
     .setMimeType(ContentService.MimeType.JSON);
 }
