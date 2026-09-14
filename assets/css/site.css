@@ -245,3 +245,33 @@
   .admin-row, .admin-clasif-row{grid-template-columns:1fr;}
   .admin-del{justify-self:flex-end;}
 }
+
+/* ---------- inscripción a pruebas ---------- */
+.rb-insc-race{background:var(--panel); border:1px solid var(--line); border-left:4px solid var(--c);
+  border-radius:14px; padding:20px 22px; margin-bottom:16px;}
+.rb-insc-race .top{display:flex; align-items:center; gap:12px; flex-wrap:wrap; margin-bottom:16px;}
+.rb-insc-race .venue{font-family:'Saira Condensed',sans-serif; font-weight:800; font-size:23px; text-transform:uppercase;}
+.rb-insc-race .top .chip{font-family:'Saira',sans-serif; text-transform:uppercase; letter-spacing:.1em; font-size:10.5px;
+  font-weight:700; padding:4px 10px; border-radius:20px; color:#0c0d10;}
+.rb-insc-race .top .date{color:var(--muted); font-size:13px;}
+.rb-insc-count{margin-left:auto; font-family:'Saira',sans-serif; text-transform:uppercase; letter-spacing:.06em;
+  font-weight:800; font-size:13px; color:var(--red); background:rgba(237,27,47,.12); border:1px solid rgba(237,27,47,.35);
+  padding:7px 14px; border-radius:20px;}
+.rb-insc-count.zero{color:var(--muted); background:rgba(255,255,255,.03); border-color:var(--line);}
+
+.rb-insc-list{display:flex; flex-direction:column; gap:6px; margin-bottom:16px;}
+.rb-insc-team{background:var(--panel2); border:1px solid var(--line); border-radius:9px; padding:10px 14px; font-size:14px;}
+.rb-insc-team .n{color:var(--c); font-weight:800; margin-right:4px;}
+.rb-insc-empty{color:var(--muted); font-size:13.5px; padding:8px 2px 16px;}
+
+.rb-insc-form{display:flex; gap:8px; flex-wrap:wrap; align-items:center; padding-top:4px; border-top:1px solid var(--line);}
+.rb-insc-form input{background:var(--panel2); border:1px solid var(--line); border-radius:8px; padding:10px 12px;
+  color:#fff; font-size:13.5px; flex:1; min-width:140px; margin-top:14px; font-family:inherit;}
+.rb-insc-form button{margin-top:14px; white-space:nowrap;}
+.rb-insc-msg{font-size:12.5px; margin-top:8px; color:var(--muted);}
+.rb-insc-msg.ok{color:#3ecf6e;}
+.rb-insc-msg.err{color:var(--red);}
+
+@media(max-width:640px){
+  .rb-insc-count{margin-left:0;}
+}

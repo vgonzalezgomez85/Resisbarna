@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inscripción a las pruebas · Resisbarna</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<div class="rb">
+  <header class="rb-hero" style="padding-bottom:14px">
+    <div class="wrap">
+      <div class="rb-top">
+        <a href="index.html" class="site">Resis<span style="color:var(--red)">barna</span></a>
+        <nav>
+          <a href="index.html#campeonatos">Campeonatos</a>
+          <a href="index.html#calendario">Calendario</a>
+          <a href="index.html#clasificacion">Clasificación</a>
+          <a href="historico/index.html">Histórico</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div class="wrap rb-crumb"><a href="index.html">Inicio</a><span>/</span><b>Inscripción</b></div>
+  <div class="wrap rb-subhero">
+    <h1>Inscripción a las pruebas</h1>
+    <p class="tag">Apunta a tu equipo a cada carrera de la temporada 2026 y consulta quién ya está apuntado.</p>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="rb-filters" id="campFilters">
+        <button class="on" data-f="all">Todas</button>
+        <button data-f="GT">GT</button>
+        <button data-f="Grupo C">Grupo C</button>
+        <button data-f="Le Mans Series">Le Mans Series</button>
+      </div>
+      <div id="races"><div class="rb-empty">Cargando calendario…</div></div>
+    </div>
+  </section>
+
+  <footer class="rb-foot">
+    <div class="wrap">
+      <div class="cr">Resisbarna © 2026 · Campeonato de resistencia de slot de Barcelona</div>
+    </div>
+  </footer>
+</div>
+<script src="assets/js/inscripcion.js"></script>
+</body>
+</html>
