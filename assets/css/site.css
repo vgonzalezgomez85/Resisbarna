@@ -126,6 +126,9 @@
 .rb-years a{font-family:'Saira Condensed',sans-serif; font-weight:800; font-size:24px; color:var(--muted);
   background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:10px 22px; transition:.15s;}
 .rb-years a:hover{color:#fff; border-color:var(--red); background:var(--panel2);}
+.rb-years a.all{color:#fff; background:var(--red); border-color:var(--red); font-size:16px; font-family:'Saira',sans-serif;
+  text-transform:uppercase; letter-spacing:.06em; padding:0 22px; display:flex; align-items:center;}
+.rb-years a.all:hover{background:var(--red-d); color:#fff;}
 
 /* ---------- sedes + social ---------- */
 .rb-venues{display:flex; flex-wrap:wrap; gap:16px; align-items:center;}
