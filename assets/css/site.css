@@ -141,6 +141,12 @@ body{margin:0; background:#07080c;}
 .rb-cta.go:hover{background:var(--red-d);}
 .rb-cta.soon{background:transparent; color:var(--muted); border:1px solid var(--line); cursor:default;}
 
+.rb-race[data-aplazada="true"],.rb-docrow[data-aplazada="true"],.rb-insc-race[data-aplazada="true"]{position:relative; overflow:hidden;}
+.rb-race[data-aplazada="true"]::after,.rb-docrow[data-aplazada="true"]::after,.rb-insc-race[data-aplazada="true"]::after{
+  content:"Aplazada"; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%) rotate(-10deg);
+  font-family:'Saira Condensed',sans-serif; font-weight:900; text-transform:uppercase; letter-spacing:.12em;
+  font-size:26px; color:rgba(237,27,47,.4); border:3px solid rgba(237,27,47,.4); border-radius:8px;
+  padding:2px 16px; white-space:nowrap; pointer-events:none; z-index:2;}
 .rb-cta.go,.rb-champ .links a.big{position:relative; overflow:hidden;}
 .rb-cta.go::before,.rb-champ .links a.big::before{content:""; position:absolute; top:0; left:-70%; width:46%; height:100%;
   background:linear-gradient(105deg, transparent, rgba(255,255,255,.35), transparent);

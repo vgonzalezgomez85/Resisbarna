@@ -1,7 +1,15 @@
 (function(){
-  // Pega aquí la URL de tu Google Apps Script publicado como Web App
-  // (termina en /exec). Instrucciones: ver docs/apps-script-inscripciones.gs
-  var SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyDLRufW-pp6NSHmROJ_ayVNC1UVrV18n_MCYJclqoUwNzrWS4HqG9apVUD8pV5qAga/exec';
+  // Cada campeonato tiene su propio Google Sheet y, por tanto, su propio
+  // Apps Script publicado como Web App (termina en /exec). Instrucciones:
+  // ver docs/apps-script-inscripciones.gs — ese mismo archivo se instala
+  // una vez por cada Sheet.
+  var SCRIPT_URLS = {
+    'GT': 'https://script.google.com/macros/s/AKfycbzfgNbWfsk28jsgd5jKWMsHN3q-ic_Z-NpefZR2NALzVE31AMsxpK3qV3Yl7ZS0WK29tQ/exec',
+    'Grupo C': 'https://script.google.com/macros/s/AKfycbzs9uXKtSgCqTivj7VXSDVFNKHWLAu9XSX9DSQ-rfwLK99Kz_9egvXW9gTgGLuc39ONHw/exec',
+    'Le Mans Series': 'https://script.google.com/macros/s/AKfycbwoFkMfhirKNj2cb1OIeOI_B4MQpe7igAyy1UavooyANJGpTGIbB5y1kSTcdwKambLoZQ/exec'
+  };
+  function scriptUrlFor(campeonato){ return SCRIPT_URLS[campeonato] || ''; }
+  function isConfigured(campeonato){ return scriptUrlFor(campeonato).indexOf('http') === 0; }
 
   var racesEl = document.getElementById('races');
   var filtersEl = document.getElementById('campFilters');
@@ -12,7 +20,6 @@
   var temporada = null;
   var inscripciones = [];
   var inscripcionesLoaded = false;
-  var configured = SCRIPT_URL.indexOf('http') === 0;
   var visibleRaces = [];
 
   var qs = new URLSearchParams(location.search);
@@ -83,7 +90,7 @@
   // a la página dedicada de esa prueba (raceHref). ---
 
   function listCardHtml(race, idx){
-    return '<div class="rb-insc-race" data-champ="' + esc(race.campeonato) + '" style="--c:' + colorFor(race.campeonato) + '">' +
+    return '<div class="rb-insc-race" data-champ="' + esc(race.campeonato) + '"' + (race.aplazada ? ' data-aplazada="true"' : '') + ' style="--c:' + colorFor(race.campeonato) + '">' +
       '<div class="top">' +
         '<div class="venue">' + esc(race.sede || 'Sede por confirmar') + '</div>' +
         '<span class="chip" style="background:' + colorFor(race.campeonato) + '">' + esc(race.campeonato) + '</span>' +
@@ -140,7 +147,7 @@
           sel.opciones.map(function(o){ return '<option value="' + esc(o) + '">' + esc(o) + '</option>'; }).join('') +
         '</select>'
       : '';
-    var formHtml = configured
+    var formHtml = isConfigured(race.campeonato)
       ? '<form class="rb-insc-form" data-race="0">' +
           campos +
           seleccionSelect +
@@ -153,7 +160,7 @@
         '</form><div class="rb-insc-msg" data-race-msg="0"></div>'
       : '<div class="rb-insc-empty">El apuntarse online está en configuración. Vuelve pronto.</div>';
 
-    racesEl.innerHTML = '<div class="rb-insc-race" data-champ="' + esc(race.campeonato) + '" style="--c:' + colorFor(race.campeonato) + '">' +
+    racesEl.innerHTML = '<div class="rb-insc-race" data-champ="' + esc(race.campeonato) + '"' + (race.aplazada ? ' data-aplazada="true"' : '') + ' style="--c:' + colorFor(race.campeonato) + '">' +
       '<div class="top">' +
         '<div class="venue">' + esc(race.sede || 'Sede por confirmar') + '</div>' +
         '<span class="chip" style="background:' + colorFor(race.campeonato) + '">' + esc(race.campeonato) + '</span>' +
@@ -213,7 +220,7 @@
     msgEl.textContent = 'Enviando…';
     msgEl.className = 'rb-insc-msg';
 
-    fetch(SCRIPT_URL, {
+    fetch(scriptUrlFor(race.campeonato), {
       method: 'POST',
       headers: { 'Content-Type': 'text/plain;charset=utf-8' },
       body: JSON.stringify(payload)
@@ -252,17 +259,30 @@
 
   var currentRace = null;
 
-  function loadInscripciones(query){
-    if(!configured){
-      inscripcionesLoaded = true;
-      return Promise.resolve();
+  function fetchRows(url){
+    return fetch(url).then(function(r){ return r.json(); }).catch(function(){ return []; });
+  }
+
+  // Modo prueba: solo la hoja del Sheet de ese campeonato, filtrada a
+  // esa sede. Modo listado: las tres URLs configuradas en paralelo, para
+  // pintar los contadores de todas las carreras con las menos llamadas
+  // posibles.
+  function loadInscripciones(campeonato, sede){
+    if(campeonato){
+      if(!isConfigured(campeonato)){
+        inscripcionesLoaded = true;
+        return Promise.resolve();
+      }
+      var url = scriptUrlFor(campeonato) + '?' + new URLSearchParams({ sede: sede }).toString();
+      return fetchRows(url).then(function(rows){
+        inscripciones = rows || [];
+        inscripcionesLoaded = true;
+      });
     }
-    var url = query ? SCRIPT_URL + '?' + query : SCRIPT_URL;
-    return fetch(url).then(function(r){ return r.json(); }).then(function(rows){
-      inscripciones = rows || [];
+    var urls = Object.keys(SCRIPT_URLS).map(scriptUrlFor).filter(function(u){ return u.indexOf('http') === 0; });
+    return Promise.all(urls.map(fetchRows)).then(function(results){
+      inscripciones = [].concat.apply([], results);
       inscripcionesLoaded = true;
-    }).catch(function(){
-      inscripcionesLoaded = true; // deja de decir "Cargando…"; el formulario sigue funcionando igual
     });
   }
 
@@ -281,7 +301,7 @@
       renderDetail(currentRace);
       // Solo se pide la hoja de ESTA prueba: más rápido y ligero que
       // traer todas las pruebas de la temporada.
-      loadInscripciones(new URLSearchParams({ camp: currentRace.campeonato, sede: currentRace.sede }).toString())
+      loadInscripciones(currentRace.campeonato, currentRace.sede)
         .then(function(){ paintDetailStatus(currentRace); });
     } else {
       renderList();

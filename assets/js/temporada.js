@@ -18,7 +18,7 @@
     races.forEach(function(r, i){
       var fecha = r.fecha ? new Date(r.fecha + 'T00:00:00').toLocaleDateString('es-ES', {day:'2-digit', month:'2-digit', year:'numeric'}) : '';
       var docs = r.documentos || [];
-      html += '<div class="rb-docrow" style="--c:' + colorFor(r.campeonato) + '">' +
+      html += '<div class="rb-docrow"' + (r.aplazada ? ' data-aplazada="true"' : '') + ' style="--c:' + colorFor(r.campeonato) + '">' +
         '<div class="rb-docnum">' + String(i+1).padStart(2,'0') + '</div>' +
         '<div class="venue">' + esc(r.sede) + (fecha ? ' <span class="date">' + fecha + '</span>' : '') + '</div>' +
         '<div class="pills">' +

@@ -1,46 +1,45 @@
 /**
  * Motor de inscripciones Resisbarna — Google Apps Script
  * ========================================================
- * Este script conecta la web (GitHub Pages) con una Google Sheet.
+ * Este script conecta la web (GitHub Pages) con Google Sheets.
  * No hay que entender el código: solo seguir los pasos de instalación
  * que te ha dado Claude en el chat. Aquí abajo no hace falta tocar nada.
  *
- * Cada prueba (campeonato + sede) tiene su PROPIA hoja (pestaña) dentro
- * de este mismo Google Sheet, por ejemplo "GT - El Sot" o
- * "Grupo C - Gasclavat". Así cada organizador puede abrir solo la
- * pestaña de su prueba sin ver las demás.
+ * IMPORTANTE: este mismo archivo se instala UNA VEZ POR CADA Sheet de
+ * campeonato (GT, Grupo C, Le Mans Series). Cada Sheet tiene su propio
+ * proyecto de Apps Script (Extensiones → Apps Script desde DENTRO de
+ * ese Sheet) y su propio despliegue, con su propia URL /exec. La web
+ * guarda las 3 URLs y llama a la que toque según el campeonato.
+ *
+ * Dentro de cada Sheet, cada prueba (sede) tiene su propia pestaña,
+ * creada sola la primera vez que alguien se apunta a esa prueba.
  *
  * Qué hace:
- *  - doGet()  -> si la web pide ?camp=...&sede=..., devuelve solo los
- *                apuntados de esa prueba (la pestaña correspondiente).
- *                Si se pide sin parámetros, devuelve TODAS las pruebas
- *                juntas (se usa en la página de listado para contar
- *                cuántos equipos hay en cada una con una sola llamada).
+ *  - doGet()  -> si la web pide ?sede=..., devuelve solo los apuntados
+ *                de esa prueba (su pestaña). Si se pide sin parámetros,
+ *                devuelve TODAS las pruebas de este Sheet juntas (se
+ *                usa en la página de listado para contar apuntados).
  *  - doPost() -> cuando alguien se apunta desde la web, añade una fila
  *                nueva en la pestaña de esa prueba (creándola si hace
  *                falta).
- *  - migrarDatosAntiguos() -> función para ejecutar UNA VEZ a mano
- *                (botón ▶ en el editor de Apps Script) si vienes de la
- *                versión anterior con una sola hoja "Inscripciones":
- *                reparte esas filas en las pestañas nuevas, una por
- *                prueba, sin borrar la hoja original.
+ *  - comprobarAcceso() -> función para ejecutar UNA VEZ a mano (▶ en
+ *                el editor) tras pegar el código, solo para disparar
+ *                la pantalla de autorización de Google si hace falta.
  */
 
 var HEADERS = ['Timestamp', 'Campeonato', 'Sede', 'Fecha', 'Día', 'Equipo', 'Piloto 1', 'Piloto 2'];
-var OLD_SHEET_NAME = 'Inscripciones';
 
-// Nombre de pestaña a partir de campeonato + sede, p.ej. "GT - El Sot".
-// Los nombres de hoja de Google Sheets no pueden llevar : \ / ? * [ ]
-// ni pasar de 100 caracteres, así que los limpiamos por si acaso.
-function sheetNameFor_(campeonato, sede) {
-  var name = (campeonato || 'Sin campeonato') + ' - ' + (sede || 'Sin sede');
-  name = name.replace(/[:\\\/\?\*\[\]]/g, '-');
+// Nombre de pestaña a partir de la sede, p.ej. "El Sot". Los nombres de
+// hoja de Google Sheets no pueden llevar : \ / ? * [ ] ni pasar de 100
+// caracteres, así que los limpiamos por si acaso.
+function sheetNameFor_(sede) {
+  var name = (sede || 'Sin sede').replace(/[:\\\/\?\*\[\]]/g, '-');
   return name.substring(0, 95);
 }
 
-function getSheet_(campeonato, sede) {
+function getSheet_(sede) {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
-  var name = sheetNameFor_(campeonato, sede);
+  var name = sheetNameFor_(sede);
   var sheet = ss.getSheetByName(name);
   if (!sheet) {
     sheet = ss.insertSheet(name);
@@ -82,9 +81,8 @@ function ensureHeader_(sheet, header) {
 // Si una celda ya se guardó como fecha de verdad (versiones anteriores
 // de este script, o alguien tecleó una fecha directamente en la hoja),
 // la devolvemos como texto "AAAA-MM-DD" en vez de como objeto Date.
-function normalizeValue_(value, header) {
+function normalizeValue_(value, header, tz) {
   if (!(value instanceof Date)) return value;
-  var tz = SpreadsheetApp.getActiveSpreadsheet().getSpreadsheetTimeZone();
   var pattern = header === 'Fecha' ? 'yyyy-MM-dd' : "yyyy-MM-dd'T'HH:mm:ss";
   return Utilities.formatDate(value, tz, pattern);
 }
@@ -93,11 +91,12 @@ function rowsFromSheet_(sheet) {
   var values = sheet.getDataRange().getValues();
   var headers = values.shift();
   if (headers.indexOf('Equipo') === -1) return []; // pestaña que no es de inscripciones
+  var tz = sheet.getParent().getSpreadsheetTimeZone();
   return values
     .filter(function (row) { return row.join('') !== ''; })
     .map(function (row) {
       var obj = {};
-      headers.forEach(function (h, i) { obj[h] = normalizeValue_(row[i], h); });
+      headers.forEach(function (h, i) { obj[h] = normalizeValue_(row[i], h, tz); });
       return obj;
     });
 }
@@ -105,16 +104,14 @@ function rowsFromSheet_(sheet) {
 function doGet(e) {
   var params = (e && e.parameter) || {};
   var data;
-  if (params.camp && params.sede) {
+  if (params.sede) {
     // Una sola prueba: solo su pestaña.
-    var sheet = getSheet_(params.camp, params.sede);
-    data = rowsFromSheet_(sheet);
+    data = rowsFromSheet_(getSheet_(params.sede));
   } else {
-    // Todas las pruebas juntas, para pintar los contadores del listado
-    // con una sola llamada.
+    // Todas las pruebas de este Sheet juntas, para pintar los
+    // contadores del listado con una sola llamada.
     data = [];
     SpreadsheetApp.getActiveSpreadsheet().getSheets().forEach(function (sheet) {
-      if (sheet.getName() === OLD_SHEET_NAME) return;
       data = data.concat(rowsFromSheet_(sheet));
     });
   }
@@ -127,7 +124,7 @@ function doGet(e) {
 // los datos.
 function doPost(e) {
   var body = JSON.parse(e.postData.contents);
-  var sheet = getSheet_(body.campeonato, body.sede);
+  var sheet = getSheet_(body.sede);
   if (body.campoSeleccion) ensureHeader_(sheet, body.campoSeleccion);
   var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
   var values = {
@@ -146,27 +143,11 @@ function doPost(e) {
     .setMimeType(ContentService.MimeType.JSON);
 }
 
-// Ejecuta esta función UNA VEZ a mano desde el editor (▶ Ejecutar) si
-// vienes de la versión anterior del script, que guardaba todo en una
-// única hoja "Inscripciones". Reparte cada fila en la pestaña nueva de
-// su prueba (creándola si hace falta) y NO borra la hoja original, por
-// si quieres comprobar que todo ha migrado bien antes de borrarla tú
-// mismo a mano.
-function migrarDatosAntiguos() {
-  var ss = SpreadsheetApp.getActiveSpreadsheet();
-  var old = ss.getSheetByName(OLD_SHEET_NAME);
-  if (!old) {
-    Logger.log('No hay hoja "' + OLD_SHEET_NAME + '" que migrar. Nada que hacer.');
-    return;
-  }
-  var rows = rowsFromSheet_(old);
-  rows.forEach(function (row) {
-    var sheet = getSheet_(row.Campeonato, row.Sede);
-    // Cualquier columna extra que trajera la fila antigua (p.ej. una
-    // "Categoría" de una versión anterior del script) se conserva.
-    Object.keys(row).forEach(function (h) { ensureHeader_(sheet, h); });
-    var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
-    sheet.appendRow(headers.map(function (h) { return row[h] !== undefined ? row[h] : ''; }));
-  });
-  Logger.log('Migradas ' + rows.length + ' filas a sus pestañas por prueba. La hoja "' + OLD_SHEET_NAME + '" no se ha tocado: bórrala a mano cuando compruebes que todo está bien.');
+// Ejecuta esta función UNA VEZ a mano desde el editor (▶ Ejecutar,
+// eligiéndola en el desplegable de funciones) después de pegar este
+// código por primera vez en cada Sheet. Solo sirve para disparar en
+// ese momento la pantalla de autorización de Google, así no falla la
+// primera inscripción real de un usuario.
+function comprobarAcceso() {
+  Logger.log('OK: "' + SpreadsheetApp.getActiveSpreadsheet().getName() + '"');
 }

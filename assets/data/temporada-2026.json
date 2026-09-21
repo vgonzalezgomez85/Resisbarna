@@ -108,14 +108,15 @@
     },
     {
       "campeonato": "Le Mans Series",
-      "sede": "Gasclavat",
+      "sede": "El Sot",
       "fecha": "2026-09-18",
+      "aplazada": true,
       "seleccion": { "campo": "Categoría", "opciones": ["Hypercar / LMDH", "LMP2", "GT3"] },
       "documentos": []
     },
     {
       "campeonato": "Le Mans Series",
-      "sede": "El Sot",
+      "sede": "Gasclavat",
       "fecha": "2026-10-02",
       "seleccion": { "campo": "Categoría", "opciones": ["Hypercar / LMDH", "LMP2", "GT3"] },
       "documentos": []
