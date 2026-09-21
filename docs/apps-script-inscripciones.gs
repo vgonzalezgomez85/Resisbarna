@@ -66,6 +66,19 @@ function getSheet_(campeonato, sede) {
   return sheet;
 }
 
+// Añade una columna extra a la hoja si todavía no la tiene. Se usa para
+// el desplegable propio de cada campeonato (p.ej. "Copa" en GT,
+// "Categoría" en Grupo C o Le Mans Series), que no es siempre el mismo
+// y por eso no está en HEADERS.
+function ensureHeader_(sheet, header) {
+  if (!header) return;
+  var lastCol = Math.max(sheet.getLastColumn(), 1);
+  var currentHeaders = sheet.getRange(1, 1, 1, lastCol).getValues()[0];
+  if (currentHeaders.indexOf(header) === -1) {
+    sheet.getRange(1, sheet.getLastColumn() + 1).setValue(header);
+  }
+}
+
 // Si una celda ya se guardó como fecha de verdad (versiones anteriores
 // de este script, o alguien tecleó una fecha directamente en la hoja),
 // la devolvemos como texto "AAAA-MM-DD" en vez de como objeto Date.
@@ -115,6 +128,7 @@ function doGet(e) {
 function doPost(e) {
   var body = JSON.parse(e.postData.contents);
   var sheet = getSheet_(body.campeonato, body.sede);
+  if (body.campoSeleccion) ensureHeader_(sheet, body.campoSeleccion);
   var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
   var values = {
     Timestamp: new Date(),
@@ -126,6 +140,7 @@ function doPost(e) {
     'Piloto 1': body.piloto1 || '',
     'Piloto 2': body.piloto2 || ''
   };
+  if (body.campoSeleccion) values[body.campoSeleccion] = body.seleccion || '';
   sheet.appendRow(headers.map(function (h) { return values[h] !== undefined ? values[h] : ''; }));
   return ContentService.createTextOutput(JSON.stringify({ ok: true }))
     .setMimeType(ContentService.MimeType.JSON);
@@ -147,6 +162,9 @@ function migrarDatosAntiguos() {
   var rows = rowsFromSheet_(old);
   rows.forEach(function (row) {
     var sheet = getSheet_(row.Campeonato, row.Sede);
+    // Cualquier columna extra que trajera la fila antigua (p.ej. una
+    // "Categoría" de una versión anterior del script) se conserva.
+    Object.keys(row).forEach(function (h) { ensureHeader_(sheet, h); });
     var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
     sheet.appendRow(headers.map(function (h) { return row[h] !== undefined ? row[h] : ''; }));
   });

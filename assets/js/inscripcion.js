@@ -68,10 +68,12 @@
       ? '<div class="rb-insc-list">' + teams.map(function(t, i){
           var diaClase = t['Día'] === 'Jueves' ? ' jueves' : (t['Día'] === 'Viernes' ? ' viernes' : '');
           var dia = t['Día'] ? ' <span class="rb-insc-dia' + diaClase + '">' + esc(t['Día']) + '</span>' : '';
+          var selValor = race.seleccion && t[race.seleccion.campo];
+          var sel = selValor ? ' <span class="rb-insc-dia">' + esc(selValor) + '</span>' : '';
           var nombre = individual
             ? esc(t['Piloto 1'])
             : esc(t.Equipo) + ' — ' + esc(t['Piloto 1']) + (t['Piloto 2'] ? ' / ' + esc(t['Piloto 2']) : '');
-          return '<div class="rb-insc-team"><span><span class="n">' + (i+1) + '.</span> ' + nombre + dia + '</span></div>';
+          return '<div class="rb-insc-team"><span><span class="n">' + (i+1) + '.</span> ' + nombre + sel + dia + '</span></div>';
         }).join('') + '</div>'
       : '<div class="rb-insc-empty">Todavía no hay ' + (individual ? 'pilotos apuntados' : 'equipos apuntados') + '. ¡Sé el primero!</div>';
     return { badge: badge, list: list };
@@ -128,9 +130,20 @@
       : '<input type="text" name="equipo" placeholder="Nombre del equipo" required>' +
         '<input type="text" name="piloto1" placeholder="Piloto 1" required>' +
         '<input type="text" name="piloto2" placeholder="Piloto 2 (opcional)">';
+    // Cada campeonato puede tener su propio desplegable de selección
+    // (p.ej. "Copa" en GT con GT/GT2/SLOT.IT, o "Categoría" en Grupo C
+    // con C1/C2), definido en temporada-2026.json por prueba.
+    var sel = race.seleccion;
+    var seleccionSelect = sel && sel.opciones && sel.opciones.length
+      ? '<select name="seleccion" required>' +
+          '<option value="" disabled selected>¿En qué ' + esc(sel.campo.toLowerCase()) + ' corres?</option>' +
+          sel.opciones.map(function(o){ return '<option value="' + esc(o) + '">' + esc(o) + '</option>'; }).join('') +
+        '</select>'
+      : '';
     var formHtml = configured
       ? '<form class="rb-insc-form" data-race="0">' +
           campos +
+          seleccionSelect +
           '<select name="dia" required>' +
             '<option value="" disabled selected>¿Qué día corres?</option>' +
             '<option value="Jueves">Jueves</option>' +
@@ -175,14 +188,21 @@
     var piloto1 = form.piloto1.value.trim();
     var piloto2 = individual ? '' : form.piloto2.value.trim();
     var dia = form.dia.value;
+    var seleccionEl = form.querySelector('[name="seleccion"]');
+    var seleccionValor = seleccionEl ? seleccionEl.value : '';
     if(!piloto1 || !dia) return;
     if(!individual && !equipo) return;
+    if(seleccionEl && !seleccionValor) return;
 
     var payload = {
       campeonato: race.campeonato,
       sede: race.sede,
       fecha: race.fecha,
       dia: dia,
+      // El nombre de columna (Copa, Categoría…) lo decide la prueba en
+      // temporada-2026.json; el Apps Script guarda por nombre de campo.
+      campoSeleccion: race.seleccion ? race.seleccion.campo : '',
+      seleccion: seleccionValor,
       equipo: equipo,
       piloto1: piloto1,
       piloto2: piloto2
@@ -201,7 +221,9 @@
       if(!res.ok) throw new Error('No se pudo guardar');
       return res.json();
     }).then(function(){
-      inscripciones.push({ Campeonato: race.campeonato, Sede: race.sede, Fecha: race.fecha, 'Día': dia, Equipo: equipo, 'Piloto 1': piloto1, 'Piloto 2': piloto2 });
+      var nueva = { Campeonato: race.campeonato, Sede: race.sede, Fecha: race.fecha, 'Día': dia, Equipo: equipo, 'Piloto 1': piloto1, 'Piloto 2': piloto2 };
+      if(race.seleccion) nueva[race.seleccion.campo] = seleccionValor;
+      inscripciones.push(nueva);
       form.reset();
       msgEl.textContent = '¡Apuntado! Ya apareces en la lista.';
       msgEl.className = 'rb-insc-msg ok';
