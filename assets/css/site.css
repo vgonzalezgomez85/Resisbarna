@@ -414,6 +414,13 @@ body{margin:0; background:#07080c;}
   .rb-prep-head .rb-cta{width:100%;}
 }
 
+/* marca de agua para páginas en desarrollo */
+.rb-wip{position:fixed; inset:0; z-index:50; pointer-events:none; display:flex; align-items:center; justify-content:center; overflow:hidden;}
+.rb-wip span{transform:rotate(-28deg); white-space:nowrap; font-family:'Saira Condensed',sans-serif; font-weight:900;
+  text-transform:uppercase; letter-spacing:.06em; font-size:clamp(64px,15vw,220px); line-height:1;
+  color:rgba(237,27,47,.16); -webkit-text-stroke:2px rgba(237,27,47,.38);
+  border:6px solid rgba(237,27,47,.3); border-radius:18px; padding:.05em .3em;}
+
 /* ---------- menú móvil ---------- */
 .rb-burger{display:none; margin-left:auto; align-items:center; gap:9px; min-height:46px; padding:0 15px;
   background:var(--panel); border:1px solid var(--line); border-radius:11px; cursor:pointer;
