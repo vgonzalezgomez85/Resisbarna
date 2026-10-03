@@ -5,10 +5,11 @@ name: Catálogo desde Google Sheet
 on:
   schedule:
     - cron: '17 * * * *'   # cada hora
-  workflow_dispatch:        # botón "Run workflow" en la pestaña Actions
+  workflow_dispatch:        # botón "Run workflow" y el Apps Script del Sheet
 
 permissions:
   contents: write
+  actions: write   # para mantener vivo el cron (último paso)
 
 concurrency:
   group: catalogo
@@ -20,9 +21,9 @@ jobs:
     env:
       SHEET_ID: 1fd25aPqrgEjAN1M2CWW9EMiNy6w_YihUPYepiRDAE14
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
 
@@ -52,3 +53,11 @@ jobs:
           git add assets/data/catalogo.json
           git commit -m "Actualiza el catálogo de \"Prepara tu coche\" desde el Google Sheet"
           git push
+
+      # GitHub desactiva los cron tras 60 días sin commits en el repo. Volver a
+      # "activar" el workflow reinicia ese contador.
+      - name: Mantener activo el cron
+        if: github.event_name == 'schedule'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X PUT "repos/${{ github.repository }}/actions/workflows/catalogo.yml/enable"
