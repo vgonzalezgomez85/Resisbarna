@@ -3,7 +3,11 @@
 Genera assets/data/catalogo.json (página "Prepara tu coche") a partir del
 Excel MAESTRO del catálogo, el mismo Google Sheet que usa PitWall Control.
 
-Uso:
+Normalmente lo ejecuta solo el workflow .github/workflows/catalogo.yml, que
+descarga el Sheet (compartido como "cualquiera con el enlace: lector") y hace
+commit si algo ha cambiado.
+
+Uso a mano:
   1. En el Google Sheet: Archivo → Descargar → Microsoft Excel (.xlsx).
   2. python3 herramientas/catalogo_desde_excel.py ~/Downloads/MAESTRO.xlsx
   3. Revisa los avisos (copas mal escritas, etc.), haz commit y push.
@@ -145,6 +149,16 @@ def main():
                     raras.setdefault(c, set()).add(tipo)
     for c, tipos in sorted(raras.items()):
         print(f'AVISO: copa {c!r} (en {", ".join(sorted(tipos))}) no está en la pestaña COPAS/CATEG.')
+
+    # Si los datos no han cambiado se conserva la fecha anterior, para no
+    # generar un commit cada vez que se ejecuta el workflow.
+    try:
+        with open(SALIDA, encoding='utf-8') as fh:
+            anterior = json.load(fh)
+        if {**anterior, 'generado': None} == {**datos, 'generado': None}:
+            datos['generado'] = anterior['generado']
+    except (OSError, ValueError, KeyError):
+        pass
 
     with open(SALIDA, 'w', encoding='utf-8') as fh:
         json.dump(datos, fh, ensure_ascii=False, separators=(',', ':'))

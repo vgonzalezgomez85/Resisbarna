@@ -1,0 +1,54 @@
+# Regenera assets/data/catalogo.json ("Prepara tu coche") desde el Google Sheet
+# MAESTRO. El Sheet debe estar compartido como "cualquiera con el enlace: lector".
+name: Catálogo desde Google Sheet
+
+on:
+  schedule:
+    - cron: '17 * * * *'   # cada hora
+  workflow_dispatch:        # botón "Run workflow" en la pestaña Actions
+
+permissions:
+  contents: write
+
+concurrency:
+  group: catalogo
+  cancel-in-progress: false
+
+jobs:
+  catalogo:
+    runs-on: ubuntu-latest
+    env:
+      SHEET_ID: 1fd25aPqrgEjAN1M2CWW9EMiNy6w_YihUPYepiRDAE14
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - run: pip install openpyxl
+
+      - name: Descargar el Sheet como .xlsx
+        run: |
+          curl -sSL -o maestro.xlsx \
+            "https://docs.google.com/spreadsheets/d/$SHEET_ID/export?format=xlsx"
+          # Si el Sheet no es público Google devuelve una página de login, no un .xlsx.
+          file maestro.xlsx | grep -q 'Zip\|Excel\|OOXML' || {
+            echo "::error::No se ha podido descargar el Sheet. ¿Está compartido como 'cualquiera con el enlace: lector'?"
+            exit 1
+          }
+
+      - name: Generar catalogo.json
+        run: python3 herramientas/catalogo_desde_excel.py maestro.xlsx
+
+      - name: Commit si ha cambiado
+        run: |
+          if git diff --quiet assets/data/catalogo.json; then
+            echo "Sin cambios."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git add assets/data/catalogo.json
+          git commit -m "Actualiza el catálogo de \"Prepara tu coche\" desde el Google Sheet"
+          git push
