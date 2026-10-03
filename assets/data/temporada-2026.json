@@ -119,7 +119,10 @@
       "sede": "Gasclavat",
       "fecha": "2026-10-02",
       "seleccion": { "campo": "Categoría", "opciones": ["Hypercar / LMDH", "LMP2", "GT3"] },
-      "documentos": []
+      "documentos": [
+        { "nombre": "Resultado carrera", "href": "resultados/2026/lemans-gasclavat-2026.html" },
+        { "nombre": "Verificaciones", "href": "assets/pdfs/2026/VERIFICACIONES_GASCLAVAT_LEMANS_2026.pdf" }
+      ]
     },
     {
       "campeonato": "Le Mans Series",
@@ -140,6 +143,9 @@
     { "nombre": "Clasificación general", "pdf": "assets/pdfs/clasificaciones-2026/CLASIFICACION_GENERAL_RESISBARNA2026.pdf" },
     { "nombre": "Clasificación GT2", "pdf": "assets/pdfs/clasificaciones-2026/CLASIFICACION_GT2_RESISBARNA2026.pdf" },
     { "nombre": "Clasificación Copa Slot.it", "pdf": "assets/pdfs/clasificaciones-2026/CLASIFICACION_COPA_RESISBARNA2026.pdf" },
-    { "nombre": "Clasificación Grupo C", "pdf": "assets/pdfs/clasificaciones-2026/CLASIFICACION_GRUPOC_2026.pdf" }
+    { "nombre": "Clasificación Grupo C", "pdf": "assets/pdfs/clasificaciones-2026/CLASIFICACION_GRUPOC_2026.pdf" },
+    { "nombre": "Clasificación Le Mans Series", "pdf": "assets/pdfs/clasificaciones-2026/CLASIFICACION_LEMANS_GENERAL_2026.pdf" },
+    { "nombre": "Clasificación Le Mans Series GT3", "pdf": "assets/pdfs/clasificaciones-2026/CLASIFICACION_LEMANS_GT3_2026.pdf" },
+    { "nombre": "Clasificación Le Mans Series LMP2", "pdf": "assets/pdfs/clasificaciones-2026/CLASIFICACION_LEMANS_LMP2_2026.pdf" }
   ]
 }
