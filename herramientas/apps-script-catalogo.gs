@@ -8,8 +8,9 @@
  *
  * Configuración (una vez):
  *   1. Configuración del proyecto → Propiedades del script → añadir
- *      GITHUB_TOKEN = token de GitHub "fine-grained" solo para el repo
- *      Resisbarna con permiso "Actions: Read and write".
+ *      GITHUB_TOKEN = token de GitHub "fine-grained" con Repository access
+ *      solo a Resisbarna y Repository permissions → Actions: Read and write
+ *      (sin ese permiso GitHub responde 403; diagnostico() ayuda a verlo).
  *   2. Ejecutar la función instalar() y aceptar los permisos.
  *
  * Las ediciones que hace PitWall Control por la API no disparan onEdit; esas
@@ -54,6 +55,23 @@ function publicarAhora() {
   SpreadsheetApp.getActive().toast('Catálogo enviado. Estará en la web en 1–2 minutos.', 'Resisbarna');
 }
 
+// Para revisar el token: muestra a qué cuenta pertenece y qué ve del repo.
+function diagnostico() {
+  var token = PropertiesService.getScriptProperties().getProperty('GITHUB_TOKEN') || '';
+  Logger.log('Token: empieza por %s, %s caracteres', token.slice(0, 11), token.length);
+  ['https://api.github.com/user', 'https://api.github.com/repos/' + REPO,
+   'https://api.github.com/repos/' + REPO + '/actions/workflows/' + WORKFLOW].forEach(function (url) {
+    var r = UrlFetchApp.fetch(url, {
+      headers: { Authorization: 'Bearer ' + token, Accept: 'application/vnd.github+json' },
+      muteHttpExceptions: true
+    });
+    var j = {};
+    try { j = JSON.parse(r.getContentText()); } catch (e) {}
+    Logger.log('%s → %s %s', url, r.getResponseCode(),
+               j.login || j.full_name || j.state || j.message || '');
+  });
+}
+
 function lanzarWorkflow() {
   var token = PropertiesService.getScriptProperties().getProperty('GITHUB_TOKEN');
   if (!token) throw new Error('Falta la propiedad GITHUB_TOKEN en la configuración del proyecto.');
@@ -66,6 +84,9 @@ function lanzarWorkflow() {
       muteHttpExceptions: true
     });
   if (r.getResponseCode() !== 204) {
-    throw new Error('GitHub respondió ' + r.getResponseCode() + ': ' + r.getContentText());
+    // En un 403, GitHub dice en esta cabecera qué permiso le falta al token.
+    var falta = r.getHeaders()['x-accepted-github-permissions'] || r.getHeaders()['X-Accepted-GitHub-Permissions'];
+    throw new Error('GitHub respondió ' + r.getResponseCode() + ': ' + r.getContentText() +
+                    (falta ? ' | Permisos necesarios: ' + falta : ''));
   }
 }
