@@ -6,7 +6,7 @@
   // Copas de cada campeonato de la web. El resto de copas del catálogo
   // aparecen plegadas en "Otras copas".
   var CAMPEONATOS = [
-    { id:'gt',  nombre:'GT',             color:'var(--gt)',  reglamento:'reglamentos/gt3.html',     copas:['GT3 RESISBARNA'] },
+    { id:'gt',  nombre:'GT',             color:'var(--gt)',  reglamento:'reglamentos/gt3.html',     copas:['GT3 RESISBARNA','GT'] },
     { id:'gc',  nombre:'Grupo C',        color:'var(--gc)',  reglamento:'reglamentos/grupo-c.html', copas:['GRUPO C1','GRUPO C2'] },
     { id:'lms', nombre:'Le Mans Series', color:'var(--lms)', reglamento:'reglamentos/lmp-hyp.html', copas:['HYP RESISBARNA','LMP','LMP-2'] }
   ];
