@@ -330,6 +330,90 @@ body{margin:0; background:#07080c;}
   .rb-insc-count{margin-left:0;}
 }
 
+/* ---------- prepara tu coche ---------- */
+.rb-prep-pick{background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:22px; margin-bottom:26px;}
+.rb-prep-search{position:relative;}
+.rb-prep-search .lbl{display:block; color:var(--muted); margin-bottom:8px;}
+.rb-prep-search input{width:100%; background:var(--panel2); border:1px solid var(--line); border-radius:10px; padding:14px 16px;
+  color:#fff; font-size:16px; font-family:inherit;}
+.rb-prep-sug{position:absolute; left:0; right:0; top:100%; margin-top:6px; z-index:20; list-style:none; max-height:360px; overflow-y:auto;
+  background:var(--panel2); border:1px solid var(--line); border-radius:10px; box-shadow:0 18px 40px rgba(0,0,0,.5);}
+.rb-prep-sug li{padding:11px 16px; cursor:pointer; border-bottom:1px solid var(--line); display:flex; flex-direction:column; gap:2px;}
+.rb-prep-sug li:last-child{border-bottom:none;}
+.rb-prep-sug li b{font-weight:700; font-size:14.5px;}
+.rb-prep-sug li span{color:var(--muted); font-size:12.5px;}
+.rb-prep-sug li:hover,.rb-prep-sug li[aria-selected="true"]{background:rgba(237,27,47,.14);}
+.rb-prep-sug li.vacio{color:var(--muted); cursor:default; font-size:13.5px;}
+.rb-prep-sug li.vacio:hover{background:none;}
+.rb-prep-or{display:flex; align-items:center; gap:12px; margin:20px 0 16px; color:var(--muted);
+  font-family:'Saira',sans-serif; text-transform:uppercase; letter-spacing:.12em; font-size:11px; font-weight:700;}
+.rb-prep-or::before,.rb-prep-or::after{content:""; flex:1; height:1px; background:var(--line);}
+.rb-prep-copas{display:grid; grid-template-columns:repeat(3,1fr); gap:16px 20px;}
+.rb-prep-grupo .lbl{margin-bottom:8px;}
+.rb-prep-copas .chips,.rb-prep-multi .chips{display:flex; gap:8px; flex-wrap:wrap;}
+.rb-prep-copa{font-family:'Saira',sans-serif; text-transform:uppercase; letter-spacing:.06em; font-weight:700; font-size:12.5px;
+  color:var(--txt); background:var(--panel2); border:1px solid var(--line); border-left:3px solid var(--c);
+  padding:9px 13px; border-radius:9px; cursor:pointer; transition:.15s; text-align:left; display:flex; flex-direction:column; gap:1px;}
+.rb-prep-copa small{font-family:'Barlow',sans-serif; text-transform:none; letter-spacing:0; font-weight:500; font-size:11.5px; color:var(--muted);}
+.rb-prep-copa:hover{border-color:var(--c);}
+.rb-prep-copa.on{background:var(--c); border-color:var(--c); color:#0c0d10;}
+.rb-prep-copa.on small{color:rgba(12,13,16,.7);}
+.rb-prep-otras{grid-column:1/-1; border-top:1px solid var(--line); padding-top:14px;}
+.rb-prep-otras summary{cursor:pointer; color:var(--muted); font-family:'Saira',sans-serif; text-transform:uppercase;
+  letter-spacing:.12em; font-size:12px; font-weight:700; margin-bottom:10px;}
+.rb-prep-otras summary:hover{color:#fff;}
+.rb-prep-hint{color:var(--muted); text-align:center; padding:36px 16px; border:1px dashed var(--line); border-radius:14px;}
+.rb-prep-res{scroll-margin-top:20px;}
+.rb-prep-coche{display:flex; gap:22px; align-items:center; background:linear-gradient(180deg,var(--panel2),var(--panel));
+  border:1px solid var(--line); border-top:4px solid var(--c); border-radius:14px; padding:20px; margin-bottom:18px;}
+.rb-prep-coche .foto{width:240px; max-width:40%; aspect-ratio:4/3; object-fit:cover; border-radius:10px; background:var(--ink);}
+.rb-prep-coche .info{flex:1; min-width:0;}
+.rb-prep-coche .lbl{color:var(--c);}
+.rb-prep-coche h2{font-weight:800; font-size:clamp(26px,4vw,38px); margin:4px 0 2px;}
+.rb-prep-coche .rb-stats{margin-top:14px; gap:26px;}
+.rb-prep-coche .rb-stats .s b{font-size:30px;}
+.rb-prep-multi{margin-top:16px;}
+.rb-prep-multi > span{display:block; color:var(--muted); font-size:13px; margin-bottom:8px;}
+.rb-prep-head{display:flex; align-items:flex-end; justify-content:space-between; gap:16px; flex-wrap:wrap; margin:6px 0 16px;}
+.rb-prep-head .lbl{color:var(--c);}
+.rb-prep-head h2{font-weight:800; font-size:clamp(26px,4vw,38px); margin-top:4px;}
+.rb-prep-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:14px;}
+.rb-prep-sec{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:16px 18px; min-width:0;}
+.rb-prep-sec h3{font-weight:800; font-size:22px; display:flex; align-items:center; gap:10px; margin-bottom:12px;}
+.rb-prep-sec h3 .n{font-family:'Saira',sans-serif; font-size:11px; font-weight:700; color:var(--muted);
+  background:rgba(255,255,255,.05); border:1px solid var(--line); padding:2px 8px; border-radius:20px; letter-spacing:.06em;}
+.rb-prep-sec h4{font-family:'Saira',sans-serif; text-transform:uppercase; letter-spacing:.12em; font-size:11px; font-weight:700;
+  color:var(--c); margin:12px 0 8px;}
+.rb-prep-sec h4:first-of-type{margin-top:0;}
+.rb-prep-list{list-style:none; display:flex; flex-direction:column; gap:6px;}
+.rb-prep-list li{background:var(--panel2); border:1px solid var(--line); border-radius:9px; padding:9px 12px;
+  display:flex; justify-content:space-between; align-items:baseline; gap:4px 12px; flex-wrap:wrap;}
+.rb-prep-list li b{font-weight:700; font-size:14.5px;}
+.rb-prep-list li span{color:var(--muted); font-size:12.5px;}
+.rb-prep-pills{display:flex; gap:6px; flex-wrap:wrap;}
+.rb-prep-pill{background:var(--panel2); border:1px solid var(--line); border-radius:8px; padding:6px 10px; font-weight:700; font-size:13.5px;
+  white-space:nowrap; display:inline-flex; align-items:baseline; gap:6px;}
+.rb-prep-pill small{color:var(--muted); font-weight:500; font-size:11.5px;}
+.rb-prep-nada{color:var(--muted); font-size:13.5px;}
+.rb-prep-coches{margin-top:14px;}
+.rb-prep-cochelist{display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:8px;}
+.rb-prep-cochelist button{background:var(--panel2); border:1px solid var(--line); border-radius:9px; padding:10px 12px; cursor:pointer;
+  text-align:left; color:var(--txt); font-family:inherit; display:flex; flex-direction:column; gap:2px; transition:.15s;}
+.rb-prep-cochelist button b{font-weight:700; font-size:14px;}
+.rb-prep-cochelist button span{color:var(--muted); font-size:12px;}
+.rb-prep-cochelist button:hover{border-color:var(--c);}
+.rb-prep-cochelist button.on{border-color:var(--c); box-shadow:inset 3px 0 0 var(--c);}
+.rb-prep-nota{color:var(--muted); font-size:12.5px; margin-top:18px;}
+@media(max-width:820px){
+  .rb-prep-pick{padding:16px;}
+  .rb-prep-copas{grid-template-columns:1fr;}
+  .rb-prep-grid{grid-template-columns:1fr;}
+  .rb-prep-coche{flex-direction:column; align-items:stretch; padding:16px;}
+  .rb-prep-coche .foto{width:100%; max-width:none;}
+  .rb-prep-copa{min-height:44px;}
+  .rb-prep-head .rb-cta{width:100%;}
+}
+
 /* ---------- menú móvil ---------- */
 .rb-burger{display:none; margin-left:auto; align-items:center; gap:9px; min-height:46px; padding:0 15px;
   background:var(--panel); border:1px solid var(--line); border-radius:11px; cursor:pointer;
