@@ -129,7 +129,11 @@
       "sede": "Crono",
       "fecha": "2026-10-16",
       "seleccion": { "campo": "Categoría", "opciones": ["Hypercar / LMDH", "LMP2", "GT3"] },
-      "documentos": []
+      "documentos": [
+        { "nombre": "Resultado carrera", "href": "resultados/2026/lemans-crono-2026.html" },
+        { "nombre": "Verificaciones", "href": "assets/pdfs/2026/VERIFICACIONES_CRONO_LEMANS_2026.pdf" },
+        { "nombre": "Resumen verificaciones", "href": "assets/pdfs/2026/RESUMEN_VERIFICACIONES_CRONO_LEMANS_2026.pdf" }
+      ]
     },
     {
       "campeonato": "Le Mans Series",
