@@ -5,8 +5,11 @@
   var DATA_PATH = 'assets/data/temporada-2026.json';
   var PDF_DIR = 'assets/pdfs/2026';
   var CLASIF_DIR = 'assets/pdfs/clasificaciones-2026';
+  var RESULT_DIR = 'resultados/2026';
   var CAMPEONATOS = ['GT', 'Grupo C', 'Le Mans Series'];
-  var DOC_TYPES = ['Resultado carrera', 'Verificaciones', 'Mangas'];
+  var DOC_TYPES = ['Resultado carrera', 'Verificaciones', 'Resumen verificaciones', 'Mangas'];
+  // El resultado de carrera puede ser el export HTML de PitWall o un PDF
+  var HTML_DOCS = ['Resultado carrera'];
   var MAX_MB = 20;
   var STORAGE_KEY = 'rb_admin_token';
 
@@ -24,6 +27,8 @@
   var state = { token: null, sha: null, data: null, dirty: false };
 
   function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+  function isHtml(file){ return /\.html?$/i.test(file.name) || file.type === 'text/html'; }
+  function isPdf(file){ return file.type === 'application/pdf' || /\.pdf$/i.test(file.name); }
   function sanitizeFilename(name){ return name.replace(/[^A-Za-z0-9._-]+/g, '_'); }
 
   function setStatus(msg, kind){
@@ -107,6 +112,7 @@
       editorSection.hidden = false;
       setStatus('', '');
       render();
+      renderPublish();
     });
   }
 
@@ -117,14 +123,15 @@
 
   function docSlotHtml(race, docName){
     var doc = findDoc(race.documentos, docName);
+    var accept = HTML_DOCS.indexOf(docName) >= 0 ? 'application/pdf,.html,.htm' : 'application/pdf';
     if(doc && doc.href){
       return '<div class="admin-doc">' +
         '<a href="' + doc.href + '" target="_blank">' + esc(docName) + '</a>' +
-        '<label>Reemplazar<input type="file" accept="application/pdf" data-race="' + race._id + '" data-doc="' + esc(docName) + '"></label>' +
+        '<label>Reemplazar<input type="file" accept="' + accept + '" data-race="' + race._id + '" data-doc="' + esc(docName) + '"></label>' +
       '</div>';
     }
     return '<div class="admin-doc">' +
-      '<label>Subir ' + esc(docName) + '<input type="file" accept="application/pdf" data-race="' + race._id + '" data-doc="' + esc(docName) + '"></label>' +
+      '<label>Subir ' + esc(docName) + '<input type="file" accept="' + accept + '" data-race="' + race._id + '" data-doc="' + esc(docName) + '"></label>' +
     '</div>';
   }
 
@@ -207,8 +214,9 @@
     var t = e.target;
     if(t.type !== 'file' || !t.files[0]) return;
     var file = t.files[0];
-    if(file.type !== 'application/pdf' && !/\.pdf$/i.test(file.name)){
-      alert('Solo se pueden subir ficheros PDF.'); t.value = ''; return;
+    var htmlOk = t.dataset.race && HTML_DOCS.indexOf(t.dataset.doc) >= 0;
+    if(!isPdf(file) && !(htmlOk && isHtml(file))){
+      alert(htmlOk ? 'Solo se pueden subir ficheros PDF o HTML.' : 'Solo se pueden subir ficheros PDF.'); t.value = ''; return;
     }
     if(file.size > MAX_MB * 1024 * 1024){
       alert('El fichero pesa más de ' + MAX_MB + 'MB. Comprímelo antes de subirlo.'); t.value = ''; return;
@@ -226,7 +234,7 @@
     if(!race) return;
     setStatus('Subiendo ' + docName + '…', '');
     inputEl.disabled = true;
-    var path = PDF_DIR + '/' + sanitizeFilename(file.name);
+    var path = (isHtml(file) ? RESULT_DIR : PDF_DIR) + '/' + sanitizeFilename(file.name);
     fileToB64(file).then(function(b64){
       return putFile(path, b64, 'Sube ' + docName + ' — ' + (race.sede || race.campeonato) + ' ' + (race.fecha || ''));
     }).then(function(){
@@ -261,6 +269,292 @@
     }).catch(function(err){
       setStatus('Error: ' + err.message, 'err');
       inputEl.disabled = false;
+    });
+  }
+
+  // ---------- publicar prueba (varios ficheros, un solo commit) ----------
+  var publishEl = document.getElementById('publish');
+  var CAMP_CODE = { 'GT': 'RESISBARNA', 'Grupo C': 'GRUPOC', 'Le Mans Series': 'LEMANS' };
+  var CAMP_SLUG = { 'GT': 'gt', 'Grupo C': 'grupo-c', 'Le Mans Series': 'lemans' };
+  var DOC_PREFIX = { 'Resultado carrera': 'RESULTADOS', 'Verificaciones': 'VERIFICACIONES', 'Resumen verificaciones': 'RESUMEN_VERIFICACIONES', 'Mangas': 'MANGAS' };
+  var pub = { raceId: null, raceManual: false, items: [], busy: false, done: null };
+
+  function norm(str){ return String(str || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, ''); }
+  function slugWords(str){ return String(str || '').normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^A-Za-z0-9]+/g, ' ').trim().split(' '); }
+  function raceLabel(r){ return r.campeonato + ' · ' + (r.sede || '¿sede?') + (r.fecha ? ' · ' + r.fecha : ''); }
+  function hasDoc(r, nombre){ return !!findDoc(r.documentos, nombre); }
+  function todayIso(){ var d = new Date(); return new Date(d.getTime() - d.getTimezoneOffset() * 60000).toISOString().slice(0, 10); }
+
+  // Prueba por defecto: la más reciente ya disputada (del campeonato indicado, si se sabe)
+  function defaultRaceId(champ){
+    var hoy = todayIso();
+    var pasadas = state.data.races.filter(function(r){ return r.fecha && r.fecha <= hoy && !r.aplazada && (!champ || r.campeonato === champ); })
+      .sort(function(a, b){ return a.fecha < b.fecha ? 1 : -1; });
+    var r = pasadas[0] || (champ ? null : state.data.races[0]);
+    return r ? r._id : (champ ? defaultRaceId() : null);
+  }
+
+  function champOfText(n){
+    if(n.indexOf('lemans') >= 0) return 'Le Mans Series';
+    if(n.indexOf('grupoc') >= 0) return 'Grupo C';
+    if(n.indexOf('resisbarna') >= 0) return 'GT';
+    return null;
+  }
+
+  function clasifCategory(nombre){
+    var c = norm(nombre).replace('clasificacion', '').replace('lemansseries', '').replace('grupoc', '');
+    return c || 'general';
+  }
+
+  // Empareja un PDF de clasificación con una entrada existente (p. ej. "...-gt3_resisbarna.pdf" → "Clasificación Le Mans Series GT3")
+  function matchClasif(fileName, race){
+    var n = norm(fileName.replace(/\.[^.]+$/, ''));
+    var champ = champOfText(n) || race.campeonato;
+    var best = null, bestLen = -1;
+    state.data.clasificaciones.forEach(function(cl){
+      if((champOfText(norm(cl.nombre)) || 'GT') !== champ) return;
+      var cat = clasifCategory(cl.nombre);
+      var ok = n.indexOf(cat) >= 0 || (cat.indexOf('copa') === 0 && n.indexOf('copa') >= 0);
+      if(ok && cat.length > bestLen){ best = cl; bestLen = cat.length; }
+    });
+    return best ? 'clasif:' + best._id : 'skip';
+  }
+
+  function guessTarget(file, race){
+    var n = norm(file.name);
+    if(!isPdf(file) && !isHtml(file)) return 'skip';
+    if(isHtml(file)) return 'doc:Resultado carrera';
+    if(n.indexOf('clasific') >= 0) return matchClasif(file.name, race);
+    if(n.indexOf('verific') >= 0) return n.indexOf('resumen') >= 0 ? 'doc:Resumen verificaciones' : 'doc:Verificaciones';
+    if(n.indexOf('manga') >= 0) return 'doc:Mangas';
+    if(n.indexOf('resultado') >= 0) return 'doc:Resultado carrera';
+    return 'skip';
+  }
+
+  function targetPath(target, file, race){
+    var sede = slugWords(race.sede);
+    if(target.indexOf('doc:') === 0){
+      var docName = target.slice(4);
+      if(isHtml(file)) return RESULT_DIR + '/' + CAMP_SLUG[race.campeonato] + '-' + sede.join('-').toLowerCase() + '-2026.html';
+      return PDF_DIR + '/' + DOC_PREFIX[docName] + '_' + sede.join('_').toUpperCase() + '_' + CAMP_CODE[race.campeonato] + '_2026.pdf';
+    }
+    var cl = state.data.clasificaciones.find(function(c){ return 'clasif:' + c._id === target; });
+    return (cl && cl.pdf) || (CLASIF_DIR + '/' + sanitizeFilename(file.name));
+  }
+
+  function targetOptions(item, race){
+    var opts = [['skip', 'No publicar']];
+    if(isPdf(item.file) || isHtml(item.file)){
+      DOC_TYPES.forEach(function(dt){
+        if(isHtml(item.file) && HTML_DOCS.indexOf(dt) < 0) return;
+        opts.push(['doc:' + dt, dt + ' de la prueba']);
+      });
+      if(isPdf(item.file)) state.data.clasificaciones.forEach(function(cl){ opts.push(['clasif:' + cl._id, cl.nombre || 'Clasificación sin nombre']); });
+    }
+    return opts.map(function(o){ return '<option value="' + esc(o[0]) + '"' + (o[0] === item.target ? ' selected' : '') + '>' + esc(o[1]) + '</option>'; }).join('');
+  }
+
+  function duplicateTargets(){
+    var seen = {}, dups = [];
+    pub.items.forEach(function(it){
+      if(it.target === 'skip') return;
+      if(seen[it.target]) dups.push(it.target); else seen[it.target] = true;
+    });
+    return dups;
+  }
+
+  function renderPublish(){
+    if(!state.data) return;
+    if(!pub.raceId || !state.data.races.some(function(r){ return r._id === pub.raceId; })) pub.raceId = defaultRaceId();
+    var race = state.data.races.find(function(r){ return r._id === pub.raceId; });
+    var raceOpts = state.data.races.map(function(r){
+      return '<option value="' + r._id + '"' + (r._id === pub.raceId ? ' selected' : '') + '>' + esc(raceLabel(r)) + (hasDoc(r, 'Resultado carrera') ? ' ✓' : '') + '</option>';
+    }).join('');
+    var dups = duplicateTargets();
+    var count = pub.items.filter(function(it){ return it.target !== 'skip'; }).length;
+    var files = pub.items.map(function(it, i){
+      var dest = it.target === 'skip' || !race ? 'No se publica' : '→ ' + targetPath(it.target, it.file, race);
+      return '<div class="admin-file' + (it.target === 'skip' ? ' skip' : '') + '">' +
+        '<div class="fn">' + esc(it.file.name) + ' <small>' + (it.file.size / 1048576).toFixed(1) + ' MB · ' + esc(dest) + '</small></div>' +
+        '<select data-pub-item="' + i + '"' + (pub.busy ? ' disabled' : '') + '>' + targetOptions(it, race) + '</select>' +
+      '</div>';
+    }).join('');
+    var done = pub.done ? '<p class="admin-status ok">' + pub.done + '</p>' : '';
+    publishEl.innerHTML = '<h2>Publicar prueba</h2><div class="admin-pub">' +
+      '<p>Elige la prueba y arrastra aquí la carpeta con lo que exporta PitWall (resultado HTML, verificaciones, resumen y clasificaciones). Cada fichero se reconoce por su nombre; revisa la lista y pulsa <b>Publicar</b>. Las clasificaciones sustituyen a las actuales.</p>' +
+      '<select id="pubRace"' + (pub.busy ? ' disabled' : '') + '>' + raceOpts + '</select>' +
+      '<label class="admin-drop" id="pubDrop"><b>Arrastra aquí la carpeta o los ficheros</b><br>o pulsa para elegirlos' +
+        '<input type="file" id="pubFiles" multiple accept="application/pdf,.html,.htm"></label>' +
+      '<p style="margin-top:-6px"><a href="#" id="pubFolder" style="color:var(--cyan)">Elegir una carpeta entera</a>' +
+        '<input type="file" id="pubFolderInput" webkitdirectory hidden></p>' +
+      (files ? '<div class="admin-files">' + files + '</div>' : '') +
+      (dups.length ? '<p class="admin-status err">Hay dos ficheros con el mismo destino. Cambia uno a "No publicar".</p>' : '') +
+      (pub.items.length ? '<div style="display:flex; gap:10px; flex-wrap:wrap;">' +
+        '<button class="rb-cta go" id="pubGo"' + (pub.busy || !count || dups.length ? ' disabled' : '') + '>Publicar ' + count + ' fichero' + (count === 1 ? '' : 's') + '</button>' +
+        '<button class="admin-add" id="pubClear" style="width:auto"' + (pub.busy ? ' disabled' : '') + '>Vaciar lista</button></div>' : '') +
+      done + '</div>';
+  }
+
+  function addFiles(list){
+    pub.done = null;
+    var antes = pub.raceId;
+    Array.prototype.forEach.call(list, function(file){
+      if(/^\./.test(file.name)) return;
+      if(file.size > MAX_MB * 1024 * 1024){ setStatus(file.name + ' pesa más de ' + MAX_MB + 'MB y no se añade.', 'err'); return; }
+      pub.items.push({ file: file, target: null });
+    });
+    // Si no se ha elegido prueba a mano, la deduce del nombre de los ficheros (p. ej. "RESISLEMANS" → Le Mans Series)
+    if(!pub.raceManual){
+      var champ = null;
+      pub.items.some(function(it){ champ = champOfText(norm(it.file.name)); return !!champ; });
+      if(champ) pub.raceId = defaultRaceId(champ);
+    }
+    var race = state.data.races.find(function(r){ return r._id === pub.raceId; });
+    pub.items.forEach(function(it){ if(it.target === null || pub.raceId !== antes) it.target = guessTarget(it.file, race); });
+    renderPublish();
+  }
+
+  // Recorre carpetas arrastradas (DataTransferItem.webkitGetAsEntry)
+  function readEntries(entry){
+    return new Promise(function(resolve){
+      if(entry.isFile){ entry.file(function(f){ resolve([f]); }, function(){ resolve([]); }); return; }
+      var reader = entry.createReader(), all = [];
+      (function next(){
+        reader.readEntries(function(batch){
+          if(!batch.length){ Promise.all(all.map(readEntries)).then(function(r){ resolve([].concat.apply([], r)); }); return; }
+          all = all.concat(Array.prototype.slice.call(batch)); next();
+        }, function(){ resolve([]); });
+      })();
+    });
+  }
+
+  publishEl.addEventListener('dragover', function(e){
+    if(!e.target.closest('#pubDrop')) return;
+    e.preventDefault(); e.target.closest('#pubDrop').classList.add('over');
+  });
+  publishEl.addEventListener('dragleave', function(e){
+    var d = e.target.closest('#pubDrop'); if(d) d.classList.remove('over');
+  });
+  publishEl.addEventListener('drop', function(e){
+    if(!e.target.closest('#pubDrop') || pub.busy) return;
+    e.preventDefault();
+    var items = e.dataTransfer.items;
+    var entries = items ? Array.prototype.map.call(items, function(it){ return it.webkitGetAsEntry && it.webkitGetAsEntry(); }).filter(Boolean) : [];
+    if(!entries.length){ addFiles(e.dataTransfer.files); return; }
+    Promise.all(entries.map(readEntries)).then(function(r){ addFiles([].concat.apply([], r)); });
+  });
+
+  publishEl.addEventListener('change', function(e){
+    var t = e.target;
+    if(t.id === 'pubFiles' || t.id === 'pubFolderInput'){ addFiles(t.files); t.value = ''; }
+    else if(t.id === 'pubRace'){
+      pub.raceId = t.value; pub.raceManual = true;
+      var race = state.data.races.find(function(r){ return r._id === pub.raceId; });
+      pub.items.forEach(function(it){ it.target = guessTarget(it.file, race); });
+      pub.done = null; renderPublish();
+    } else if(t.dataset.pubItem){
+      pub.items[+t.dataset.pubItem].target = t.value; renderPublish();
+    }
+  });
+
+  publishEl.addEventListener('click', function(e){
+    var t = e.target;
+    if(t.id === 'pubFolder'){ e.preventDefault(); document.getElementById('pubFolderInput').click(); }
+    else if(t.id === 'pubClear'){ pub.items = []; pub.done = null; pub.raceManual = false; renderPublish(); }
+    else if(t.id === 'pubGo'){ publishRace(); }
+  });
+
+  function gitJson(path, opts){
+    return api(path, opts).then(function(res){
+      if(!res.ok) return res.json().catch(function(){ return {}; }).then(function(j){
+        var err = new Error(j.message || ('Error de GitHub (' + res.status + ')')); err.status = res.status; throw err;
+      });
+      return res.json();
+    });
+  }
+
+  function createBlob(b64){
+    return gitJson('git/blobs', { method: 'POST', body: JSON.stringify({ content: b64, encoding: 'base64' }) }).then(function(j){ return j.sha; });
+  }
+
+  // Sube los ficheros y el JSON de la temporada en un único commit.
+  // Si main ha avanzado entretanto (p. ej. el cron del catálogo), reintenta sobre el commit nuevo.
+  function commitFiles(blobs, mutate, message, intento){
+    intento = intento || 1;
+    var head, data, jsonSha;
+    return gitJson('git/ref/heads/' + BRANCH).then(function(ref){
+      head = ref.object.sha;
+      return gitJson('contents/' + DATA_PATH + '?ref=' + head);
+    }).then(function(j){
+      data = JSON.parse(b64ToUtf8(j.content));
+      mutate(data);
+      return createBlob(utf8ToB64(JSON.stringify(data, null, 2)));
+    }).then(function(sha){
+      jsonSha = sha;
+      var tree = blobs.map(function(b){ return { path: b.path, mode: '100644', type: 'blob', sha: b.sha }; });
+      tree.push({ path: DATA_PATH, mode: '100644', type: 'blob', sha: jsonSha });
+      return gitJson('git/trees', { method: 'POST', body: JSON.stringify({ base_tree: head, tree: tree }) });
+    }).then(function(tree){
+      return gitJson('git/commits', { method: 'POST', body: JSON.stringify({ message: message, tree: tree.sha, parents: [head] }) });
+    }).then(function(commit){
+      return gitJson('git/refs/heads/' + BRANCH, { method: 'PATCH', body: JSON.stringify({ sha: commit.sha, force: false }) });
+    }).then(function(){
+      return { data: data, jsonSha: jsonSha };
+    }).catch(function(err){
+      if(err.status === 422 && intento < 4) return commitFiles(blobs, mutate, message, intento + 1);
+      throw err;
+    });
+  }
+
+  function publishRace(){
+    if(state.dirty){ setStatus('Guarda primero los cambios pendientes (botón "Guardar cambios").', 'err'); return; }
+    var race = state.data.races.find(function(r){ return r._id === pub.raceId; });
+    var items = pub.items.filter(function(it){ return it.target !== 'skip'; });
+    if(!race || !items.length) return;
+    var raceKey = { campeonato: race.campeonato, sede: race.sede, fecha: race.fecha };
+    var plan = items.map(function(it){
+      var cl = it.target.indexOf('clasif:') === 0 ? state.data.clasificaciones.find(function(c){ return 'clasif:' + c._id === it.target; }) : null;
+      return { file: it.file, path: targetPath(it.target, it.file, race), docName: it.target.indexOf('doc:') === 0 ? it.target.slice(4) : null, clasifNombre: cl ? cl.nombre : null };
+    });
+    pub.busy = true; renderPublish();
+    var hechos = 0;
+    setStatus('Subiendo ficheros (0/' + plan.length + ')…', '');
+    Promise.all(plan.map(function(p){
+      return fileToB64(p.file).then(createBlob).then(function(sha){
+        p.sha = sha; hechos++;
+        setStatus('Subiendo ficheros (' + hechos + '/' + plan.length + ')…', '');
+      });
+    })).then(function(){
+      setStatus('Publicando…', '');
+      return commitFiles(plan, function(data){
+        var r = data.races.find(function(x){ return x.campeonato === raceKey.campeonato && x.sede === raceKey.sede && x.fecha === raceKey.fecha; });
+        if(!r) throw new Error('La prueba ya no existe en la temporada. Recarga el panel.');
+        r.documentos = r.documentos || [];
+        plan.forEach(function(p){
+          if(p.docName){
+            var d = findDoc(r.documentos, p.docName);
+            if(d) d.href = p.path; else r.documentos.push({ nombre: p.docName, href: p.path });
+          } else if(p.clasifNombre !== null){
+            var cl = data.clasificaciones.find(function(c){ return c.nombre === p.clasifNombre; });
+            if(cl) cl.pdf = p.path;
+          }
+        });
+        // mantiene el orden habitual de los documentos
+        r.documentos.sort(function(a, b){
+          var ia = DOC_TYPES.indexOf(a.nombre), ib = DOC_TYPES.indexOf(b.nombre);
+          return (ia < 0 ? 99 : ia) - (ib < 0 ? 99 : ib);
+        });
+      }, 'Publica resultados de ' + raceLabel(race) + ' desde el panel');
+    }).then(function(res){
+      state.data = res.data; state.sha = res.jsonSha; state.dirty = false; saveBtn.disabled = true;
+      pub.busy = false; pub.items = []; pub.raceManual = false;
+      pub.done = 'Publicado ✓ — ' + plan.length + ' fichero' + (plan.length === 1 ? '' : 's') + ' en ' + esc(raceLabel(raceKey)) + '. La web se actualizará en 1-2 minutos.';
+      setStatus('Publicado ✓', 'ok');
+      render(); pub.raceId = state.data.races.find(function(x){ return x.campeonato === raceKey.campeonato && x.sede === raceKey.sede && x.fecha === raceKey.fecha; })._id;
+      renderPublish();
+    }).catch(function(err){
+      pub.busy = false; renderPublish();
+      setStatus('Error: ' + err.message, 'err');
     });
   }
 
