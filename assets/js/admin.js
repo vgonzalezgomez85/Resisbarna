@@ -28,6 +28,11 @@
 
   function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
   function isHtml(file){ return /\.html?$/i.test(file.name) || file.type === 'text/html'; }
+  // Los enlaces llevan "?v=…" para que, al reemplazar un fichero con el mismo
+  // nombre, el navegador no siga mostrando el antiguo desde su caché.
+  function conVersion(path){ return path + '?v=' + Date.now().toString(36); }
+  function sinVersion(href){ return String(href || '').split('?')[0]; }
+
   function isPdf(file){ return file.type === 'application/pdf' || /\.pdf$/i.test(file.name); }
   function sanitizeFilename(name){ return name.replace(/[^A-Za-z0-9._-]+/g, '_'); }
 
@@ -240,8 +245,8 @@
     }).then(function(){
       race.documentos = race.documentos || [];
       var doc = findDoc(race.documentos, docName);
-      if(doc) doc.href = path;
-      else race.documentos.push({ nombre: docName, href: path });
+      if(doc) doc.href = conVersion(path);
+      else race.documentos.push({ nombre: docName, href: conVersion(path) });
       return saveData('Actualiza ' + docName + ' — ' + (race.sede || race.campeonato));
     }).then(function(){
       setStatus('PDF subido y publicado ✓', 'ok');
@@ -261,7 +266,7 @@
     fileToB64(file).then(function(b64){
       return putFile(path, b64, 'Sube clasificación — ' + (cl.nombre || ''));
     }).then(function(){
-      cl.pdf = path;
+      cl.pdf = conVersion(path);
       return saveData('Actualiza clasificación — ' + (cl.nombre || ''));
     }).then(function(){
       setStatus('PDF subido y publicado ✓', 'ok');
@@ -339,7 +344,7 @@
       return PDF_DIR + '/' + DOC_PREFIX[docName] + '_' + sede.join('_').toUpperCase() + '_' + CAMP_CODE[race.campeonato] + '_2026.pdf';
     }
     var cl = state.data.clasificaciones.find(function(c){ return 'clasif:' + c._id === target; });
-    return (cl && cl.pdf) || (CLASIF_DIR + '/' + sanitizeFilename(file.name));
+    return (cl && cl.pdf && sinVersion(cl.pdf)) || (CLASIF_DIR + '/' + sanitizeFilename(file.name));
   }
 
   function targetOptions(item, race){
@@ -533,10 +538,10 @@
         plan.forEach(function(p){
           if(p.docName){
             var d = findDoc(r.documentos, p.docName);
-            if(d) d.href = p.path; else r.documentos.push({ nombre: p.docName, href: p.path });
+            if(d) d.href = conVersion(p.path); else r.documentos.push({ nombre: p.docName, href: conVersion(p.path) });
           } else if(p.clasifNombre !== null){
             var cl = data.clasificaciones.find(function(c){ return c.nombre === p.clasifNombre; });
-            if(cl) cl.pdf = p.path;
+            if(cl) cl.pdf = conVersion(p.path);
           }
         });
         // mantiene el orden habitual de los documentos
