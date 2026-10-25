@@ -314,7 +314,12 @@
           "GT3"
         ]
       },
-      "documentos": []
+      "documentos": [
+        {
+          "nombre": "Resultado carrera",
+          "href": "resultados/2026/resultados_resislemans3_s4y.html?v=mvo6i12c"
+        }
+      ]
     }
   ],
   "clasificaciones": [
